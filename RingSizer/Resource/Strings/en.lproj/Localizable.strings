@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  Soccer
+
+  Created by Андрей Чернышев on 01.02.2023.
+  
+*/
+
+// MARK: General
+"Cancel" = "Cancel";
+"Continue" = "Continue";
+"Next" = "Next";
+
+// MARK: ImagePicker
+"ImagePicker.TakePhoto" = "Take a photo";
+"ImagePicker.CameraRoll" = "Camera roll";
+"ImagePicker.PhotoLibrary" = "Photo library";
+
+// MARK: Paygate
+"Paygate.Title" = "UNLOCK PREMIUM STATUS";
+"Paygate.Cell1" = "Customized wall pilates workouts";
+"Paygate.Cell2" = "Clear instructions";
+"Paygate.Cell3" = "Easily schedule your training";
+"Paygate.Info" = "Secured by the App Store. Cancel anytime.";
+"Paygate.TermsOfUse" = "Terms of Use";
+"Paygate.PrivacyPolicy" = "Privacy Policy";
+"Paygate.RestorePurchases" = "Restore Purchase";
+"Paygate.Failed" = "Failed to make purchase";
+"Paygate.Monthly.Name1" = "7 days for free";
+"Paygate.Monthly.Name2" = "Quick prep";
+"Paygate.Monthly.Bottom1" = "After 7-day trial";
+"Paygate.Monthly.Bottom2" = "Trial is over";
+"Paygate.Lifetime.Name" = "Lifetime";
+"Paygate.Lifetime.PriceDescription" = "\nIn terms of  1  year";
+"Paygate.Lifetime.BottomDescription" = "once";
+"Paygate.Discount" = "SAVE %i%%";
+"Paygate.Price.Period" = "month";
+
+// MARK: Onboarding
+"Onboarding.Skip" = "SKIP";
+"Onboarding.RingSize.Title" = "Get your ring size easily";
+"Onboarding.Convert.Title" = "Convert the ring size measurements";
+"Onboarding.SaveShare.Title" = "Save and share your rings sizes";
+
+// MARK: Main
+"Main.RingSizer" = "RING SIZER";
+"Main.Converter" = "CONVERTER";
+"Main.FingerSizer" = "FINGER SIZER";
