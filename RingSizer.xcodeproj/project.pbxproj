@@ -93,6 +93,9 @@
 		DE38C5BF2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE38C5BC2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json */; };
 		DE38C5C12BAEDAB40019C044 /* OAnimationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C02BAEDAB40019C044 /* OAnimationInfoView.swift */; };
 		DE38C5C52BAEE22A0019C044 /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */; };
+		DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */; };
+		DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */; };
+		DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +189,9 @@
 		DE38C5BC2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.SaveShare.Animation.json; sourceTree = "<group>"; };
 		DE38C5C02BAEDAB40019C044 /* OAnimationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAnimationInfoView.swift; sourceTree = "<group>"; };
 		DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
+		DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
+		DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +310,8 @@
 				DE38C2AD2BAEC1990019C044 /* ObservableAndSingle+Extension.swift */,
 				DE38C2AE2BAEC1990019C044 /* String+Extension.swift */,
 				DE38C2AF2BAEC1990019C044 /* UIView+RxExtension.swift */,
+				DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */,
+				DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -566,6 +574,7 @@
 		DE38C5A32BAED0450019C044 /* Paygate */ = {
 			isa = PBXGroup;
 			children = (
+				DE38C5C62BB168F60019C044 /* Views */,
 				DE38C5A52BAED0450019C044 /* Utils */,
 				DE38C5A92BAED0450019C044 /* PaygateViewController.swift */,
 				DE38C5A42BAED0450019C044 /* PaygateViewModel.swift */,
@@ -607,6 +616,14 @@
 				DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */,
 			);
 			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DE38C5C62BB168F60019C044 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -765,18 +782,21 @@
 				DE38C4782BAEC19A0019C044 /* NavigationControllerSettings.swift in Sources */,
 				DE38C4622BAEC19A0019C044 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE38C4C02BAEC19A0019C044 /* IAPManager.swift in Sources */,
+				DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */,
 				DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */,
 				DE38C4772BAEC19A0019C044 /* Toast.swift in Sources */,
 				DE38C4C42BAEC19A0019C044 /* IAPProduct.swift in Sources */,
 				DE38C5712BAEC19A0019C044 /* TabView.swift in Sources */,
 				DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */,
 				DE38C46E2BAEC19A0019C044 /* XOREncryption.swift in Sources */,
+				DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE38C4722BAEC19A0019C044 /* ContentError.swift in Sources */,
 				DE38C4FC2BAEC19A0019C044 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE38C5B82BAED6710019C044 /* SessionManager.swift in Sources */,
 				DE38C4692BAEC19A0019C044 /* Scalable.swift in Sources */,
 				DE38C4832BAEC19A0019C044 /* PushNotificationsManager.swift in Sources */,
 				DE38C4792BAEC19A0019C044 /* NavigationController.swift in Sources */,
+				DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
 				DE38C4862BAEC19A0019C044 /* SceneDelegate.swift in Sources */,
 				DE38C4802BAEC19A0019C044 /* GradientView.swift in Sources */,
@@ -951,8 +971,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingSizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -965,8 +986,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.RingSizer;
+				PRODUCT_BUNDLE_IDENTIFIER = train.pilates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -982,8 +1004,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingSizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -996,8 +1019,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wed.RingSizer;
+				PRODUCT_BUNDLE_IDENTIFIER = train.pilates;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
