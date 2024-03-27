@@ -45,3 +45,20 @@
 "Main.RingSizer" = "RING SIZER";
 "Main.Converter" = "CONVERTER";
 "Main.FingerSizer" = "FINGER SIZER";
+
+// MARK: Converter
+"Converter.Title" = "Converter";
+"Converter.Subtitle" = "Select a ring size you want to convert";
+"Converter.Convert" = "CONVERT";
+"Converter.RingSize" = "Ring size";
+
+// MARK: Pick ring size
+"PickSize.Title" = "Pick the ring size";
+"PickSize.Select" = "SELECT";
+
+// MARK: Measurement systems
+"MeasurementSystems.US" = "US (United States)";
+"MeasurementSystems.AU" = "AU/UK (Australia&United Kingdom)";
+"MeasurementSystems.EU" = "EU/ISO (Europe)";
+"MeasurementSystems.JP" = "JP/CN (Japan&China)";
+"MeasurementSystems.Title" = "Measurement systems";

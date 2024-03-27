@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5502BA2BB200BD00B7692B /* RingSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502B92BB200BD00B7692B /* RingSizes.swift */; };
+		0F5502BD2BB2051C00B7692B /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */; };
+		0F5502BF2BB2053500B7692B /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502BE2BB2053500B7692B /* ConverterView.swift */; };
+		0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C12BB2143700B7692B /* HeaderView.swift */; };
+		0F5502C52BB2195300B7692B /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C42BB2195300B7692B /* DropdownView.swift */; };
+		0F5502C82BB2225500B7692B /* MeasurementSystemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C72BB2225500B7692B /* MeasurementSystemsViewController.swift */; };
+		0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C92BB2226B00B7692B /* MeasurementSystemsView.swift */; };
+		0F5502CD2BB2238D00B7692B /* PickSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502CC2BB2238D00B7692B /* PickSizeView.swift */; };
+		0F5502CF2BB2239E00B7692B /* PickSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502CE2BB2239E00B7692B /* PickSizeViewController.swift */; };
+		0F5502D12BB2247400B7692B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502D02BB2247400B7692B /* PrimaryButton.swift */; };
+		0F5502D42BB2DFC600B7692B /* PickSizeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502D32BB2DFC600B7692B /* PickSizeViewCell.swift */; };
+		0F5502D62BB2E42A00B7692B /* PickSizeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502D52BB2E42A00B7692B /* PickSizeTableView.swift */; };
+		0F5502DA2BB304D800B7692B /* MeasurementSystemsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502D92BB304D800B7692B /* MeasurementSystemsTableView.swift */; };
+		0F5502DD2BB3057000B7692B /* MeasurementSystemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502DC2BB3057000B7692B /* MeasurementSystemViewCell.swift */; };
+		0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E02BB335E800B7692B /* ConverterViewModel.swift */; };
+		0F5502E42BB3492000B7692B /* ConverterSizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */; };
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
@@ -99,6 +115,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F5502B92BB200BD00B7692B /* RingSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizes.swift; sourceTree = "<group>"; };
+		0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		0F5502BE2BB2053500B7692B /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		0F5502C12BB2143700B7692B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0F5502C42BB2195300B7692B /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		0F5502C72BB2225500B7692B /* MeasurementSystemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemsViewController.swift; sourceTree = "<group>"; };
+		0F5502C92BB2226B00B7692B /* MeasurementSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemsView.swift; sourceTree = "<group>"; };
+		0F5502CC2BB2238D00B7692B /* PickSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSizeView.swift; sourceTree = "<group>"; };
+		0F5502CE2BB2239E00B7692B /* PickSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSizeViewController.swift; sourceTree = "<group>"; };
+		0F5502D02BB2247400B7692B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		0F5502D32BB2DFC600B7692B /* PickSizeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSizeViewCell.swift; sourceTree = "<group>"; };
+		0F5502D52BB2E42A00B7692B /* PickSizeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSizeTableView.swift; sourceTree = "<group>"; };
+		0F5502D92BB304D800B7692B /* MeasurementSystemsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemsTableView.swift; sourceTree = "<group>"; };
+		0F5502DC2BB3057000B7692B /* MeasurementSystemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemViewCell.swift; sourceTree = "<group>"; };
+		0F5502E02BB335E800B7692B /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
+		0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterSizeButton.swift; sourceTree = "<group>"; };
 		240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426723285054683E1755FD3A /* Pods-RingSizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.debug.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B298D76B0AF3E7B54D526CD0 /* Pods-RingSizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.release.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +238,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5502BB2BB204E600B7692B /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502E22BB348FD00B7692B /* Views */,
+				0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */,
+				0F5502BE2BB2053500B7692B /* ConverterView.swift */,
+				0F5502E02BB335E800B7692B /* ConverterViewModel.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		0F5502C62BB2223000B7692B /* MeasurementSystems */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502D82BB304B900B7692B /* Views */,
+				0F5502C72BB2225500B7692B /* MeasurementSystemsViewController.swift */,
+				0F5502C92BB2226B00B7692B /* MeasurementSystemsView.swift */,
+			);
+			path = MeasurementSystems;
+			sourceTree = "<group>";
+		};
+		0F5502CB2BB2237500B7692B /* PickSize */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502D22BB2DFA100B7692B /* Views */,
+				0F5502CE2BB2239E00B7692B /* PickSizeViewController.swift */,
+				0F5502CC2BB2238D00B7692B /* PickSizeView.swift */,
+			);
+			path = PickSize;
+			sourceTree = "<group>";
+		};
+		0F5502D22BB2DFA100B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502DB2BB304E700B7692B /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5502D72BB304B000B7692B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502D92BB304D800B7692B /* MeasurementSystemsTableView.swift */,
+				0F5502DC2BB3057000B7692B /* MeasurementSystemViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0F5502D82BB304B900B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502D72BB304B000B7692B /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5502DB2BB304E700B7692B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502D32BB2DFC600B7692B /* PickSizeViewCell.swift */,
+				0F5502D52BB2E42A00B7692B /* PickSizeTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0F5502E22BB348FD00B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AD0ECECA7ECE76F9D2436721 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +451,7 @@
 				DE38C2BC2BAEC1990019C044 /* XOREncryption.swift */,
 				DE38C2BD2BAEC1990019C044 /* Fonts.swift */,
 				DE38C2C22BAEC1990019C044 /* Weak.swift */,
+				0F5502B92BB200BD00B7692B /* RingSizes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -363,10 +469,13 @@
 		DE38C2C32BAEC1990019C044 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0F5502C12BB2143700B7692B /* HeaderView.swift */,
+				0F5502C42BB2195300B7692B /* DropdownView.swift */,
 				DE38C2C42BAEC1990019C044 /* RequestReview.swift */,
 				DE38C2C52BAEC1990019C044 /* ImagePicker.swift */,
 				DE38C2C62BAEC1990019C044 /* RxActivityIndicator.swift */,
 				DE38C2C72BAEC1990019C044 /* Toast.swift */,
+				0F5502D02BB2247400B7692B /* PrimaryButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -465,6 +574,9 @@
 		DE38C3632BAEC19A0019C044 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0F5502CB2BB2237500B7692B /* PickSize */,
+				0F5502C62BB2223000B7692B /* MeasurementSystems */,
+				0F5502BB2BB204E600B7692B /* Converter */,
 				DE38C5A32BAED0450019C044 /* Paygate */,
 				DE38C3872BAEC19A0019C044 /* Splash */,
 				DE38C4302BAEC19A0019C044 /* Main */,
@@ -756,8 +868,11 @@
 				DE38C4C32BAEC19A0019C044 /* IAPActionResult.swift in Sources */,
 				DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */,
 				DE38C47D2BAEC19A0019C044 /* PaddingTextField.swift in Sources */,
+				0F5502C52BB2195300B7692B /* DropdownView.swift in Sources */,
 				DE38C4822BAEC19A0019C044 /* AppDelegate.swift in Sources */,
+				0F5502D12BB2247400B7692B /* PrimaryButton.swift in Sources */,
 				DE38C45F2BAEC19A0019C044 /* UIColor+Extension.swift in Sources */,
+				0F5502CD2BB2238D00B7692B /* PickSizeView.swift in Sources */,
 				DE38C4742BAEC19A0019C044 /* RequestReview.swift in Sources */,
 				DE38C4752BAEC19A0019C044 /* ImagePicker.swift in Sources */,
 				DE38C56E2BAEC19A0019C044 /* MainViewController.swift in Sources */,
@@ -770,6 +885,7 @@
 				DE38C4702BAEC19A0019C044 /* SignError.swift in Sources */,
 				DE38C4842BAEC19A0019C044 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE38C4FA2BAEC19A0019C044 /* SplashViewController.swift in Sources */,
+				0F5502BD2BB2051C00B7692B /* ConverterViewController.swift in Sources */,
 				DE38C5862BAEC19A0019C044 /* OSlideView.swift in Sources */,
 				DE38C4672BAEC19A0019C044 /* APIRequestBody.swift in Sources */,
 				DE38C4732BAEC19A0019C044 /* Weak.swift in Sources */,
@@ -778,6 +894,7 @@
 				DE38C4872BAEC19A0019C044 /* Appearance.swift in Sources */,
 				DE38C46C2BAEC19A0019C044 /* ScreenSize.swift in Sources */,
 				DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */,
+				0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */,
 				DE38C4682BAEC19A0019C044 /* RestAPITransport.swift in Sources */,
 				DE38C4782BAEC19A0019C044 /* NavigationControllerSettings.swift in Sources */,
 				DE38C4622BAEC19A0019C044 /* ObservableAndSingle+Extension.swift in Sources */,
@@ -789,6 +906,7 @@
 				DE38C5712BAEC19A0019C044 /* TabView.swift in Sources */,
 				DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */,
 				DE38C46E2BAEC19A0019C044 /* XOREncryption.swift in Sources */,
+				0F5502DD2BB3057000B7692B /* MeasurementSystemViewCell.swift in Sources */,
 				DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE38C4722BAEC19A0019C044 /* ContentError.swift in Sources */,
 				DE38C4FC2BAEC19A0019C044 /* SplashReceiptValidationObserver.swift in Sources */,
@@ -799,7 +917,14 @@
 				DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
 				DE38C4862BAEC19A0019C044 /* SceneDelegate.swift in Sources */,
+				0F5502BA2BB200BD00B7692B /* RingSizes.swift in Sources */,
+				0F5502CF2BB2239E00B7692B /* PickSizeViewController.swift in Sources */,
+				0F5502E42BB3492000B7692B /* ConverterSizeButton.swift in Sources */,
 				DE38C4802BAEC19A0019C044 /* GradientView.swift in Sources */,
+				0F5502DA2BB304D800B7692B /* MeasurementSystemsTableView.swift in Sources */,
+				0F5502D62BB2E42A00B7692B /* PickSizeTableView.swift in Sources */,
+				0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */,
+				0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */,
 				DE38C47F2BAEC19A0019C044 /* CircleView.swift in Sources */,
 				DE38C5B02BAED0450019C044 /* PaygateInteractor.swift in Sources */,
 				DE38C4C62BAEC19A0019C044 /* IAPErrorHelper.swift in Sources */,
@@ -812,9 +937,11 @@
 				DE38C58D2BAEC19A0019C044 /* OnboardingView.swift in Sources */,
 				DE38C47E2BAEC19A0019C044 /* PaddingLabel.swift in Sources */,
 				DE38C5AE2BAED0450019C044 /* PaygateViewModel.swift in Sources */,
+				0F5502BF2BB2053500B7692B /* ConverterView.swift in Sources */,
 				DE38C46A2BAEC19A0019C044 /* NumberLaunches.swift in Sources */,
 				DE38C56F2BAEC19A0019C044 /* MainView.swift in Sources */,
 				DE38C4FE2BAEC19A0019C044 /* SplashView.swift in Sources */,
+				0F5502D42BB2DFC600B7692B /* PickSizeViewCell.swift in Sources */,
 				DE38C4652BAEC19A0019C044 /* GlobalDefinitions.swift in Sources */,
 				DE38C46F2BAEC19A0019C044 /* Fonts.swift in Sources */,
 				DE38C48B2BAEC19A0019C044 /* FacebookManager.swift in Sources */,
@@ -822,6 +949,7 @@
 				DE38C57A2BAEC19A0019C044 /* OnboardingViewController.swift in Sources */,
 				DE38C4C52BAEC19A0019C044 /* IAPError.swift in Sources */,
 				DE38C4812BAEC19A0019C044 /* CircleProgressView.swift in Sources */,
+				0F5502C82BB2225500B7692B /* MeasurementSystemsViewController.swift in Sources */,
 				DE38C4852BAEC19A0019C044 /* PushNotificationsModel.swift in Sources */,
 				DE38C4612BAEC19A0019C044 /* Collection+Extension.swift in Sources */,
 				DE38C5AF2BAED0450019C044 /* Currency.swift in Sources */,
