@@ -51,7 +51,7 @@ private extension PickSizeView {
 			primaryButton.heightAnchor.constraint(equalToConstant: 54.scale),
 			primaryButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 71.scale),
 			primaryButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -71.scale),
-			primaryButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -50.scale : -35.scale)
+			primaryButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -64.scale : -35.scale)
 		])
 	}
 }

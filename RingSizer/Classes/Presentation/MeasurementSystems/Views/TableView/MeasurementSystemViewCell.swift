@@ -28,7 +28,6 @@ class MeasurementSystemViewCell: UITableViewCell {
 		let image = selected ? UIImage(named: "RadioButton.Selected") : UIImage(named: "RadioButton.Default")
 		iconView.image = image
 	}
-
 }
 
 // MARK: Public

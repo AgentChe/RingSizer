@@ -1,5 +1,5 @@
 //
-//  DropdownView.swift
+//  ConverterDropdownView.swift
 //  RingSizer
 //
 //  Created by Виталий Загороднов on 25.03.2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DropdownView: UIButton {
+class ConverterDropdownView: UIButton {
 	
 	private lazy var labelView = makeLabel()
 	private lazy var indicator = makeIndicator()
@@ -15,7 +15,7 @@ class DropdownView: UIButton {
 
 	var title: String = "" {
 		didSet {
-			labelView.attributedText = title.attributed(with: DropdownView.textAttrs)
+			labelView.attributedText = title.attributed(with: ConverterDropdownView.textAttrs)
 		}
 	}
 	
@@ -32,7 +32,7 @@ class DropdownView: UIButton {
 }
 
 // MARK: Make constraints
-private extension DropdownView {
+private extension ConverterDropdownView {
 	func makeConstraints() {
 		NSLayoutConstraint.activate([
 			labelView.topAnchor.constraint(equalTo: topAnchor),
@@ -58,7 +58,7 @@ private extension DropdownView {
 }
 
 // MARK: Lazy initialization
-private extension DropdownView {
+private extension ConverterDropdownView {
 	func makeLabel() -> UILabel {
 		let view = UILabel()
 		view.translatesAutoresizingMaskIntoConstraints = false
@@ -82,7 +82,7 @@ private extension DropdownView {
 	}
 }
 
-private extension DropdownView {
+private extension ConverterDropdownView {
 	static let textAttrs = TextAttributes()
 		.textColor(Appearance.v4DarkGrey)
 		.font(Fonts.Sen.regular(size: 20.scale))

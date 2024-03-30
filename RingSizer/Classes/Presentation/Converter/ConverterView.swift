@@ -32,7 +32,7 @@ class ConverterView: UIView {
 private extension ConverterView {
 	func makeConstraints() {
 		NSLayoutConstraint.activate([
-			headerView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 26.scale),
+			headerView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 80.scale : 26.scale),
 			headerView.leadingAnchor.constraint(equalTo: leadingAnchor),
 			headerView.trailingAnchor.constraint(equalTo: trailingAnchor)
 		])
@@ -107,8 +107,8 @@ private extension ConverterView {
 		return view
 	}
 	
-	func makeDropdownView() -> DropdownView {
-		let view = DropdownView()
+	func makeDropdownView() -> ConverterDropdownView {
+		let view = ConverterDropdownView()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)
 		return view

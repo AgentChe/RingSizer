@@ -11,7 +11,7 @@
 		0F5502BD2BB2051C00B7692B /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */; };
 		0F5502BF2BB2053500B7692B /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502BE2BB2053500B7692B /* ConverterView.swift */; };
 		0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C12BB2143700B7692B /* HeaderView.swift */; };
-		0F5502C52BB2195300B7692B /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C42BB2195300B7692B /* DropdownView.swift */; };
+		0F5502C52BB2195300B7692B /* ConverterDropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C42BB2195300B7692B /* ConverterDropdownView.swift */; };
 		0F5502C82BB2225500B7692B /* MeasurementSystemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C72BB2225500B7692B /* MeasurementSystemsViewController.swift */; };
 		0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502C92BB2226B00B7692B /* MeasurementSystemsView.swift */; };
 		0F5502CD2BB2238D00B7692B /* PickSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502CC2BB2238D00B7692B /* PickSizeView.swift */; };
@@ -23,6 +23,25 @@
 		0F5502DD2BB3057000B7692B /* MeasurementSystemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502DC2BB3057000B7692B /* MeasurementSystemViewCell.swift */; };
 		0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E02BB335E800B7692B /* ConverterViewModel.swift */; };
 		0F5502E42BB3492000B7692B /* ConverterSizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */; };
+		0F5502E72BB454AD00B7692B /* RingSizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E62BB454AD00B7692B /* RingSizerViewController.swift */; };
+		0F5502E92BB454BF00B7692B /* RingSizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502E82BB454BF00B7692B /* RingSizerView.swift */; };
+		0F5502EC2BB45A6100B7692B /* RingSizerDropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502EB2BB45A6100B7692B /* RingSizerDropdown.swift */; };
+		0F5502EE2BB4647100B7692B /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502ED2BB4647100B7692B /* RingView.swift */; };
+		0F5502F22BB4929E00B7692B /* RingSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502F12BB4929E00B7692B /* RingSlider.swift */; };
+		0F5502F42BB4938900B7692B /* RingSizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502F32BB4938900B7692B /* RingSizerViewModel.swift */; };
+		0F5502F72BB51F8E00B7692B /* SaveRingSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502F62BB51F8E00B7692B /* SaveRingSizeViewController.swift */; };
+		0F5502F92BB51F9E00B7692B /* SaveRingSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502F82BB51F9E00B7692B /* SaveRingSizeView.swift */; };
+		0F5502FC2BB5227200B7692B /* SavedRingSizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502FB2BB5227200B7692B /* SavedRingSizeModel.swift */; };
+		0F5503002BB526F700B7692B /* RingSaveRadioButtonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5502FF2BB526F700B7692B /* RingSaveRadioButtonViewCell.swift */; };
+		0F5503022BB527EF00B7692B /* SaveRingSizeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503012BB527EF00B7692B /* SaveRingSizeCollectionView.swift */; };
+		0F5503042BB5287F00B7692B /* SaveRingSizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503032BB5287F00B7692B /* SaveRingSizeViewModel.swift */; };
+		0F5503062BB5873700B7692B /* ExpandableHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503052BB5873600B7692B /* ExpandableHeaderViewCell.swift */; };
+		0F5503082BB5C3D900B7692B /* RingSizeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503072BB5C3D900B7692B /* RingSizeHeaderView.swift */; };
+		0F55030A2BB5D02F00B7692B /* SaveRingFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503092BB5D02F00B7692B /* SaveRingFieldViewCell.swift */; };
+		0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55030E2BB6D62300B7692B /* RingManager.swift */; };
+		0F5503142BB6F92200B7692B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503132BB6F92200B7692B /* HelpViewController.swift */; };
+		0F5503162BB6F93100B7692B /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503152BB6F93100B7692B /* HelpView.swift */; };
+		0F5503182BB7032E00B7692B /* AlertTransitonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503172BB7032E00B7692B /* AlertTransitonAnimator.swift */; };
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
@@ -119,7 +138,7 @@
 		0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		0F5502BE2BB2053500B7692B /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 		0F5502C12BB2143700B7692B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
-		0F5502C42BB2195300B7692B /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
+		0F5502C42BB2195300B7692B /* ConverterDropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterDropdownView.swift; sourceTree = "<group>"; };
 		0F5502C72BB2225500B7692B /* MeasurementSystemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemsViewController.swift; sourceTree = "<group>"; };
 		0F5502C92BB2226B00B7692B /* MeasurementSystemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemsView.swift; sourceTree = "<group>"; };
 		0F5502CC2BB2238D00B7692B /* PickSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSizeView.swift; sourceTree = "<group>"; };
@@ -131,6 +150,25 @@
 		0F5502DC2BB3057000B7692B /* MeasurementSystemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementSystemViewCell.swift; sourceTree = "<group>"; };
 		0F5502E02BB335E800B7692B /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
 		0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterSizeButton.swift; sourceTree = "<group>"; };
+		0F5502E62BB454AD00B7692B /* RingSizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerViewController.swift; sourceTree = "<group>"; };
+		0F5502E82BB454BF00B7692B /* RingSizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerView.swift; sourceTree = "<group>"; };
+		0F5502EB2BB45A6100B7692B /* RingSizerDropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerDropdown.swift; sourceTree = "<group>"; };
+		0F5502ED2BB4647100B7692B /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		0F5502F12BB4929E00B7692B /* RingSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSlider.swift; sourceTree = "<group>"; };
+		0F5502F32BB4938900B7692B /* RingSizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizerViewModel.swift; sourceTree = "<group>"; };
+		0F5502F62BB51F8E00B7692B /* SaveRingSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRingSizeViewController.swift; sourceTree = "<group>"; };
+		0F5502F82BB51F9E00B7692B /* SaveRingSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRingSizeView.swift; sourceTree = "<group>"; };
+		0F5502FB2BB5227200B7692B /* SavedRingSizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRingSizeModel.swift; sourceTree = "<group>"; };
+		0F5502FF2BB526F700B7692B /* RingSaveRadioButtonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSaveRadioButtonViewCell.swift; sourceTree = "<group>"; };
+		0F5503012BB527EF00B7692B /* SaveRingSizeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRingSizeCollectionView.swift; sourceTree = "<group>"; };
+		0F5503032BB5287F00B7692B /* SaveRingSizeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRingSizeViewModel.swift; sourceTree = "<group>"; };
+		0F5503052BB5873600B7692B /* ExpandableHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderViewCell.swift; sourceTree = "<group>"; };
+		0F5503072BB5C3D900B7692B /* RingSizeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingSizeHeaderView.swift; sourceTree = "<group>"; };
+		0F5503092BB5D02F00B7692B /* SaveRingFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRingFieldViewCell.swift; sourceTree = "<group>"; };
+		0F55030E2BB6D62300B7692B /* RingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingManager.swift; sourceTree = "<group>"; };
+		0F5503132BB6F92200B7692B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		0F5503152BB6F93100B7692B /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		0F5503172BB7032E00B7692B /* AlertTransitonAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTransitonAnimator.swift; sourceTree = "<group>"; };
 		240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426723285054683E1755FD3A /* Pods-RingSizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.debug.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B298D76B0AF3E7B54D526CD0 /* Pods-RingSizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.release.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,9 +344,97 @@
 		0F5502E22BB348FD00B7692B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0F5502C42BB2195300B7692B /* ConverterDropdownView.swift */,
 				0F5502E32BB3492000B7692B /* ConverterSizeButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5502E52BB4549500B7692B /* RingSizer */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502EA2BB45A3E00B7692B /* Views */,
+				0F5502E62BB454AD00B7692B /* RingSizerViewController.swift */,
+				0F5502E82BB454BF00B7692B /* RingSizerView.swift */,
+				0F5502F32BB4938900B7692B /* RingSizerViewModel.swift */,
+			);
+			path = RingSizer;
+			sourceTree = "<group>";
+		};
+		0F5502EA2BB45A3E00B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502EB2BB45A6100B7692B /* RingSizerDropdown.swift */,
+				0F5502ED2BB4647100B7692B /* RingView.swift */,
+				0F5502F12BB4929E00B7692B /* RingSlider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5502F52BB51F7100B7692B /* SaveRingSize */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502FD2BB526BA00B7692B /* Views */,
+				0F5502F62BB51F8E00B7692B /* SaveRingSizeViewController.swift */,
+				0F5502F82BB51F9E00B7692B /* SaveRingSizeView.swift */,
+				0F5503032BB5287F00B7692B /* SaveRingSizeViewModel.swift */,
+			);
+			path = SaveRingSize;
+			sourceTree = "<group>";
+		};
+		0F5502FD2BB526BA00B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502FE2BB526C600B7692B /* CollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5502FE2BB526C600B7692B /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0F55030B2BB602AD00B7692B /* Cells */,
+				0F5503012BB527EF00B7692B /* SaveRingSizeCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0F55030B2BB602AD00B7692B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0F5503092BB5D02F00B7692B /* SaveRingFieldViewCell.swift */,
+				0F5503072BB5C3D900B7692B /* RingSizeHeaderView.swift */,
+				0F5503052BB5873600B7692B /* ExpandableHeaderViewCell.swift */,
+				0F5502FF2BB526F700B7692B /* RingSaveRadioButtonViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0F55030C2BB6D5E300B7692B /* Ring */ = {
+			isa = PBXGroup;
+			children = (
+				0F55030D2BB6D5F900B7692B /* Model */,
+				0F55030E2BB6D62300B7692B /* RingManager.swift */,
+			);
+			path = Ring;
+			sourceTree = "<group>";
+		};
+		0F55030D2BB6D5F900B7692B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F5502FB2BB5227200B7692B /* SavedRingSizeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F5503122BB6F90400B7692B /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				0F5503132BB6F92200B7692B /* HelpViewController.swift */,
+				0F5503152BB6F93100B7692B /* HelpView.swift */,
+				0F5503172BB7032E00B7692B /* AlertTransitonAnimator.swift */,
+			);
+			path = Help;
 			sourceTree = "<group>";
 		};
 		AD0ECECA7ECE76F9D2436721 /* Frameworks */ = {
@@ -470,7 +596,6 @@
 			isa = PBXGroup;
 			children = (
 				0F5502C12BB2143700B7692B /* HeaderView.swift */,
-				0F5502C42BB2195300B7692B /* DropdownView.swift */,
 				DE38C2C42BAEC1990019C044 /* RequestReview.swift */,
 				DE38C2C52BAEC1990019C044 /* ImagePicker.swift */,
 				DE38C2C62BAEC1990019C044 /* RxActivityIndicator.swift */,
@@ -535,6 +660,7 @@
 		DE38C2E12BAEC1990019C044 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0F55030C2BB6D5E300B7692B /* Ring */,
 				DE38C5B62BAED6650019C044 /* Session */,
 				DE38C3312BAEC1990019C044 /* Purchase */,
 			);
@@ -574,6 +700,9 @@
 		DE38C3632BAEC19A0019C044 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0F5503122BB6F90400B7692B /* Help */,
+				0F5502F52BB51F7100B7692B /* SaveRingSize */,
+				0F5502E52BB4549500B7692B /* RingSizer */,
 				0F5502CB2BB2237500B7692B /* PickSize */,
 				0F5502C62BB2223000B7692B /* MeasurementSystems */,
 				0F5502BB2BB204E600B7692B /* Converter */,
@@ -867,14 +996,18 @@
 				DE38C4892BAEC19A0019C044 /* AmplitudeManager.swift in Sources */,
 				DE38C4C32BAEC19A0019C044 /* IAPActionResult.swift in Sources */,
 				DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */,
+				0F5503002BB526F700B7692B /* RingSaveRadioButtonViewCell.swift in Sources */,
 				DE38C47D2BAEC19A0019C044 /* PaddingTextField.swift in Sources */,
-				0F5502C52BB2195300B7692B /* DropdownView.swift in Sources */,
+				0F5502EE2BB4647100B7692B /* RingView.swift in Sources */,
+				0F5502C52BB2195300B7692B /* ConverterDropdownView.swift in Sources */,
 				DE38C4822BAEC19A0019C044 /* AppDelegate.swift in Sources */,
 				0F5502D12BB2247400B7692B /* PrimaryButton.swift in Sources */,
 				DE38C45F2BAEC19A0019C044 /* UIColor+Extension.swift in Sources */,
+				0F5502E72BB454AD00B7692B /* RingSizerViewController.swift in Sources */,
 				0F5502CD2BB2238D00B7692B /* PickSizeView.swift in Sources */,
 				DE38C4742BAEC19A0019C044 /* RequestReview.swift in Sources */,
 				DE38C4752BAEC19A0019C044 /* ImagePicker.swift in Sources */,
+				0F5503082BB5C3D900B7692B /* RingSizeHeaderView.swift in Sources */,
 				DE38C56E2BAEC19A0019C044 /* MainViewController.swift in Sources */,
 				DE38C4632BAEC19A0019C044 /* String+Extension.swift in Sources */,
 				DE38C4762BAEC19A0019C044 /* RxActivityIndicator.swift in Sources */,
@@ -887,6 +1020,7 @@
 				DE38C4FA2BAEC19A0019C044 /* SplashViewController.swift in Sources */,
 				0F5502BD2BB2051C00B7692B /* ConverterViewController.swift in Sources */,
 				DE38C5862BAEC19A0019C044 /* OSlideView.swift in Sources */,
+				0F5503022BB527EF00B7692B /* SaveRingSizeCollectionView.swift in Sources */,
 				DE38C4672BAEC19A0019C044 /* APIRequestBody.swift in Sources */,
 				DE38C4732BAEC19A0019C044 /* Weak.swift in Sources */,
 				DE38C4C12BAEC19A0019C044 /* PurchaseValidationObserver.swift in Sources */,
@@ -896,9 +1030,11 @@
 				DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */,
 				0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */,
 				DE38C4682BAEC19A0019C044 /* RestAPITransport.swift in Sources */,
+				0F55030A2BB5D02F00B7692B /* SaveRingFieldViewCell.swift in Sources */,
 				DE38C4782BAEC19A0019C044 /* NavigationControllerSettings.swift in Sources */,
 				DE38C4622BAEC19A0019C044 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE38C4C02BAEC19A0019C044 /* IAPManager.swift in Sources */,
+				0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */,
 				DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */,
 				DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */,
 				DE38C4772BAEC19A0019C044 /* Toast.swift in Sources */,
@@ -911,21 +1047,26 @@
 				DE38C4722BAEC19A0019C044 /* ContentError.swift in Sources */,
 				DE38C4FC2BAEC19A0019C044 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE38C5B82BAED6710019C044 /* SessionManager.swift in Sources */,
+				0F5502FC2BB5227200B7692B /* SavedRingSizeModel.swift in Sources */,
 				DE38C4692BAEC19A0019C044 /* Scalable.swift in Sources */,
 				DE38C4832BAEC19A0019C044 /* PushNotificationsManager.swift in Sources */,
 				DE38C4792BAEC19A0019C044 /* NavigationController.swift in Sources */,
 				DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
+				0F5502E92BB454BF00B7692B /* RingSizerView.swift in Sources */,
+				0F5502F92BB51F9E00B7692B /* SaveRingSizeView.swift in Sources */,
 				DE38C4862BAEC19A0019C044 /* SceneDelegate.swift in Sources */,
 				0F5502BA2BB200BD00B7692B /* RingSizes.swift in Sources */,
 				0F5502CF2BB2239E00B7692B /* PickSizeViewController.swift in Sources */,
 				0F5502E42BB3492000B7692B /* ConverterSizeButton.swift in Sources */,
+				0F5503142BB6F92200B7692B /* HelpViewController.swift in Sources */,
 				DE38C4802BAEC19A0019C044 /* GradientView.swift in Sources */,
 				0F5502DA2BB304D800B7692B /* MeasurementSystemsTableView.swift in Sources */,
 				0F5502D62BB2E42A00B7692B /* PickSizeTableView.swift in Sources */,
 				0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */,
 				0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */,
 				DE38C47F2BAEC19A0019C044 /* CircleView.swift in Sources */,
+				0F5503042BB5287F00B7692B /* SaveRingSizeViewModel.swift in Sources */,
 				DE38C5B02BAED0450019C044 /* PaygateInteractor.swift in Sources */,
 				DE38C4C62BAEC19A0019C044 /* IAPErrorHelper.swift in Sources */,
 				DE38C4712BAEC19A0019C044 /* NetworkError.swift in Sources */,
@@ -934,26 +1075,33 @@
 				DE38C58E2BAEC19A0019C044 /* OnboardingViewModel.swift in Sources */,
 				DE38C46B2BAEC19A0019C044 /* TextAttributes.swift in Sources */,
 				DE38C4FD2BAEC19A0019C044 /* SplashViewModel.swift in Sources */,
+				0F5503182BB7032E00B7692B /* AlertTransitonAnimator.swift in Sources */,
 				DE38C58D2BAEC19A0019C044 /* OnboardingView.swift in Sources */,
 				DE38C47E2BAEC19A0019C044 /* PaddingLabel.swift in Sources */,
 				DE38C5AE2BAED0450019C044 /* PaygateViewModel.swift in Sources */,
 				0F5502BF2BB2053500B7692B /* ConverterView.swift in Sources */,
 				DE38C46A2BAEC19A0019C044 /* NumberLaunches.swift in Sources */,
 				DE38C56F2BAEC19A0019C044 /* MainView.swift in Sources */,
+				0F5502F72BB51F8E00B7692B /* SaveRingSizeViewController.swift in Sources */,
 				DE38C4FE2BAEC19A0019C044 /* SplashView.swift in Sources */,
 				0F5502D42BB2DFC600B7692B /* PickSizeViewCell.swift in Sources */,
 				DE38C4652BAEC19A0019C044 /* GlobalDefinitions.swift in Sources */,
+				0F5503062BB5873700B7692B /* ExpandableHeaderViewCell.swift in Sources */,
 				DE38C46F2BAEC19A0019C044 /* Fonts.swift in Sources */,
 				DE38C48B2BAEC19A0019C044 /* FacebookManager.swift in Sources */,
 				DE38C5C12BAEDAB40019C044 /* OAnimationInfoView.swift in Sources */,
 				DE38C57A2BAEC19A0019C044 /* OnboardingViewController.swift in Sources */,
 				DE38C4C52BAEC19A0019C044 /* IAPError.swift in Sources */,
 				DE38C4812BAEC19A0019C044 /* CircleProgressView.swift in Sources */,
+				0F5502F42BB4938900B7692B /* RingSizerViewModel.swift in Sources */,
 				0F5502C82BB2225500B7692B /* MeasurementSystemsViewController.swift in Sources */,
 				DE38C4852BAEC19A0019C044 /* PushNotificationsModel.swift in Sources */,
+				0F5502EC2BB45A6100B7692B /* RingSizerDropdown.swift in Sources */,
 				DE38C4612BAEC19A0019C044 /* Collection+Extension.swift in Sources */,
 				DE38C5AF2BAED0450019C044 /* Currency.swift in Sources */,
+				0F5502F22BB4929E00B7692B /* RingSlider.swift in Sources */,
 				DE38C4C22BAEC19A0019C044 /* ProductPrice.swift in Sources */,
+				0F5503162BB6F93100B7692B /* HelpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

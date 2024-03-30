@@ -62,3 +62,30 @@
 "MeasurementSystems.EU" = "EU/ISO (Europe)";
 "MeasurementSystems.JP" = "JP/CN (Japan&China)";
 "MeasurementSystems.Title" = "Measurement systems";
+
+// MARK: Ring size
+"RingSize.Title" = "Ring sizer";
+"RingSize.Subtitle" = "Put the ring in the circle and use slider to measure the size";
+"RingSize.MM" = "mm";
+"RingSize.Save" = "SAVE SIZE";
+
+// MARK: Save ring size
+"SaveSize.ScreenTitle" = "Save ring size";
+"SaveSize.Title" = "Title";
+"SaveSize.Placeholder" = "e.g.: My wife’s ring";
+"SaveSize.Save" = "SAVE SIZE";
+"SaveSize.Hand" = "Hand";
+"SaveSize.RingHand" = "Ring hand";
+"SaveSize.LeftHand" = "Left";
+"SaveSize.RightHand" = "Right";
+"SaveSize.Finger" = "Finger";
+"SaveSize.FingerRing" = "Ring finger";
+"SaveSize.Thumb" = "Thumb";
+"SaveSize.IndexFinger" = "Index finger";
+"SaveSize.MiddleFinger" = "Middle finger";
+"SaveSize.RingFinger" = "Ring finger";
+"SaveSize.Pinky" = "Pinky";
+
+//MARK: Help
+"Help.Title" = "How to measure a ring?";
+"Help.Subtitle" = "Align the edges of the circle with the inner edge of your ring.";
