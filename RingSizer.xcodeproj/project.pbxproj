@@ -42,6 +42,16 @@
 		0F5503142BB6F92200B7692B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503132BB6F92200B7692B /* HelpViewController.swift */; };
 		0F5503162BB6F93100B7692B /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503152BB6F93100B7692B /* HelpView.swift */; };
 		0F5503182BB7032E00B7692B /* AlertTransitonAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503172BB7032E00B7692B /* AlertTransitonAnimator.swift */; };
+		0F55031B2BB833F500B7692B /* FingerSizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55031A2BB833F500B7692B /* FingerSizerView.swift */; };
+		0F55031F2BB8345200B7692B /* FingerSizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55031E2BB8345200B7692B /* FingerSizerViewController.swift */; };
+		0F5503212BB8346000B7692B /* FingerSizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503202BB8346000B7692B /* FingerSizerViewModel.swift */; };
+		0F5503232BB834C100B7692B /* FingerSizerOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503222BB834C100B7692B /* FingerSizerOnboardingView.swift */; };
+		0F5503252BB834D500B7692B /* FingerSizerOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503242BB834D500B7692B /* FingerSizerOnboardingViewController.swift */; };
+		0F5503282BB83AC500B7692B /* FingerSizerConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503272BB83AC500B7692B /* FingerSizerConverterViewController.swift */; };
+		0F55032A2BB83AD800B7692B /* FingerSizerConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503292BB83AD800B7692B /* FingerSizerConverterView.swift */; };
+		0F55032D2BB842A900B7692B /* FingerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55032C2BB842A900B7692B /* FingerView.swift */; };
+		0F55032F2BB9720600B7692B /* UIDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F55032E2BB9720600B7692B /* UIDeviceModel.swift */; };
+		0F5503322BB9C95900B7692B /* FingerSizerConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5503312BB9C95900B7692B /* FingerSizerConverterViewModel.swift */; };
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
@@ -169,6 +179,16 @@
 		0F5503132BB6F92200B7692B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		0F5503152BB6F93100B7692B /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		0F5503172BB7032E00B7692B /* AlertTransitonAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTransitonAnimator.swift; sourceTree = "<group>"; };
+		0F55031A2BB833F500B7692B /* FingerSizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerView.swift; sourceTree = "<group>"; };
+		0F55031E2BB8345200B7692B /* FingerSizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerViewController.swift; sourceTree = "<group>"; };
+		0F5503202BB8346000B7692B /* FingerSizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerViewModel.swift; sourceTree = "<group>"; };
+		0F5503222BB834C100B7692B /* FingerSizerOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerOnboardingView.swift; sourceTree = "<group>"; };
+		0F5503242BB834D500B7692B /* FingerSizerOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerOnboardingViewController.swift; sourceTree = "<group>"; };
+		0F5503272BB83AC500B7692B /* FingerSizerConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerConverterViewController.swift; sourceTree = "<group>"; };
+		0F5503292BB83AD800B7692B /* FingerSizerConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerConverterView.swift; sourceTree = "<group>"; };
+		0F55032C2BB842A900B7692B /* FingerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerView.swift; sourceTree = "<group>"; };
+		0F55032E2BB9720600B7692B /* UIDeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceModel.swift; sourceTree = "<group>"; };
+		0F5503312BB9C95900B7692B /* FingerSizerConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerSizerConverterViewModel.swift; sourceTree = "<group>"; };
 		240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426723285054683E1755FD3A /* Pods-RingSizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.debug.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B298D76B0AF3E7B54D526CD0 /* Pods-RingSizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.release.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.release.xcconfig"; sourceTree = "<group>"; };
@@ -437,6 +457,54 @@
 			path = Help;
 			sourceTree = "<group>";
 		};
+		0F5503192BB833D400B7692B /* FingerSizer */ = {
+			isa = PBXGroup;
+			children = (
+				0F55031C2BB8341500B7692B /* Onboarding */,
+				0F55031D2BB8342D00B7692B /* Main */,
+				0F5503262BB83A9500B7692B /* Converter */,
+			);
+			path = FingerSizer;
+			sourceTree = "<group>";
+		};
+		0F55031C2BB8341500B7692B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				0F5503222BB834C100B7692B /* FingerSizerOnboardingView.swift */,
+				0F5503242BB834D500B7692B /* FingerSizerOnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0F55031D2BB8342D00B7692B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0F55032B2BB8429A00B7692B /* Views */,
+				0F55031A2BB833F500B7692B /* FingerSizerView.swift */,
+				0F55031E2BB8345200B7692B /* FingerSizerViewController.swift */,
+				0F5503202BB8346000B7692B /* FingerSizerViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0F5503262BB83A9500B7692B /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				0F5503272BB83AC500B7692B /* FingerSizerConverterViewController.swift */,
+				0F5503292BB83AD800B7692B /* FingerSizerConverterView.swift */,
+				0F5503312BB9C95900B7692B /* FingerSizerConverterViewModel.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		0F55032B2BB8429A00B7692B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F55032C2BB842A900B7692B /* FingerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AD0ECECA7ECE76F9D2436721 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +646,7 @@
 				DE38C2BD2BAEC1990019C044 /* Fonts.swift */,
 				DE38C2C22BAEC1990019C044 /* Weak.swift */,
 				0F5502B92BB200BD00B7692B /* RingSizes.swift */,
+				0F55032E2BB9720600B7692B /* UIDeviceModel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -700,6 +769,7 @@
 		DE38C3632BAEC19A0019C044 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				0F5503192BB833D400B7692B /* FingerSizer */,
 				0F5503122BB6F90400B7692B /* Help */,
 				0F5502F52BB51F7100B7692B /* SaveRingSize */,
 				0F5502E52BB4549500B7692B /* RingSizer */,
@@ -993,6 +1063,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE38C5B22BAED0450019C044 /* PaygateViewController.swift in Sources */,
+				0F55032F2BB9720600B7692B /* UIDeviceModel.swift in Sources */,
 				DE38C4892BAEC19A0019C044 /* AmplitudeManager.swift in Sources */,
 				DE38C4C32BAEC19A0019C044 /* IAPActionResult.swift in Sources */,
 				DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */,
@@ -1016,6 +1087,7 @@
 				DE38C4662BAEC19A0019C044 /* DefaultRequestWrapper.swift in Sources */,
 				DE38C4882BAEC19A0019C044 /* BranchManager.swift in Sources */,
 				DE38C4702BAEC19A0019C044 /* SignError.swift in Sources */,
+				0F5503232BB834C100B7692B /* FingerSizerOnboardingView.swift in Sources */,
 				DE38C4842BAEC19A0019C044 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE38C4FA2BAEC19A0019C044 /* SplashViewController.swift in Sources */,
 				0F5502BD2BB2051C00B7692B /* ConverterViewController.swift in Sources */,
@@ -1026,12 +1098,15 @@
 				DE38C4C12BAEC19A0019C044 /* PurchaseValidationObserver.swift in Sources */,
 				DE38C5C52BAEE22A0019C044 /* OPageIndicatorView.swift in Sources */,
 				DE38C4872BAEC19A0019C044 /* Appearance.swift in Sources */,
+				0F5503212BB8346000B7692B /* FingerSizerViewModel.swift in Sources */,
 				DE38C46C2BAEC19A0019C044 /* ScreenSize.swift in Sources */,
+				0F55032D2BB842A900B7692B /* FingerView.swift in Sources */,
 				DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */,
 				0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */,
 				DE38C4682BAEC19A0019C044 /* RestAPITransport.swift in Sources */,
 				0F55030A2BB5D02F00B7692B /* SaveRingFieldViewCell.swift in Sources */,
 				DE38C4782BAEC19A0019C044 /* NavigationControllerSettings.swift in Sources */,
+				0F5503282BB83AC500B7692B /* FingerSizerConverterViewController.swift in Sources */,
 				DE38C4622BAEC19A0019C044 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE38C4C02BAEC19A0019C044 /* IAPManager.swift in Sources */,
 				0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */,
@@ -1041,6 +1116,7 @@
 				DE38C4C42BAEC19A0019C044 /* IAPProduct.swift in Sources */,
 				DE38C5712BAEC19A0019C044 /* TabView.swift in Sources */,
 				DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */,
+				0F55031F2BB8345200B7692B /* FingerSizerViewController.swift in Sources */,
 				DE38C46E2BAEC19A0019C044 /* XOREncryption.swift in Sources */,
 				0F5502DD2BB3057000B7692B /* MeasurementSystemViewCell.swift in Sources */,
 				DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */,
@@ -1048,9 +1124,11 @@
 				DE38C4FC2BAEC19A0019C044 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE38C5B82BAED6710019C044 /* SessionManager.swift in Sources */,
 				0F5502FC2BB5227200B7692B /* SavedRingSizeModel.swift in Sources */,
+				0F55032A2BB83AD800B7692B /* FingerSizerConverterView.swift in Sources */,
 				DE38C4692BAEC19A0019C044 /* Scalable.swift in Sources */,
 				DE38C4832BAEC19A0019C044 /* PushNotificationsManager.swift in Sources */,
 				DE38C4792BAEC19A0019C044 /* NavigationController.swift in Sources */,
+				0F5503322BB9C95900B7692B /* FingerSizerConverterViewModel.swift in Sources */,
 				DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
 				0F5502E92BB454BF00B7692B /* RingSizerView.swift in Sources */,
@@ -1070,6 +1148,7 @@
 				DE38C5B02BAED0450019C044 /* PaygateInteractor.swift in Sources */,
 				DE38C4C62BAEC19A0019C044 /* IAPErrorHelper.swift in Sources */,
 				DE38C4712BAEC19A0019C044 /* NetworkError.swift in Sources */,
+				0F55031B2BB833F500B7692B /* FingerSizerView.swift in Sources */,
 				DE38C5702BAEC19A0019C044 /* TabItemView.swift in Sources */,
 				DE38C5B12BAED0450019C044 /* PaygateView.swift in Sources */,
 				DE38C58E2BAEC19A0019C044 /* OnboardingViewModel.swift in Sources */,
@@ -1085,6 +1164,7 @@
 				0F5502F72BB51F8E00B7692B /* SaveRingSizeViewController.swift in Sources */,
 				DE38C4FE2BAEC19A0019C044 /* SplashView.swift in Sources */,
 				0F5502D42BB2DFC600B7692B /* PickSizeViewCell.swift in Sources */,
+				0F5503252BB834D500B7692B /* FingerSizerOnboardingViewController.swift in Sources */,
 				DE38C4652BAEC19A0019C044 /* GlobalDefinitions.swift in Sources */,
 				0F5503062BB5873700B7692B /* ExpandableHeaderViewCell.swift in Sources */,
 				DE38C46F2BAEC19A0019C044 /* Fonts.swift in Sources */,

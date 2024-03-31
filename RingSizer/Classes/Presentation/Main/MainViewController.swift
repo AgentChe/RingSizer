@@ -30,6 +30,11 @@ final class MainViewController: UIViewController {
     override func loadView() {
         view = mainView
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: animated)
+	}
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,7 +16,6 @@ class HeaderView: UIView {
 	
 	init(title: String) {
 		self.title = title
-		
 		super.init(frame: .zero)
 		
 		backgroundColor = Appearance.v4WarmBeige

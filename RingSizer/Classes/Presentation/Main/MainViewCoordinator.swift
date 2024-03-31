@@ -10,9 +10,9 @@ import UIKit
 final class MainViewCoordinator {
     weak var parentVC: MainViewController?
     
-    lazy var ringSizerVC = NavigationController(rootViewController: RingSizerViewController())
-    lazy var converterVC = NavigationController(rootViewController: ConverterViewController())
-    lazy var fingerSizerVC = NavigationController(rootViewController: UIViewController())
+    lazy var ringSizerVC = RingSizerViewController()
+    lazy var converterVC = ConverterViewController()
+    lazy var fingerSizerVC = FingerSizerOnboardingViewController()
     
     private var previousVC: UIViewController?
     

@@ -34,10 +34,22 @@ class MeasurementSystemsViewController: UIViewController {
 }
 
 extension MeasurementSystemsViewController {
-	static func make(current: MeasurementSystem, didSelect: @escaping (MeasurementSystem) -> Void) -> MeasurementSystemsViewController {
+	static func make(current: MeasurementSystem, didSelect: @escaping (MeasurementSystem) -> Void) -> NavigationController {
 		let vc = MeasurementSystemsViewController()
 		vc.current = current
 		vc.didSelectSystem = didSelect
-		return vc
+		
+		let nc = NavigationController(rootViewController: vc)
+		nc.modalPresentationStyle = .pageSheet
+		
+		if let sheet = nc.sheetPresentationController {
+			sheet.prefersGrabberVisible = true
+			if #available(iOS 16.0, *) {
+				sheet.detents = [.custom(resolver: { _ in return 300.scale })]
+			} else {
+				sheet.detents = [.medium()]
+			}
+		}
+		return nc
 	}
 }

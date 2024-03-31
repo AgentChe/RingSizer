@@ -25,6 +25,7 @@ class RingSizerView: UIView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+		backgroundColor = Appearance.v4WarmBeige
 		makeConstraints()
 	}
 	
@@ -80,7 +81,7 @@ private extension RingSizerView {
 		])
 		
 		NSLayoutConstraint.activate([
-			sliderView.topAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 44.scale),
+			sliderView.topAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 24.scale),
 			sliderView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
 			sliderView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
 		])

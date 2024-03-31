@@ -18,7 +18,7 @@ class SaveRingSizeViewController: UIViewController {
 	private let initialFinger = Finger.thumb
 	private let initialHand: Hand
 	
-	init(size: RingSize, system: MeasurementSystem, hand: Hand = .left) {
+	init(size: RingSize, system: MeasurementSystem, hand: Hand) {
 		self.viewModel = SaveRingSizeViewModel(size: size, measureSystem: system)
 		self.initialHand = hand
 		super.init(nibName: nil, bundle: nil)
@@ -58,8 +58,8 @@ class SaveRingSizeViewController: UIViewController {
 }
 
 extension SaveRingSizeViewController {
-	static func make(size: RingSize, system: MeasurementSystem) -> SaveRingSizeViewController {
-		let vc = SaveRingSizeViewController(size: size, system: system)
+	static func make(size: RingSize, system: MeasurementSystem, hand: Hand = .right) -> SaveRingSizeViewController {
+		let vc = SaveRingSizeViewController(size: size, system: system, hand: hand)
 		return vc
 	}
 }

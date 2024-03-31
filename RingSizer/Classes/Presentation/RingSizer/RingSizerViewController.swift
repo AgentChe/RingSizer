@@ -80,20 +80,7 @@ private extension RingSizerViewController {
 		let vc = MeasurementSystemsViewController.make(current: current) { [weak self] system in
 			self?.selectedMeasureSystem.accept(system)
 		}
-		
-		let nc = UINavigationController(rootViewController: vc)
-		nc.modalPresentationStyle = .pageSheet
-		
-		if let sheet = nc.sheetPresentationController {
-			sheet.prefersGrabberVisible = true
-			if #available(iOS 16.0, *) {
-				sheet.detents = [.custom(resolver: { _ in return 300.scale })]
-			} else {
-				sheet.detents = [.medium()]
-			}
-		}
-		
-		present(nc, animated: true)
+		present(vc, animated: true)
 	}
 	
 	func openSaveSize(size: RingSize, system: MeasurementSystem) {

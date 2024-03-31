@@ -20,6 +20,7 @@ class ConverterView: UIView {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
+		backgroundColor = Appearance.v4WarmBeige
 		makeConstraints()
 	}
 	
@@ -102,6 +103,7 @@ private extension ConverterView {
 		
 		let view = UILabel()
 		view.attributedText = "Converter.Subtitle".localized.attributed(with: attrs)
+		view.numberOfLines = 0
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)
 		return view

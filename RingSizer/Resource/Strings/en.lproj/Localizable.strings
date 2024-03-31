@@ -89,3 +89,18 @@
 //MARK: Help
 "Help.Title" = "How to measure a ring?";
 "Help.Subtitle" = "Align the edges of the circle with the inner edge of your ring.";
+
+// MARK: Finger sizer onboarding
+"FingerSizerOnboadring.Title" = "Finger sizer";
+"FingerSizerOnboadring.Subtitle" = "Get the ring size by measuring your finger width";
+"FingerSizerOnboadring.Start" = "START";
+
+// MARK: Finger sizer
+"FingerSizer.Title" = "Finger sizer";
+"FingerSizer.Subtitle" = "Place your finger and adjust the slider to match the width";
+"FingerSizer.Continue" = "CONTINUE";
+
+// MARK: Finger sizer converter
+"FingerSizerConverter.Title" = "Finger sizer";
+"FingerSizerConverter.Subtitle" = "Place your finger and adjust the slider to match the width";
+"FingerSizerConverter.Save" = "SAVE SIZE";

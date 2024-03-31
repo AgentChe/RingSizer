@@ -104,18 +104,6 @@ private extension ConverterViewController {
 			}
 		}
 		
-		let nc = UINavigationController(rootViewController: vc)
-		nc.modalPresentationStyle = .pageSheet
-		
-		if let sheet = nc.sheetPresentationController {
-			sheet.prefersGrabberVisible = true
-			if #available(iOS 16.0, *) {
-				sheet.detents = [.custom(resolver: { _ in return 300.scale })]
-			} else {
-				sheet.detents = [.medium()]
-			}
-		}
-		
-		present(nc, animated: true)
+		present(vc, animated: true)
 	}
 }
