@@ -51,12 +51,26 @@ class RingSizerViewController: UIViewController {
 		
 		output.convertedSizeValue
 			.drive(with: mainView.convertedValuelabel) {
-				let attrs = TextAttributes()
+				let main = TextAttributes()
 					.textColor(Appearance.v4DarkGrey)
 					.font(Fonts.Sen.regular(size: 58.scale))
 					.textAlignment(.center)
 				
-				$0.attributedText = $1.attributed(with: attrs)
+				let additional = TextAttributes()
+					.textColor(Appearance.v4DarkGrey)
+					.font(Fonts.Sen.regular(size: 36.scale))
+					.textAlignment(.center)
+					.baselineOffset(20.scale)
+				
+				let attributes = $1
+					.components(separatedBy: " ")
+					.enumerated()
+					.reduce(into: NSMutableAttributedString()) { newAttrs, value in
+						let attrs = value.offset == 0 ? main : additional
+						newAttrs.append(value.element.attributed(with: attrs))
+					}
+				
+				$0.attributedText = attributes
 			}
 			.disposed(by: disposeBag)
 		

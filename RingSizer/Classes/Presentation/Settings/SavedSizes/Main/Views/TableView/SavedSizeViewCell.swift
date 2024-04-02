@@ -38,7 +38,7 @@ extension SavedSizeViewCell {
 		self.model = model
 		
 		nameLabel.attributedText = model.name.attributed(with: SavedSizeViewCell.nameAttrs)
-		sizeLabel.attributedText = model.ringSize.size(by: model.measureSystem).attributed(with: SavedSizeViewCell.sizeAttrs)
+		sizeLabel.attributedText = sizeAttributes(for: model.ringSize.size(by: model.measureSystem))
 		handLabel.attributedText = model.hand.formattedName.attributed(with: SavedSizeViewCell.handAttrs)
 		fingerLabel.attributedText = model.finger.formattedName.attributed(with: SavedSizeViewCell.fingerAttrs)
 	}
@@ -50,6 +50,27 @@ private extension SavedSizeViewCell {
 		backgroundColor = .clear
 		contentView.backgroundColor = .clear
 		selectionStyle = .none
+	}
+	
+	func sizeAttributes(for value: String) -> NSAttributedString {
+		let attrs = TextAttributes()
+			.textColor(Appearance.v4DarkGrey)
+			.font(Fonts.Sen.regular(size: 58.scale))
+			.textAlignment(.center)
+		
+		let additional = TextAttributes()
+			.textColor(Appearance.v4DarkGrey)
+			.font(Fonts.Sen.regular(size: 36.scale))
+			.textAlignment(.center)
+			.baselineOffset(20.scale)
+		
+		return value
+			.components(separatedBy: " ")
+			.enumerated()
+			.reduce(into: NSMutableAttributedString()) { attributes, value in
+				let newAttrs = value.offset == 0 ? attrs : additional
+				attributes.append(value.element.attributed(with: newAttrs))
+			}
 	}
 }
 
@@ -189,11 +210,6 @@ private extension SavedSizeViewCell {
 		.font(Fonts.Sen.bold(size: 16.scale))
 		.lineHeight(26.scale)
 		.textAlignment(.left)
-	
-	static let sizeAttrs = TextAttributes()
-		.textColor(Appearance.v4DarkGrey)
-		.font(Fonts.Sen.regular(size: 58.scale))
-		.textAlignment(.center)
 	
 	static let handAttrs = TextAttributes()
 		.textColor(Appearance.v4DarkGrey)

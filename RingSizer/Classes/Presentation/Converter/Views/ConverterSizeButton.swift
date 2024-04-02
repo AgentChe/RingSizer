@@ -14,11 +14,7 @@ class ConverterSizeButton: UIButton {
 	
 	var title: String? = nil {
 		didSet {
-			if let title {
-				labelView.attributedText = title.attributed(with: ConverterSizeButton.valueAttrs)
-			} else {
-				labelView.attributedText = "Converter.RingSize".localized.attributed(with: ConverterSizeButton.emptyAttrs)
-			}
+			configureTitle(text: title)
 		}
 	}
 	
@@ -39,6 +35,33 @@ private extension ConverterSizeButton {
 		layer.borderWidth = 1.scale
 		layer.borderColor = Appearance.v4Grey.cgColor
 		backgroundColor = Appearance.v4WarmBeige
+	}
+	
+	func configureTitle(text: String?) {
+		if let title {
+			let main = TextAttributes()
+				.textColor(Appearance.v4DarkGrey)
+				.font(Fonts.Sen.regular(size: 58.scale))
+				.textAlignment(.center)
+			
+			let additional = TextAttributes()
+				.textColor(Appearance.v4DarkGrey)
+				.font(Fonts.Sen.regular(size: 36.scale))
+				.textAlignment(.center)
+				.baselineOffset(20.scale)
+			
+			let attributes = title
+				.components(separatedBy: " ")
+				.enumerated()
+				.reduce(into: NSMutableAttributedString()) { newAttrs, value in
+					let attrs = value.offset == 0 ? main : additional
+					newAttrs.append(value.element.attributed(with: attrs))
+				}
+			
+			labelView.attributedText = attributes
+		} else {
+			labelView.attributedText = "Converter.RingSize".localized.attributed(with: ConverterSizeButton.emptyAttrs)
+		}
 	}
 }
 
@@ -82,10 +105,5 @@ private extension ConverterSizeButton {
 		.textColor(Appearance.v4DarkGrey.withAlphaComponent(0.6))
 		.font(Fonts.Sen.regular(size: 16.scale))
 		.lineHeight(22.4.scale)
-		.textAlignment(.center)
-	
-	static let valueAttrs = TextAttributes()
-		.textColor(Appearance.v4DarkGrey)
-		.font(Fonts.Sen.regular(size: 58.scale))
 		.textAlignment(.center)
 }

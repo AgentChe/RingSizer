@@ -33,13 +33,26 @@ class PickSizeViewCell: UITableViewCell {
 // MARK: Public
 extension PickSizeViewCell {
 	func setup(size: RingSize, type: MeasurementSystem, isHiddedSeparator: Bool) {
-		let attrs = TextAttributes()
+		let main = TextAttributes()
 			.textColor(Appearance.v4DarkGrey)
 			.font(Fonts.Sen.regular(size: 16.scale))
 			.lineHeight(22.4.scale)
 			.textAlignment(.left)
 		
-		titleView.attributedText = size.size(by: type).attributed(with: attrs)
+		let additional = TextAttributes()
+			.textColor(Appearance.v4DarkGrey)
+			.font(Fonts.Sen.regular(size: 10.scale))
+			.textAlignment(.left)
+			.baselineOffset(6.scale)
+		
+		let attributes = size.size(by: type).components(separatedBy: " ")
+			.enumerated()
+			.reduce(into: NSMutableAttributedString()) { newAttrs, value in
+				let attrs = value.offset == 0 ? main : additional
+				newAttrs.append(value.element.attributed(with: attrs))
+			}
+		
+		titleView.attributedText = attributes
 		separator.isHidden = isHiddedSeparator
 	}
 }

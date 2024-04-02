@@ -64,6 +64,8 @@ enum MeasurementSystem: CaseIterable, Equatable, Codable {
 
 extension RingSize {
 	
+	// Для отображения части значения в степени нужно разделить пробелом значение
+	// и то, что возводится в степень
 	static let allSizes: [Self] = [
 		.init(diameter: 14, circle: 44, iso: 44, us: 3, uk: "F", cn: 4),
 		.init(diameter: 14.1, circle: 44.3, iso: 44, us: 3.25, uk: "F", cn: 5),
@@ -78,7 +80,7 @@ extension RingSize {
 		.init(diameter: 15.9, circle: 50.0, iso: 50, us: 5.5, uk: "L", cn: 11),
 		.init(diameter: 16.1, circle: 50.6, iso: 50, us: 5.75, uk: "L 1/2", cn: 12),
 		.init(diameter: 16.3, circle: 51.2, iso: 51, us: 6, uk: "M", cn: 12),
-		.init(diameter: 16.5, circle: 51.9, iso: 52, us: 6.25, uk: "M1 /2", cn: 13),
+		.init(diameter: 16.5, circle: 51.9, iso: 52, us: 6.25, uk: "M 1/2", cn: 13),
 		.init(diameter: 16.7, circle: 52.5, iso: 52, us: 6.5, uk: "N", cn: 13),
 		.init(diameter: 16.9, circle: 53.1, iso: 53, us: 6.75, uk: "N 1/2", cn: 14),
 		.init(diameter: 17.1, circle: 53.8, iso: 54, us: 7, uk: "O", cn: 14),
@@ -95,21 +97,21 @@ extension RingSize {
 		.init(diameter: 21.0, circle: 66.0, iso: 66, us: 11.5, uk: "W", cn: 25),
 		.init(diameter: 21.5, circle: 67.5, iso: 67, us: 12, uk: "X 1/2", cn: 27),
 		.init(diameter: 22.0, circle: 69.1, iso: 69, us: 12.5, uk: "Z", cn: 28),
-		.init(diameter: 22.5, circle: 70.7, iso: 70, us: 13, uk: "Z+1", cn: 29),
-		.init(diameter: 23.0, circle: 72.3, iso: 72, us: 13.5, uk: "Z+1.5", cn: 31),
-		.init(diameter: 23.5, circle: 73.8, iso: 73, us: 14, uk: "Z+2", cn: 32),
-		.init(diameter: 24.0, circle: 75.4, iso: 75, us: 14.5, uk: "Z+2.5", cn: 33),
-		.init(diameter: 24.5, circle: 76.9, iso: 76, us: 15, uk: "Z+3", cn: 34),
-		.init(diameter: 25.0, circle: 78.5, iso: 78, us: 15.5, uk: "Z+3.5", cn: 35),
-		.init(diameter: 25.5, circle: 80.1, iso: 80, us: 16, uk: "Z+4", cn: 36),
-		.init(diameter: 26.0, circle: 81.6, iso: 81, us: 16.5, uk: "Z+4.5", cn: 37),
-		.init(diameter: 26.5, circle: 83.2, iso: 83, us: 17, uk: "Z+5", cn: 38),
-		.init(diameter: 27.0, circle: 84.8, iso: 84, us: 17.5, uk: "Z+5.5", cn: 39),
-		.init(diameter: 27.5, circle: 86.4, iso: 86, us: 18, uk: "Z+6", cn: 40),
-		.init(diameter: 28.0, circle: 87.9, iso: 87, us: 18.5, uk: "Z+6.5", cn: 41),
-		.init(diameter: 28.5, circle: 89.5, iso: 89, us: 19, uk: "Z+7", cn: 42),
-		.init(diameter: 29.0, circle: 91.1, iso: 91, us: 19.5, uk: "Z+7.5", cn: 43),
-		.init(diameter: 29.5, circle: 92.7, iso: 92, us: 20, uk: "Z+8", cn: 44),
-		.init(diameter: 30.0, circle: 94.2, iso: 94, us: 20.5, uk: "Z+8.5", cn: 45)
+		.init(diameter: 22.5, circle: 70.7, iso: 70, us: 13, uk: "Z +1", cn: 29),
+		.init(diameter: 23.0, circle: 72.3, iso: 72, us: 13.5, uk: "Z +1.5", cn: 31),
+		.init(diameter: 23.5, circle: 73.8, iso: 73, us: 14, uk: "Z +2", cn: 32),
+		.init(diameter: 24.0, circle: 75.4, iso: 75, us: 14.5, uk: "Z +2.5", cn: 33),
+		.init(diameter: 24.5, circle: 76.9, iso: 76, us: 15, uk: "Z +3", cn: 34),
+		.init(diameter: 25.0, circle: 78.5, iso: 78, us: 15.5, uk: "Z +3.5", cn: 35),
+		.init(diameter: 25.5, circle: 80.1, iso: 80, us: 16, uk: "Z +4", cn: 36),
+		.init(diameter: 26.0, circle: 81.6, iso: 81, us: 16.5, uk: "Z +4.5", cn: 37),
+		.init(diameter: 26.5, circle: 83.2, iso: 83, us: 17, uk: "Z +5", cn: 38),
+		.init(diameter: 27.0, circle: 84.8, iso: 84, us: 17.5, uk: "Z +5.5", cn: 39),
+		.init(diameter: 27.5, circle: 86.4, iso: 86, us: 18, uk: "Z +6", cn: 40),
+		.init(diameter: 28.0, circle: 87.9, iso: 87, us: 18.5, uk: "Z +6.5", cn: 41),
+		.init(diameter: 28.5, circle: 89.5, iso: 89, us: 19, uk: "Z +7", cn: 42),
+		.init(diameter: 29.0, circle: 91.1, iso: 91, us: 19.5, uk: "Z +7.5", cn: 43),
+		.init(diameter: 29.5, circle: 92.7, iso: 92, us: 20, uk: "Z +8", cn: 44),
+		.init(diameter: 30.0, circle: 94.2, iso: 94, us: 20.5, uk: "Z +8.5", cn: 45)
 	]
 }
