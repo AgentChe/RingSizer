@@ -17,6 +17,7 @@ final class ConverterViewModel {
 	enum Route {
 		case openMeasureSystem(DropdownType, system: MeasurementSystem)
 		case openSize(current: RingSize?, system: MeasurementSystem)
+		case settings
 	}
 	
 	struct Input {
@@ -27,6 +28,7 @@ final class ConverterViewModel {
 		let didTapCurrentDropdown: Signal<Void>
 		let didTapNewDropdown: Signal<Void>
 		let didTapSize: Signal<Void>
+		let didTapSettings: Signal<Void>
 	}
 	
 	struct Output {
@@ -120,7 +122,10 @@ extension ConverterViewModel {
 				input.didTapSize
 					.asObservable()
 					.withLatestFrom(Observable.combineLatest(currentSystem, currentSize))
-					.map { .openSize(current: $1, system: $0) }
+					.map { .openSize(current: $1, system: $0) },
+				input.didTapSettings
+					.asObservable()
+					.map { _ in .settings }
 			)
 			.asSignal(onErrorSignalWith: .empty())
 		

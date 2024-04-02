@@ -14,6 +14,7 @@ final class RingSizerViewModel {
 		case save(RingSize, MeasurementSystem)
 		case openMeasureSystem(system: MeasurementSystem)
 		case help
+		case settings
 	}
 	
 	struct Input {
@@ -24,6 +25,7 @@ final class RingSizerViewModel {
 		let selectedMeasureSystem: Signal<MeasurementSystem>
 		let didTapDropdown: Signal<Void>
 		let didTapHelp: Signal<Void>
+		let didTapSettings: Signal<Void>
 	}
 	
 	struct Output {
@@ -86,11 +88,13 @@ extension RingSizerViewModel {
 			.map { Route.save($0, $1) }
 			.asSignal(onErrorSignalWith: .empty())
 		
-		let openHelp = input.didTapHelp
-			.map { _ in Route.help }
-		
 		let route = Signal
-			.merge(openMeasureSystem, openSaveRing, openHelp)
+			.merge(
+				openMeasureSystem,
+				openSaveRing,
+				input.didTapHelp.map { _ in .help },
+				input.didTapSettings.map { _ in .settings }
+			)
 		
 		return Output(
 			currentSliderValue: currentIndex.map { Float($0) }.asDriver(onErrorJustReturn: 0),

@@ -12,7 +12,7 @@ final class SaveRingSizeViewModel {
 	let size: RingSize
 	let measureSystem: MeasurementSystem
 	
-	private let ringManager = RingManager.shared
+	private let ringManager: RingManagerProtocol = RingManager()
 	
 	init(size: RingSize, measureSystem: MeasurementSystem) {
 		self.size = size
@@ -45,7 +45,9 @@ extension SaveRingSizeViewModel {
 		let closeSignal = input.didTapPrimary
 			.asObservable()
 			.withLatestFrom(savingData)
-			.map { [size, measureSystem] finger, hand, name in
+			.compactMap { [size, measureSystem] finger, hand, name -> SavedRingSizeModel? in
+				guard !name.isEmpty else { return nil }
+				
 				return SavedRingSizeModel(
 					name: name,
 					hand: hand,

@@ -18,8 +18,14 @@ class ConverterViewController: UIViewController {
 	private lazy var currentSystem = PublishRelay<MeasurementSystem>()
 	private lazy var newSystem = PublishRelay<MeasurementSystem>()
 	private lazy var selectedSize = PublishRelay<RingSize>()
+	private let measurementTransitionDelegate = MeasurementTransitionDelegate()
 	
 	private lazy var disposeBag = DisposeBag()
+	
+	func convert(model: SavedRingSizeModel) {
+		currentSystem.accept(model.measureSystem)
+		selectedSize.accept(model.ringSize)
+	}
 	
 	override func loadView() {
 		view = mainView
@@ -36,7 +42,8 @@ class ConverterViewController: UIViewController {
 				didTapConvert: mainView.primaryButton.rx.tap.asSignal(),
 				didTapCurrentDropdown: mainView.leftDropdown.rx.tap.asSignal(),
 				didTapNewDropdown: mainView.rightDropdown.rx.tap.asSignal(),
-				didTapSize: mainView.sizeSelector.rx.tap.asSignal()
+				didTapSize: mainView.sizeSelector.rx.tap.asSignal(),
+				didTapSettings: mainView.headerView.button.rx.tap.asSignal()
 			)
 		)
 		
@@ -84,6 +91,8 @@ private extension ConverterViewController {
 			openMeasurementSystems(for: type, current: system)
 		case let .openSize(current, system):
 			openPickSize(system: system, current: current)
+		case .settings:
+			openSettings()
 		}
 	}
 	
@@ -104,6 +113,14 @@ private extension ConverterViewController {
 			}
 		}
 		
+		vc.modalPresentationStyle = .custom
+		vc.transitioningDelegate = measurementTransitionDelegate
+		
 		present(vc, animated: true)
+	}
+	
+	func openSettings() {
+		let vc = SettingsViewController.make()
+		navigationController?.pushViewController(vc, animated: true)
 	}
 }

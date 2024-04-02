@@ -163,8 +163,8 @@ private extension FingerSizerView {
 		return view
 	}
 	
-	func makeBackButton() -> UIButton {
-		let view = UIButton()
+	func makeBackButton() -> TapAreaButton {
+		let view = TapAreaButton()
 		view.setImage(UIImage(named: "FingerSizer.Back"), for: .normal)
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)

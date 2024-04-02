@@ -63,8 +63,8 @@ private extension HeaderView {
 		return view
 	}
 	
-	func makeButton() -> UIButton {
-		let view = UIButton()
+	func makeButton() -> TapAreaButton {
+		let view = TapAreaButton()
 		view.setImage(UIImage(named: "Burger"), for: .normal)
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)

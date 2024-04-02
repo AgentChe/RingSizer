@@ -15,6 +15,8 @@ class RingSizerViewController: UIViewController {
 	private lazy var viewModel = RingSizerViewModel()
 	private let selectedMeasureSystem = PublishRelay<MeasurementSystem>()
 	private lazy var disposeBag = DisposeBag()
+	private let alertTransitioningDelegate = AlertTransitioningDelegate()
+	private let measurementTransitionDelegate = MeasurementTransitionDelegate()
 	
 	override func loadView() {
 		view = mainView
@@ -30,7 +32,8 @@ class RingSizerViewController: UIViewController {
 			sliderValue: mainView.sliderView.rx.value.asDriver(),
 			selectedMeasureSystem: selectedMeasureSystem.asSignal(), 
 			didTapDropdown: mainView.dropdownView.rx.tap.asSignal(), 
-			didTapHelp: mainView.didTapHelp.asSignal()
+			didTapHelp: mainView.didTapHelp.asSignal(), 
+			didTapSettings: mainView.headerView.button.rx.tap.asSignal()
 		))
 		
 		output.currenSizeValue
@@ -73,6 +76,8 @@ private extension RingSizerViewController {
 			openSaveSize(size: size, system: system)
 		case .help:
 			openHelp()
+		case .settings:
+			openSettings()
 		}
 	}
 	
@@ -80,6 +85,10 @@ private extension RingSizerViewController {
 		let vc = MeasurementSystemsViewController.make(current: current) { [weak self] system in
 			self?.selectedMeasureSystem.accept(system)
 		}
+		
+		vc.modalPresentationStyle = .custom
+		vc.transitioningDelegate = measurementTransitionDelegate
+		
 		present(vc, animated: true)
 	}
 	
@@ -91,18 +100,12 @@ private extension RingSizerViewController {
 	func openHelp() {
 		let vc = HelpViewController.make()
 		vc.modalPresentationStyle = .custom
-		vc.transitioningDelegate = self
+		vc.transitioningDelegate = alertTransitioningDelegate
 		present(vc, animated: true)
 	}
-}
-
-// MARK: UIViewControllerTransitioningDelegate
-extension RingSizerViewController: UIViewControllerTransitioningDelegate {
-	func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		AlertTransitonAnimator(duration: 0.5, type: .present)
-	}
 	
-	func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-		AlertTransitonAnimator(duration: 0.5, type: .dismiss)
+	func openSettings() {
+		let vc = SettingsViewController.make()
+		navigationController?.pushViewController(vc, animated: true)
 	}
 }

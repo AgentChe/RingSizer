@@ -17,6 +17,7 @@ class SaveRingSizeViewController: UIViewController {
 	
 	private let initialFinger = Finger.thumb
 	private let initialHand: Hand
+	var didSaved: (() -> Void)?
 	
 	init(size: RingSize, system: MeasurementSystem, hand: Hand) {
 		self.viewModel = SaveRingSizeViewModel(size: size, measureSystem: system)
@@ -46,9 +47,15 @@ class SaveRingSizeViewController: UIViewController {
 			.drive(with: mainView.collectionView) { $0.setup(elements: $1) }
 			.disposed(by: disposeBag)
 		
-		Signal
-			.merge(mainView.closeButton.rx.tap.asSignal(), output.closeSignal)
+		mainView.closeButton.rx.tap
+			.asSignal()
 			.emit(with: self, onNext: { base, _ in base.dismiss(animated: true) })
+			.disposed(by: disposeBag)
+		
+		output.closeSignal
+			.emit(with: self) { base, _ in
+				base.dismiss(animated: true, completion: base.didSaved)
+			}
 			.disposed(by: disposeBag)
 		
 		mainView.collectionView.setSelected(item: .finger(initialFinger))

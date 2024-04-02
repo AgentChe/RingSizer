@@ -18,6 +18,8 @@ class FingerSizerConverterViewController: UIViewController {
 	private let selectedMeasureSystem = PublishRelay<MeasurementSystem>()
 	private let disposeBag = DisposeBag()
 	
+	private let measurementTransitionDelegate = MeasurementTransitionDelegate()
+	
 	init(hand: Hand, size: RingSize) {
 		self.viewModel = .init(hand: hand, size: size)
 		super.init(nibName: nil, bundle: nil)
@@ -86,11 +88,18 @@ private extension FingerSizerConverterViewController {
 		let vc = MeasurementSystemsViewController.make(current: current) { [weak self] system in
 			self?.selectedMeasureSystem.accept(system)
 		}
+		
+		vc.modalPresentationStyle = .custom
+		vc.transitioningDelegate = measurementTransitionDelegate
+		
 		present(vc, animated: true)
 	}
 	
 	func openSaveSize(hand: Hand, size: RingSize, system: MeasurementSystem) {
 		let vc = SaveRingSizeViewController.make(size: size, system: system, hand: hand)
+		vc.didSaved = { [weak self] in
+			self?.navigationController?.popToRootViewController(animated: false)
+		}
 		present(vc, animated: true)
 	}
 }

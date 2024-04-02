@@ -9,14 +9,13 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class RingManager {
-	
-	static let shared = RingManager()
-	lazy var elements = loadSavedRingSizes().share(replay: 1)
-	
-	private let updateSignal = PublishRelay<Void>()
-	
-	private init() {}
+protocol RingManagerProtocol {
+	func loadSavedRings() -> Signal<[SavedRingSizeModel]>
+	func save(model: SavedRingSizeModel)
+	func delete(model: SavedRingSizeModel)
+}
+
+final class RingManager: RingManagerProtocol {
 	
 	func save(model: SavedRingSizeModel) {
 		var elements = cachedSizes()
@@ -26,7 +25,7 @@ final class RingManager {
 		
 		UserDefaults.standard.set(data, forKey: Constants.ringSizeKey)
 		
-		updateSignal.accept(())
+		RingMediator.shared.notify(models: elements)
 	}
 	
 	func delete(model: SavedRingSizeModel) {
@@ -37,18 +36,16 @@ final class RingManager {
 		
 		UserDefaults.standard.set(data, forKey: Constants.ringSizeKey)
 		
-		updateSignal.accept(())
+		RingMediator.shared.notify(models: elements)
+	}
+	
+	func loadSavedRings() -> Signal<[SavedRingSizeModel]> {
+		return .just(cachedSizes())
 	}
 }
 
 
 private extension RingManager {
-	func loadSavedRingSizes() -> Observable<[SavedRingSizeModel]> {
-		updateSignal
-			.startWith(())
-			.compactMap { [weak self] _ in self?.cachedSizes() }
-	}
-	
 	func cachedSizes() -> [SavedRingSizeModel] {
 		guard let data = UserDefaults.standard.data(forKey: Constants.ringSizeKey) else {
 			return []

@@ -18,12 +18,18 @@ class FingerSizerOnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		mainView.primaryButton.addTarget(self, action: #selector(showSizer), for: .touchUpInside)
+		mainView.headerView.button.addTarget(self, action: #selector(openSettings), for: .touchUpInside)
     }
 }
 
 extension FingerSizerOnboardingViewController {
 	@objc func showSizer() {
 		let vc = FingerSizerViewController.make()
+		navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	@objc func openSettings() {
+		let vc = SettingsViewController.make()
 		navigationController?.pushViewController(vc, animated: true)
 	}
 }

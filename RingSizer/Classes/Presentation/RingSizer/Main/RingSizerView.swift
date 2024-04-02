@@ -166,8 +166,8 @@ private extension RingSizerView {
 		return view
 	}
 	
-	func makeButton(imageName: String) -> UIButton {
-		let view = UIButton()
+	func makeButton(imageName: String) -> TapAreaButton {
+		let view = TapAreaButton()
 		view.setImage(UIImage(named: imageName), for: .normal)
 		view.backgroundColor = .clear
 		view.translatesAutoresizingMaskIntoConstraints = false
