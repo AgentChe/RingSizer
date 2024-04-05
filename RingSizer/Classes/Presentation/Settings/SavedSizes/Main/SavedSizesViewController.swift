@@ -15,6 +15,7 @@ class SavedSizesViewController: UIViewController {
 	private lazy var viewModel = SavedSizesViewModel()
 	
 	private let selectedAction = PublishRelay<SavedSizesAction>()
+	private let didTapDeleteRelay = PublishRelay<Void>()
 	private let disposeBag = DisposeBag()
 	
 	private let alertTransitioningDelegate = AlertTransitioningDelegate()
@@ -31,18 +32,26 @@ class SavedSizesViewController: UIViewController {
 			selectMoreAction: mainView.tableView.selectMoreAction.asSignal(),
 			selectedAction: selectedAction.asSignal(),
 			didTapClose: mainView.backButton.rx.tap.asSignal(),
-			didTapPrimaryButton: mainView.primaryButton.rx.tap.asSignal()
+			didTapPrimaryButton: mainView.primaryButton.rx.tap.asSignal(),
+			didTapDelete: didTapDeleteRelay.asSignal()
 		))
 		
 		output.elements
-			.drive(with: mainView.tableView) { 
-				$0.setup(elements: $1)
-				$0.isHidden = $1.isEmpty
+			.drive(with: mainView) {
+				$0.tableView.setup(elements: $1)
+				$0.tableView.isHidden = $1.isEmpty
+				$0.emptyContainer.isHidden = !$1.isEmpty
 			}
 			.disposed(by: disposeBag)
 		
 		output.route
 			.emit(with: self) { $0.route(route: $1) }
+			.disposed(by: disposeBag)
+		
+		mainView.tableView.rx.contentOffset
+			.asDriver()
+			.debug()
+			.drive(with: mainView) { $0.changeHeader(offset: $1.y) }
 			.disposed(by: disposeBag)
     }
 }
@@ -74,7 +83,7 @@ private extension SavedSizesViewController {
 	
 	func showDelete() {
 		let vc = DeleteSavedSizeViewController.make { [weak self] in
-			self?.selectedAction.accept(.delete)
+			self?.didTapDeleteRelay.accept(())
 		}
 		
 		vc.modalPresentationStyle = .custom

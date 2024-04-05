@@ -40,6 +40,14 @@ class FingerSizerView: UIView {
 			sliderView.center.x = leftHandButton.center.x
 		}
 	}
+	
+	private lazy var maxWidth: CGFloat = {
+		guard let diameter = RingSize.allSizes.last?.diameter else {
+			return 194.scale
+		}
+		
+		return diameter / UIDeviceModel.current.scaleFactor + 20.scale
+	}()
 }
 
 // MARK: Make constraints
@@ -59,7 +67,7 @@ private extension FingerSizerView {
 		])
 		
 		NSLayoutConstraint.activate([
-			subtitle.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 22.scale),
+			subtitle.topAnchor.constraint(equalTo: headerView.bottomAnchor),
 			subtitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
 			subtitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale)
 		])
@@ -73,8 +81,9 @@ private extension FingerSizerView {
 		
 		NSLayoutConstraint.activate([
 			fingerView.topAnchor.constraint(equalTo: primaryButton.bottomAnchor, constant: 47.scale),
-			fingerView.bottomAnchor.constraint(equalTo: bottomAnchor),
-			fingerView.leadingAnchor.constraint(equalTo: leftHandButton.trailingAnchor, constant: 27.scale)
+			fingerView.widthAnchor.constraint(equalToConstant: maxWidth),
+			fingerView.centerXAnchor.constraint(equalTo: centerXAnchor),
+			fingerView.bottomAnchor.constraint(equalTo: bottomAnchor)
 		])
 	
 		NSLayoutConstraint.activate([
@@ -85,7 +94,6 @@ private extension FingerSizerView {
 		NSLayoutConstraint.activate([
 			rightHandButton.widthAnchor.constraint(equalToConstant: 44.scale),
 			rightHandButton.heightAnchor.constraint(equalTo: rightHandButton.widthAnchor),
-			rightHandButton.leadingAnchor.constraint(equalTo: fingerView.trailingAnchor, constant: 27.scale),
 			rightHandButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24.scale),
 			rightHandButton.topAnchor.constraint(equalTo: sliderView.bottomAnchor, constant: 14.scale),
 			rightHandButton.bottomAnchor.constraint(equalTo: fingerView.bottomAnchor, constant: -48.scale)
@@ -94,7 +102,7 @@ private extension FingerSizerView {
 		NSLayoutConstraint.activate([
 			leftHandButton.widthAnchor.constraint(equalTo: rightHandButton.widthAnchor),
 			leftHandButton.heightAnchor.constraint(equalTo: rightHandButton.heightAnchor),
-			leftHandButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 22.scale),
+			leftHandButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24.scale),
 			leftHandButton.bottomAnchor.constraint(equalTo: rightHandButton.bottomAnchor),
 			leftHandButton.topAnchor.constraint(equalTo: rightHandButton.topAnchor)
 		])
@@ -121,6 +129,7 @@ private extension FingerSizerView {
 		let view = UILabel()
 		view.attributedText = "FingerSizer.Subtitle".localized.attributed(with: attrs)
 		view.numberOfLines = 0
+		view.setContentHuggingPriority(.defaultHigh, for: .vertical)
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)
 		return view
@@ -143,8 +152,8 @@ private extension FingerSizerView {
 		return view
 	}
 	
-	func makeSliderView() -> TestVerticalSlider {
-		let view = TestVerticalSlider()
+	func makeSliderView() -> VerticalSlider {
+		let view = VerticalSlider()
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.slider.minimumValue = 0
 		view.slider.maximumValue = Float(RingSize.allSizes.count - 1)
@@ -169,34 +178,5 @@ private extension FingerSizerView {
 		view.translatesAutoresizingMaskIntoConstraints = false
 		addSubview(view)
 		return view
-	}
-}
-
-class TestVerticalSlider: UIView {
-	
-	let slider = RingSlider()
-	
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		slider.transform = CGAffineTransform(rotationAngle: .pi * -0.5)
-		addSubview(slider)
-	}
-	
-	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
-	
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		
-		slider.bounds.size.width = bounds.height
-		slider.center.x = bounds.midX
-		slider.center.y = bounds.midY
-	}
-	
-	override var intrinsicContentSize: CGSize {
-		get {
-			return CGSize(width: slider.intrinsicContentSize.height, height: slider.intrinsicContentSize.width)
-		}
 	}
 }

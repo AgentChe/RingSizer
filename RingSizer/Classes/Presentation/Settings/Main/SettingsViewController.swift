@@ -13,6 +13,8 @@ class SettingsViewController: UIViewController {
 	
 	lazy var mainView = SettingsView()
 	
+	private lazy var viewModel = SettingsViewModel()
+	
 	private let disposeBag = DisposeBag()
 	
 	override func loadView() {
@@ -21,18 +23,18 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		mainView.tableView.setup(elements: SettingItemsModel.allCases)
 		
-		mainView.tableView.selectedAction
-			.asSignal()
-			.emit(with: self) { $0.route(action: $1) }
+		let output = viewModel.configure(input: .init(
+			selectedItem: mainView.tableView.selectedAction.asSignal(),
+			didTapBack: mainView.backButton.rx.tap.asSignal()
+		))
+		
+		output.elements
+			.drive(with: mainView.tableView) { $0.setup(elements: $1) }
 			.disposed(by: disposeBag)
 		
-		mainView.backButton.rx.tap
-			.asSignal()
-			.emit(with: self) { base, _ in
-				base.navigationController?.popViewController(animated: true)
-			}
+		output.route
+			.emit(with: self) { $0.route($1) }
 			.disposed(by: disposeBag)
     }
 }
@@ -45,16 +47,14 @@ extension SettingsViewController {
 }
 
 private extension SettingsViewController {
-	func route(action: SettingItemsModel) {
-		switch action {
+	func route(_ route: SettingsViewModel.Route) {
+		switch route {
 		case .savedSizes:
 			showSavedSizes()
-		case .termsOfUse:
-			showTermsOfUse()
-		case .privacyPolicy:
-			showPrivacyPolicy()
-		case .support:
-			showSupport()
+		case let .open(url):
+			open(url: url)
+		case .back:
+			navigationController?.popViewController(animated: true)
 		}
 	}
 	
@@ -63,15 +63,9 @@ private extension SettingsViewController {
 		navigationController?.pushViewController(vc, animated: true)
 	}
 	
-	func showTermsOfUse() {
-		
-	}
-	
-	func showPrivacyPolicy() {
-		
-	}
-	
-	func showSupport() {
-		
+	func open(url: URL) {
+		if UIApplication.shared.canOpenURL(url) {
+			UIApplication.shared.open(url)
+		}
 	}
 }

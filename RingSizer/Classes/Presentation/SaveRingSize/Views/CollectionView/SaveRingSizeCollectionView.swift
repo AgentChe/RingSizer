@@ -154,6 +154,7 @@ private extension SaveRingSizeCollectionView {
 		collectionViewLayout = layout
 		delegate = self
 		allowsMultipleSelection = true
+		showsVerticalScrollIndicator = false
 		backgroundColor = Appearance.v4WarmBeige
 		keyboardDismissMode = .onDrag
 		saveRingDataSource.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in

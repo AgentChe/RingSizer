@@ -25,18 +25,18 @@ class FingerView: UIView {
 		let width = currentSize.diameter / UIDeviceModel.current.scaleFactor
 		let fingerRect = CGRect(
 			x: (rect.width - width) / 2,
-			y: rect.origin.y + 26.0,
+			y: rect.origin.y + 26.scale,
 			width: width,
 			height: rect.height
 		)
 		let fingerRadius = fingerRect.width / 2
 		
-		let innerWidth = (width - width * 0.3) * (0.67 + width * 0.003)
+		let innerWidth = width * (0.67 - width * 0.0003)
 		let innerRect = CGRect(
 			x: fingerRect.midX - innerWidth / 2,
 			y: fingerRect.minY + fingerRect.width / 2,
 			width: innerWidth,
-			height: width
+			height: innerWidth * 1.47 - innerWidth
 		)
 		let innerRadius = innerRect.width / 2
 		

@@ -67,7 +67,6 @@
 		0F95E4592BBC66F3004D86A0 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4582BBC66F3004D86A0 /* SettingsTableView.swift */; };
 		0F95E45B2BBC6706004D86A0 /* SettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E45A2BBC6706004D86A0 /* SettingsViewCell.swift */; };
 		0F95E45E2BBC7BFD004D86A0 /* SettingItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E45D2BBC7BFD004D86A0 /* SettingItemsModel.swift */; };
-		0F95E4602BBC7DB4004D86A0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E45F2BBC7DB4004D86A0 /* SettingsViewModel.swift */; };
 		0F95E4652BBC8337004D86A0 /* AlertTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4642BBC8337004D86A0 /* AlertTransitioningDelegate.swift */; };
 		0F95E4682BBC8F51004D86A0 /* DimmedPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4672BBC8F51004D86A0 /* DimmedPresentationController.swift */; };
 		0F95E46A2BBC8F9E004D86A0 /* MeasurementPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4692BBC8F9E004D86A0 /* MeasurementPresentationController.swift */; };
@@ -77,6 +76,8 @@
 		0F95E4752BBCAE30004D86A0 /* SavedActionsPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4742BBCAE30004D86A0 /* SavedActionsPresentationController.swift */; };
 		0F95E4772BBCAE75004D86A0 /* SavedActionsTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4762BBCAE75004D86A0 /* SavedActionsTransitionDelegate.swift */; };
 		0F95E4792BBCAED5004D86A0 /* SavedSizesActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E4782BBCAED5004D86A0 /* SavedSizesActionsViewController.swift */; };
+		0F95E47C2BBD70E6004D86A0 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E47B2BBD70E6004D86A0 /* VerticalSlider.swift */; };
+		0F95E47E2BBD7BF9004D86A0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E47D2BBD7BF9004D86A0 /* SettingsViewModel.swift */; };
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
@@ -229,7 +230,6 @@
 		0F95E4582BBC66F3004D86A0 /* SettingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
 		0F95E45A2BBC6706004D86A0 /* SettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewCell.swift; sourceTree = "<group>"; };
 		0F95E45D2BBC7BFD004D86A0 /* SettingItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemsModel.swift; sourceTree = "<group>"; };
-		0F95E45F2BBC7DB4004D86A0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		0F95E4642BBC8337004D86A0 /* AlertTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTransitioningDelegate.swift; sourceTree = "<group>"; };
 		0F95E4672BBC8F51004D86A0 /* DimmedPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmedPresentationController.swift; sourceTree = "<group>"; };
 		0F95E4692BBC8F9E004D86A0 /* MeasurementPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementPresentationController.swift; sourceTree = "<group>"; };
@@ -239,6 +239,8 @@
 		0F95E4742BBCAE30004D86A0 /* SavedActionsPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedActionsPresentationController.swift; sourceTree = "<group>"; };
 		0F95E4762BBCAE75004D86A0 /* SavedActionsTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedActionsTransitionDelegate.swift; sourceTree = "<group>"; };
 		0F95E4782BBCAED5004D86A0 /* SavedSizesActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSizesActionsViewController.swift; sourceTree = "<group>"; };
+		0F95E47B2BBD70E6004D86A0 /* VerticalSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
+		0F95E47D2BBD7BF9004D86A0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		426723285054683E1755FD3A /* Pods-RingSizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.debug.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B298D76B0AF3E7B54D526CD0 /* Pods-RingSizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.release.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.release.xcconfig"; sourceTree = "<group>"; };
@@ -550,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				0F55032C2BB842A900B7692B /* FingerView.swift */,
+				0F95E47B2BBD70E6004D86A0 /* VerticalSlider.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -639,7 +642,6 @@
 			children = (
 				0F95E45C2BBC7BDF004D86A0 /* Models */,
 				0F95E4572BBC66DE004D86A0 /* TableView */,
-				0F95E45F2BBC7DB4004D86A0 /* SettingsViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,6 +669,7 @@
 				0F95E4562BBC66D4004D86A0 /* Views */,
 				0F95E4542BBC64D7004D86A0 /* SettingsView.swift */,
 				0F95E4522BBC64C2004D86A0 /* SettingsViewController.swift */,
+				0F95E47D2BBD7BF9004D86A0 /* SettingsViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1335,7 +1338,6 @@
 				DE38C4C02BAEC19A0019C044 /* IAPManager.swift in Sources */,
 				0F95E4532BBC64C2004D86A0 /* SettingsViewController.swift in Sources */,
 				0F5503402BB9E36B00B7692B /* SavedSizeViewCell.swift in Sources */,
-				0F95E4602BBC7DB4004D86A0 /* SettingsViewModel.swift in Sources */,
 				0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */,
 				DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */,
 				DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */,
@@ -1381,6 +1383,7 @@
 				0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */,
 				0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */,
 				DE38C47F2BAEC19A0019C044 /* CircleView.swift in Sources */,
+				0F95E47C2BBD70E6004D86A0 /* VerticalSlider.swift in Sources */,
 				0F95E4592BBC66F3004D86A0 /* SettingsTableView.swift in Sources */,
 				0F5503042BB5287F00B7692B /* SaveRingSizeViewModel.swift in Sources */,
 				DE38C5B02BAED0450019C044 /* PaygateInteractor.swift in Sources */,
@@ -1405,6 +1408,7 @@
 				DE38C56F2BAEC19A0019C044 /* MainView.swift in Sources */,
 				0F5502F72BB51F8E00B7692B /* SaveRingSizeViewController.swift in Sources */,
 				DE38C4FE2BAEC19A0019C044 /* SplashView.swift in Sources */,
+				0F95E47E2BBD7BF9004D86A0 /* SettingsViewModel.swift in Sources */,
 				0F95E45E2BBC7BFD004D86A0 /* SettingItemsModel.swift in Sources */,
 				0F5502D42BB2DFC600B7692B /* PickSizeViewCell.swift in Sources */,
 				0F5503252BB834D500B7692B /* FingerSizerOnboardingViewController.swift in Sources */,

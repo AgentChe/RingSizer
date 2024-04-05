@@ -17,7 +17,7 @@ class HeaderView: UIView {
 	init(title: String) {
 		self.title = title
 		super.init(frame: .zero)
-		
+		titleView.setContentHuggingPriority(.defaultHigh, for: .vertical)
 		backgroundColor = Appearance.v4WarmBeige
 		
 		makeConstraints()

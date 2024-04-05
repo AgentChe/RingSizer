@@ -35,7 +35,7 @@ private extension FingerSizerOnboardingView {
 		])
 		
 		NSLayoutConstraint.activate([
-			subtitle.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 3.scale),
+			subtitle.topAnchor.constraint(equalTo: headerView.bottomAnchor),
 			subtitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
 			subtitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale)
 		])

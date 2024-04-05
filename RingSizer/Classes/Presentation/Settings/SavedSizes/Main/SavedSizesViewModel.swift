@@ -28,6 +28,7 @@ extension SavedSizesViewModel {
 		let selectedAction: Signal<SavedSizesAction>
 		let didTapClose: Signal<Void>
 		let didTapPrimaryButton: Signal<Void>
+		let didTapDelete: Signal<Void>
 	}
 	
 	struct Output {
@@ -51,14 +52,14 @@ extension SavedSizesViewModel {
 		let actionRoute = input.selectedAction
 			.asObservable()
 			.withLatestFrom(currentModel) { ($0, $1) }
-			.compactMap { action, model -> Route? in
+			.map { action, model -> Route in
 				switch action {
 				case .share:
 					return .share(model)
 				case .convert:
 					return .convert(model)
 				case .delete:
-					return nil
+					return .delete
 				}
 			}
 			.asSignal(onErrorSignalWith: .empty())
@@ -71,9 +72,8 @@ extension SavedSizesViewModel {
 				input.didTapPrimaryButton.map { _ in .measure }
 			)
 		
-		input.selectedAction
+		input.didTapDelete
 			.asObservable()
-			.filter { $0 == .delete }
 			.withLatestFrom(currentModel)
 			.subscribe(with: self) { $0.ringManager.delete(model: $1) }
 			.disposed(by: disposeBag)

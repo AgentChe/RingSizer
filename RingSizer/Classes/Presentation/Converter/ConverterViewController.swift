@@ -15,9 +15,13 @@ class ConverterViewController: UIViewController {
 	
 	private lazy var viewModel = ConverterViewModel()
 	
-	private lazy var currentSystem = PublishRelay<MeasurementSystem>()
+	// Behavior нужен по только для случая, когда юзер ни разу не открывал конвертер
+	// в текущем запуске приложения и из сохраненных настроек решил перейти в него.
+	// Если будет Publish то в этом кейсе не сработает подстановка значений, при повторной
+	// попытке станет все отработает правильно
+	private lazy var currentSystem = BehaviorRelay<MeasurementSystem?>(value: nil)
+	private lazy var selectedSize = BehaviorRelay<RingSize?>(value: nil)
 	private lazy var newSystem = PublishRelay<MeasurementSystem>()
-	private lazy var selectedSize = PublishRelay<RingSize>()
 	private let measurementTransitionDelegate = MeasurementTransitionDelegate()
 	
 	private lazy var disposeBag = DisposeBag()
@@ -36,9 +40,9 @@ class ConverterViewController: UIViewController {
 		
 		let output = viewModel.configure(
 			input: .init(
-				selectedCurrentSystem: currentSystem.asSignal(),
+				selectedCurrentSystem: currentSystem.asSignal(onErrorJustReturn: nil).compactMap { $0 },
 				selectedNewSystem: newSystem.asSignal(),
-				selectedSize: selectedSize.asSignal(),
+				selectedSize: selectedSize.asSignal(onErrorJustReturn: nil).compactMap { $0 },
 				didTapConvert: mainView.primaryButton.rx.tap.asSignal(),
 				didTapCurrentDropdown: mainView.leftDropdown.rx.tap.asSignal(),
 				didTapNewDropdown: mainView.rightDropdown.rx.tap.asSignal(),

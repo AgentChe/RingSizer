@@ -52,14 +52,14 @@ class FingerSizerConverterViewController: UIViewController {
 			.drive(with: mainView.sizeLabel) {
 				let main = TextAttributes()
 					.textColor(Appearance.v4DarkGrey)
-					.font(Fonts.Sen.regular(size: 58.scale))
+					.font(Fonts.Sen.regular(size: 76.scale))
 					.textAlignment(.center)
 				
 				let additional = TextAttributes()
 					.textColor(Appearance.v4DarkGrey)
-					.font(Fonts.Sen.regular(size: 36.scale))
+					.font(Fonts.Sen.regular(size: 50.scale))
 					.textAlignment(.center)
-					.baselineOffset(20.scale)
+					.baselineOffset(30.scale)
 				
 				let attributes = $1
 					.components(separatedBy: " ")

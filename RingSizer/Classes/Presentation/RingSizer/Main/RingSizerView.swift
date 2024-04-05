@@ -29,6 +29,14 @@ class RingSizerView: UIView {
 		makeConstraints()
 	}
 	
+	private lazy var maxHeight: CGFloat = {
+		guard let diameter = RingSize.allSizes.last?.diameter else {
+			return 194.scale
+		}
+		
+		return diameter / UIDeviceModel.current.scaleFactor + 10.scale
+	}()
+	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
@@ -50,10 +58,10 @@ private extension RingSizerView {
 		])
 		
 		NSLayoutConstraint.activate([
-			containerView.topAnchor.constraint(equalTo: subtitle.bottomAnchor, constant: 47.scale),
+			containerView.topAnchor.constraint(equalTo: subtitle.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 47.scale : 23.scale),
 			containerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
 			containerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-			containerView.heightAnchor.constraint(equalToConstant: 194.scale)
+			containerView.heightAnchor.constraint(equalToConstant: maxHeight)
 		])
 		
 		NSLayoutConstraint.activate([
@@ -67,7 +75,7 @@ private extension RingSizerView {
 		NSLayoutConstraint.activate([
 			dropdownView.topAnchor.constraint(equalTo: containerView.topAnchor),
 			dropdownView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor),
-			dropdownView.widthAnchor.constraint(equalToConstant: 110.scale),
+			dropdownView.widthAnchor.constraint(equalToConstant: 105.scale),
 		])
 		
 		NSLayoutConstraint.activate([
@@ -87,12 +95,12 @@ private extension RingSizerView {
 		])
 		
 		NSLayoutConstraint.activate([
-			convertedValuelabel.topAnchor.constraint(equalTo: sliderView.bottomAnchor, constant: 32.scale),
+			convertedValuelabel.topAnchor.constraint(equalTo: sliderView.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 32.scale : 16.scale),
 			convertedValuelabel.centerXAnchor.constraint(equalTo: centerXAnchor)
 		])
 		
 		NSLayoutConstraint.activate([
-			primaryButton.topAnchor.constraint(equalTo: convertedValuelabel.bottomAnchor, constant: 47.scale),
+			primaryButton.topAnchor.constraint(equalTo: convertedValuelabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 46.scale : 23.scale),
 			primaryButton.heightAnchor.constraint(equalToConstant: 54.scale),
 			primaryButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 71.scale),
 			primaryButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -71.scale)

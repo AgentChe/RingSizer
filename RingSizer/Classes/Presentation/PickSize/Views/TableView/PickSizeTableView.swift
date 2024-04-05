@@ -66,6 +66,7 @@ extension PickSizeTableView: UITableViewDelegate {
 private extension PickSizeTableView {
 	func initialize() {
 		register(PickSizeViewCell.self, forCellReuseIdentifier: String(describing: PickSizeViewCell.self))
+		showsVerticalScrollIndicator = false
 		allowsMultipleSelection = false
 		separatorStyle = .none
 		dataSource = self

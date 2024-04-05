@@ -35,14 +35,14 @@ private extension RingSizerDropdown {
 	func makeConstraints() {
 		NSLayoutConstraint.activate([
 			labelView.topAnchor.constraint(equalTo: topAnchor, constant: 8.scale),
-			labelView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12.scale),
+			labelView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.scale),
 			labelView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8.scale)
 		])
 		
 		NSLayoutConstraint.activate([
 			indicator.centerYAnchor.constraint(equalTo: labelView.centerYAnchor),
 			indicator.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8.scale),
-			indicator.leadingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: 10.scale),
+			indicator.leadingAnchor.constraint(equalTo: labelView.trailingAnchor, constant: 5.scale),
 			indicator.heightAnchor.constraint(equalToConstant: 24.scale),
 			indicator.widthAnchor.constraint(equalToConstant: 24.scale)
 		])

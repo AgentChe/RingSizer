@@ -25,7 +25,7 @@ class PickSizeViewController: UIViewController {
         super.viewDidLoad()
 		
 		mainView.tableView.setup(
-			elements: RingSize.allSizes,
+			elements: RingSize.allSizes.filter { $0.isAvailableSize(for: system) },
 			system: system,
 			current: initialSize
 		)
