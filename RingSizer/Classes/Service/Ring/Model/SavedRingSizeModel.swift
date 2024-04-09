@@ -25,6 +25,12 @@ struct SavedRingSizeModel: Equatable, Codable {
 	}
 }
 
+extension SavedRingSizeModel {
+	var sizeValue: String {
+		ringSize.size(by: measureSystem)
+	}
+}
+
 enum Hand: String, CaseIterable, Codable {
 	case left
 	case right
@@ -35,6 +41,15 @@ enum Hand: String, CaseIterable, Codable {
 			"SaveSize.LeftHand".localized
 		case .right:
 			"SaveSize.RightHand".localized
+		}
+	}
+	
+	var formattedName: String {
+		switch self {
+		case .left:
+			return "SavedSizes.LeftHand".localized
+		case .right:
+			return "SavedSizes.RightHand".localized
 		}
 	}
 }
@@ -58,6 +73,21 @@ enum Finger: String, CaseIterable, Codable {
 			return "SaveSize.RingFinger".localized
 		case .pinky:
 			return "SaveSize.Pinky".localized
+		}
+	}
+	
+	var formattedName: String {
+		switch self {
+		case .thumb:
+			return "SavedSizes.ThumbFinger".localized
+		case .index:
+			return "SavedSizes.IndexFinger".localized
+		case .middle:
+			return "SavedSizes.MiddleFinger".localized
+		case .ring:
+			return "SavedSizes.RingFinger".localized
+		case .pinky:
+			return "SavedSizes.PinkyFinger".localized
 		}
 	}
 }

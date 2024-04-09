@@ -38,7 +38,7 @@ extension SavedSizeViewCell {
 		self.model = model
 		
 		nameLabel.attributedText = model.name.attributed(with: SavedSizeViewCell.nameAttrs)
-		sizeLabel.attributedText = sizeAttributes(for: model.ringSize.size(by: model.measureSystem))
+		sizeLabel.attributedText = sizeAttributes(for: model.sizeValue)
 		handLabel.attributedText = model.hand.formattedName.attributed(with: SavedSizeViewCell.handAttrs)
 		fingerLabel.attributedText = model.finger.formattedName.attributed(with: SavedSizeViewCell.fingerAttrs)
 	}
@@ -222,32 +222,4 @@ private extension SavedSizeViewCell {
 		.font(Fonts.Sen.regular(size: 16.scale))
 		.lineHeight(22.4.scale)
 		.textAlignment(.left)
-}
-
-private extension Hand {
-	var formattedName: String {
-		switch self {
-		case .left:
-			return "SavedSizes.LeftHand".localized
-		case .right:
-			return "SavedSizes.RightHand".localized
-		}
-	}
-}
-
-private extension Finger {
-	var formattedName: String {
-		switch self {
-		case .thumb:
-			return "SavedSizes.ThumbFinger".localized
-		case .index:
-			return "SavedSizes.IndexFinger".localized
-		case .middle:
-			return "SavedSizes.MiddleFinger".localized
-		case .ring:
-			return "SavedSizes.RingFinger".localized
-		case .pinky:
-			return "SavedSizes.PinkyFinger".localized
-		}
-	}
 }

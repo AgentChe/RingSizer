@@ -134,3 +134,7 @@
 "Settings.TermsOfUse" = "Terms of Use";
 "Settings.PrivacyPolicy" = "Privacy Policy";
 "Settings.Support" = "Support";
+
+// MARK: Share
+"Share.CardTitle" = "Measurement";
+"Share.DiameterFormat" = "%@mm";

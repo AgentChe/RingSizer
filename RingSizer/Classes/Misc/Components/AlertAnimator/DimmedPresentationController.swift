@@ -20,6 +20,8 @@ class DimmedPresentationController: UIPresentationController {
 		
 		let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(didSwipe))
 		swipeGesture.direction = .down
+		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didSwipe))
+		dimmedView.addGestureRecognizer(tapGesture)
 		presentedView?.addGestureRecognizer(swipeGesture)
 	}
 	

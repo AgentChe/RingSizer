@@ -109,7 +109,16 @@ private extension SavedSizesViewController {
 	}
 	
 	func showShare(model: SavedRingSizeModel) {
+		let view = ShareView(savedRing: model)
+		view.frame = UIScreen.main.bounds
 		
+		let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+		let image = renderer.image { ctx in
+			view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+		}
+		
+		let ac = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+		present(ac, animated: true)
 	}
 	
 	func showMeasureRing() {

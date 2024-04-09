@@ -38,7 +38,7 @@ private extension ConverterSizeButton {
 	}
 	
 	func configureTitle(text: String?) {
-		if let title {
+		if let title, !title.isEmpty {
 			let main = TextAttributes()
 				.textColor(Appearance.v4DarkGrey)
 				.font(Fonts.Sen.regular(size: 58.scale))

@@ -95,11 +95,15 @@ extension ConverterViewModel {
 			}
 		
 		let sizeValue = Observable
-			.combineLatest(currentSize, currentSystem) { $0?.size(by: $1) }
+			.combineLatest(currentSize, currentSystem) { size, system in
+				size.flatMap { $0.isAvailableSize(for: system) ? $0.size(by: system) : nil }
+			}
 			.asDriver(onErrorJustReturn: nil)
 		
 		let convertedValueResult = Observable
-			.combineLatest(currentSize, newSystem) { $0?.size(by: $1) }
+			.combineLatest(currentSize, newSystem, currentSystem) { size, newSystem, currentSystem in
+				size.flatMap { $0.isAvailableSize(for: currentSystem) ? $0.size(by: newSystem) : nil }
+			}
 			.asDriver(onErrorJustReturn: nil)
 		
 		let convertedValue = hasActiveSubscription

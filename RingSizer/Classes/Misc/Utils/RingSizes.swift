@@ -34,7 +34,7 @@ struct RingSize: Equatable, Codable {
 		case .us:
 			return us != nil
 		case .au:
-			return us != nil
+			return uk != nil
 		case .jp:
 			return cn != 0
 		}
