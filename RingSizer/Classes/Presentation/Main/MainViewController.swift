@@ -30,6 +30,11 @@ final class MainViewController: UIViewController {
     override func loadView() {
         view = mainView
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		navigationController?.setNavigationBarHidden(true, animated: animated)
+	}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,10 +81,11 @@ private extension MainViewController {
                     .rx.tap.map { TabView.Tab.ringSizer },
                 
                 mainView.tabView.convererItem
-                    .rx.tap.map { TabView.Tab.converter },
+                    .rx.tap.map { TabView.Tab.converter() },
                 
                 mainView.tabView.fingerSizerItem
-                    .rx.tap.map { TabView.Tab.fingerSizer }
+                    .rx.tap.map { TabView.Tab.fingerSizer },
+				MainCoordinatorMediator.shared.selectedTab
             ])
             .subscribe(onNext: { [weak self] tab in
                 self?.update(selectedTab: tab)

@@ -45,3 +45,96 @@
 "Main.RingSizer" = "RING SIZER";
 "Main.Converter" = "CONVERTER";
 "Main.FingerSizer" = "FINGER SIZER";
+
+// MARK: Converter
+"Converter.Title" = "Converter";
+"Converter.Subtitle" = "Select a ring size you want to convert";
+"Converter.Convert" = "CONVERT";
+"Converter.RingSize" = "Ring size";
+
+// MARK: Pick ring size
+"PickSize.Title" = "Pick the ring size";
+"PickSize.Select" = "SELECT";
+
+// MARK: Measurement systems
+"MeasurementSystems.US" = "US (United States)";
+"MeasurementSystems.AU" = "AU/UK (Australia&United Kingdom)";
+"MeasurementSystems.EU" = "EU/ISO (Europe)";
+"MeasurementSystems.JP" = "JP/CN (Japan&China)";
+"MeasurementSystems.Title" = "Measurement systems";
+
+// MARK: Ring size
+"RingSize.Title" = "Ring sizer";
+"RingSize.Subtitle" = "Put the ring in the circle and use slider to measure the size";
+"RingSize.MM" = "mm";
+"RingSize.Save" = "SAVE SIZE";
+
+// MARK: Save ring size
+"SaveSize.ScreenTitle" = "Save ring size";
+"SaveSize.Title" = "Title";
+"SaveSize.Placeholder" = "e.g.: My wife’s ring";
+"SaveSize.Save" = "SAVE SIZE";
+"SaveSize.Hand" = "Hand";
+"SaveSize.RingHand" = "Ring hand";
+"SaveSize.LeftHand" = "Left";
+"SaveSize.RightHand" = "Right";
+"SaveSize.Finger" = "Finger";
+"SaveSize.FingerRing" = "Ring finger";
+"SaveSize.Thumb" = "Thumb";
+"SaveSize.IndexFinger" = "Index finger";
+"SaveSize.MiddleFinger" = "Middle finger";
+"SaveSize.RingFinger" = "Ring finger";
+"SaveSize.Pinky" = "Pinky";
+
+//MARK: Help
+"Help.Title" = "How to measure a ring?";
+"Help.Subtitle" = "Align the edges of the circle with the inner edge of your ring.";
+
+// MARK: Finger sizer onboarding
+"FingerSizerOnboadring.Title" = "Finger sizer";
+"FingerSizerOnboadring.Subtitle" = "Get the ring size by measuring your finger width";
+"FingerSizerOnboadring.Start" = "START";
+
+// MARK: Finger sizer
+"FingerSizer.Title" = "Finger sizer";
+"FingerSizer.Subtitle" = "Place your finger and adjust the slider to match the width";
+"FingerSizer.Continue" = "CONTINUE";
+
+// MARK: Finger sizer converter
+"FingerSizerConverter.Title" = "Finger sizer";
+"FingerSizerConverter.Subtitle" = "Place your finger and adjust the slider to match the width";
+"FingerSizerConverter.Save" = "SAVE SIZE";
+
+// MARK: Saved ring sizes
+"SavedSizes.Title" = "Saved ring sizes";
+"SavedSizes.Subtitle" = "You haven’t saved any ring sizes yet";
+"SavedSizes.MeasureRing" = "MEASURE THE RING";
+"SavedSizes.RightHand" = "right hand";
+"SavedSizes.LeftHand" = "left hand";
+"SavedSizes.ThumbFinger" = "thumb finger";
+"SavedSizes.IndexFinger" = "index finger";
+"SavedSizes.MiddleFinger" = "middle finger";
+"SavedSizes.RingFinger" = "ring finger";
+"SavedSizes.PinkyFinger" = "pinky finger";
+
+// MARK: Delete
+"Delete.Title" = "Delete the ring size";
+"Delete.Subtitle" = "Are you sure you want to delete this  ring size?";
+"Delete.Delete" = "DELETE";
+"Delete.Cancel" = "CANCEL";
+
+// MARK: Saved sizes actions
+"SavedSizesActions.Share" = "Share";
+"SavedSizesActions.Convert" = "Convert";
+"SavedSizesActions.Delete" = "Delete";
+
+// MARK: Settings
+"Settings.Title" = "Settings";
+"Settings.SavedSizes" = "Saved Ring Sizes";
+"Settings.TermsOfUse" = "Terms of Use";
+"Settings.PrivacyPolicy" = "Privacy Policy";
+"Settings.Support" = "Support";
+
+// MARK: Share
+"Share.CardTitle" = "Measurement";
+"Share.DiameterFormat" = "%@mm";

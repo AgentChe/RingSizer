@@ -9,7 +9,9 @@ import UIKit
 
 final class TabView: UIView {
     enum Tab {
-        case ringSizer, converter, fingerSizer
+        case ringSizer
+		case converter(model: SavedRingSizeModel? = nil)
+		case fingerSizer
     }
     
     lazy var separator = makeSeparator()

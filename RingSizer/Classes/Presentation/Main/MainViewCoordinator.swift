@@ -10,9 +10,9 @@ import UIKit
 final class MainViewCoordinator {
     weak var parentVC: MainViewController?
     
-    lazy var ringSizerVC = NavigationController(rootViewController: UIViewController())
-    lazy var converterVC = NavigationController(rootViewController: UIViewController())
-    lazy var fingerSizerVC = NavigationController(rootViewController: UIViewController())
+    lazy var ringSizerVC = RingSizerViewController()
+    lazy var converterVC = ConverterViewController()
+    lazy var fingerSizerVC = FingerSizerOnboardingViewController()
     
     private var previousVC: UIViewController?
     
@@ -26,7 +26,10 @@ final class MainViewCoordinator {
         switch tab {
         case .ringSizer:
             changeVC(on: ringSizerVC)
-        case .converter:
+        case let .converter(model):
+			if let model {
+				converterVC.convert(model: model)
+			}
             changeVC(on: converterVC)
         case .fingerSizer:
             changeVC(on: fingerSizerVC)
