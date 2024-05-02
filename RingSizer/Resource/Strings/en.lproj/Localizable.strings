@@ -102,7 +102,7 @@
 
 // MARK: Finger sizer converter
 "FingerSizerConverter.Title" = "Finger sizer";
-"FingerSizerConverter.Subtitle" = "Place your finger and adjust the slider to match the width";
+"FingerSizerConverter.Subtitle" = "Here is your ring size";
 "FingerSizerConverter.Save" = "SAVE SIZE";
 
 // MARK: Saved ring sizes
