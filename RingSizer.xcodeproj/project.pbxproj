@@ -82,7 +82,6 @@
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
-		DE38C2A02BAEC1770019C044 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE38C29F2BAEC1770019C044 /* GoogleService-Info.plist */; };
 		DE38C2A42BAEC17C0019C044 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2A22BAEC17C0019C044 /* Localizable.strings */; };
 		DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2A82BAEC1990019C044 /* UIApplication+Extension.swift */; };
 		DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2A92BAEC1990019C044 /* UIDevice+Extension.swift */; };
@@ -168,6 +167,7 @@
 		DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */; };
 		DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */; };
 		DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */; };
+		DEFA92A62BE53A8F00F892BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -250,7 +250,6 @@
 		DE38C2932BAEC0740019C044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE38C2962BAEC0740019C044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE38C2982BAEC0740019C044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE38C29F2BAEC1770019C044 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE38C2A32BAEC17C0019C044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DE38C2A82BAEC1990019C044 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		DE38C2A92BAEC1990019C044 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
@@ -336,6 +335,7 @@
 		DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
 		DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -780,7 +780,7 @@
 				DE38C2932BAEC0740019C044 /* Assets.xcassets */,
 				DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */,
 				DE38C2982BAEC0740019C044 /* Info.plist */,
-				DE38C29F2BAEC1770019C044 /* GoogleService-Info.plist */,
+				DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1174,6 +1174,7 @@
 				DE38C2842BAEC0720019C044 /* Frameworks */,
 				DE38C2852BAEC0720019C044 /* Resources */,
 				A3B48C841EFFE66474CF0C5D /* [CP] Embed Pods Frameworks */,
+				DEFA92A72BE53B2A00F892BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1222,6 +1223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFA92A62BE53A8F00F892BC /* GoogleService-Info.plist in Resources */,
 				DE38C59B2BAEC7DF0019C044 /* Sen-Bold.ttf in Resources */,
 				DE38C59C2BAEC7DF0019C044 /* Sen-ExtraBold.ttf in Resources */,
 				DE38C59D2BAEC7DF0019C044 /* Sen-Medium.ttf in Resources */,
@@ -1234,7 +1236,6 @@
 				DE38C2A42BAEC17C0019C044 /* Localizable.strings in Resources */,
 				DE38C5BD2BAEDA5A0019C044 /* Onboarding.Convert.Animation.json in Resources */,
 				DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */,
-				DE38C2A02BAEC1770019C044 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1279,6 +1280,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RingSizer/Pods-RingSizer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DEFA92A72BE53B2A00F892BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/RingSizer/Resource/GoogleService-Info.plist",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\" \\\n-gsp \"${PROJECT_DIR}/RingSizer/Resource/GoogleService-Info.plist\" \\\n-p ios \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1582,6 +1601,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
