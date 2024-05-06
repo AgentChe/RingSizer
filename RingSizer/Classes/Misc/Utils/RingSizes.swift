@@ -135,46 +135,6 @@ extension RingSize {
 		
 		.init(diameter: 23.0, iso: 74.50, us: "13", uk: "Z+4", cn: 49),
 		.init(diameter: 23.2, iso: 75.25, us: "13 1/8", uk: "Z+4 1/2", cn: 50),
-		.init(diameter: 23.4, iso: 76.00, us: "13 1/4", uk: "Z+5", cn: 51),
-		.init(diameter: 23.6, iso: 76.25, us: "13 3/8", uk: nil, cn: 52),
-		.init(diameter: 23.8, iso: 76.75, us: "13 1/2", uk: nil, cn: 53),
-		
-		.init(diameter: 24.0, iso: 77.50, us: "13 5/8", uk: nil, cn: 54),
-		.init(diameter: 24.2, iso: 78.25, us: "14", uk: nil, cn: 55),
-		.init(diameter: 24.4, iso: 79.00, us: "14 1/8", uk: nil, cn: 56),
-		.init(diameter: 24.6, iso: 79.50, us: "14 1/4", uk: nil, cn: 57),
-		.init(diameter: 24.8, iso: 80.25, us: "14 3/8", uk: nil, cn: 58),
-		
-		.init(diameter: 25.0, iso: 81.00, us: "14 1/2", uk: nil, cn: 59),
-		.init(diameter: 25.2, iso: 81.50, us: "14 5/8", uk: nil, cn: 60),
-		.init(diameter: 25.4, iso: 82.25, us: "15", uk: nil, cn: 61),
-		.init(diameter: 25.6, iso: 83.00, us: "15 1/8", uk: nil, cn: 62),
-		.init(diameter: 25.8, iso: 83.50, us: "15 1/4", uk: nil, cn: 63),
-		
-		.init(diameter: 26.0, iso: 84.25, us: "15 3/8", uk: nil, cn: 64),
-		.init(diameter: 26.2, iso: 85.00, us: "15 1/2", uk: nil, cn: 65),
-		.init(diameter: 26.4, iso: 85.75, us: "15 5/8", uk: nil, cn: 66),
-		.init(diameter: 26.6, iso: 85.25, us: "16", uk: nil, cn: 67),
-		.init(diameter: 26.8, iso: 86.75, us: "16 1/8", uk: nil, cn: 68),
-		
-		.init(diameter: 27.0, iso: 87.50, us: "16 1/4", uk: nil, cn: 69),
-		.init(diameter: 27.2, iso: 88.25, us: "16 3/8", uk: nil, cn: 70),
-		.init(diameter: 27.4, iso: 89.00, us: "16 1/2", uk: nil, cn: 71),
-		.init(diameter: 27.6, iso: 89.50, us: "16 5/8", uk: nil, cn: 72),
-		.init(diameter: 27.8, iso: 90.25, us: "17", uk: nil, cn: 73),
-		
-		.init(diameter: 28.0, iso: 91.00, us: "17 1/8", uk: nil, cn: 74),
-		.init(diameter: 28.2, iso: 91.50, us: "17 1/4", uk: nil, cn: 75),
-		.init(diameter: 28.4, iso: 92.25, us: "17 3/8", uk: nil, cn: 76),
-		.init(diameter: 28.6, iso: 93.00, us: "17 1/2", uk: nil, cn: 77),
-		.init(diameter: 28.8, iso: 93.75, us: "17 5/8", uk: nil, cn: 78),
-		
-		.init(diameter: 29.0, iso: 94.25, us: "18", uk: nil, cn: 79),
-		.init(diameter: 29.2, iso: 94.75, us: "18 1/8", uk: nil, cn: 80),
-		.init(diameter: 29.4, iso: 95.50, us: "18 1/4", uk: nil, cn: 81),
-		.init(diameter: 29.6, iso: 96.00, us: "18 3/8", uk: nil, cn: 82),
-		.init(diameter: 29.8, iso: 96.50, us: "18 1/2", uk: nil, cn: 83),
-		
-		.init(diameter: 30.0, iso: 97.25, us: "18 5/8", uk: nil, cn: 84)
+		.init(diameter: 23.4, iso: 76.00, us: "13 1/4", uk: "Z+5", cn: 51)
 	]
 }
