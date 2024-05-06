@@ -145,7 +145,7 @@ extension UIDeviceModel {
 		case .iPhone14Plus, .iPhone14ProMax, .iPhone15Plus, .iPhone15ProMax:
 			return 6.7
 		case .simulator, .unknown:
-			return 0
+            return 4.7
 		}
 	}
 	
