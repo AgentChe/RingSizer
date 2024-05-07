@@ -164,10 +164,10 @@
 		DE38C5BF2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DE38C5BC2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json */; };
 		DE38C5C12BAEDAB40019C044 /* OAnimationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C02BAEDAB40019C044 /* OAnimationInfoView.swift */; };
 		DE38C5C52BAEE22A0019C044 /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */; };
-		DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */; };
 		DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */; };
 		DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */; };
 		DEFA92A62BE53A8F00F892BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */; };
+		DEFA94362BEA635F00F892BC /* PaygateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFA94352BEA635F00F892BC /* PaygateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -332,10 +332,10 @@
 		DE38C5BC2BAEDA5A0019C044 /* Onboarding.SaveShare.Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Onboarding.SaveShare.Animation.json; sourceTree = "<group>"; };
 		DE38C5C02BAEDAB40019C044 /* OAnimationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAnimationInfoView.swift; sourceTree = "<group>"; };
 		DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
-		DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
 		DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 		DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DEFA94352BEA635F00F892BC /* PaygateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1157,7 +1157,7 @@
 		DE38C5C62BB168F60019C044 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE38C5C82BB16C770019C044 /* PaygateProductButton.swift */,
+				DEFA94352BEA635F00F892BC /* PaygateCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1349,6 +1349,7 @@
 				DE38C4872BAEC19A0019C044 /* Appearance.swift in Sources */,
 				0F5503212BB8346000B7692B /* FingerSizerViewModel.swift in Sources */,
 				DE38C46C2BAEC19A0019C044 /* ScreenSize.swift in Sources */,
+				DEFA94362BEA635F00F892BC /* PaygateCell.swift in Sources */,
 				0F55032D2BB842A900B7692B /* FingerView.swift in Sources */,
 				DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */,
 				0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */,
@@ -1361,7 +1362,6 @@
 				0F95E4532BBC64C2004D86A0 /* SettingsViewController.swift in Sources */,
 				0F5503402BB9E36B00B7692B /* SavedSizeViewCell.swift in Sources */,
 				0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */,
-				DE38C5C92BB16C770019C044 /* PaygateProductButton.swift in Sources */,
 				DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */,
 				DE38C4772BAEC19A0019C044 /* Toast.swift in Sources */,
 				0F95E4702BBCAA4F004D86A0 /* RingMediator.swift in Sources */,
@@ -1600,7 +1600,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
@@ -1615,7 +1615,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1637,7 +1637,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1651,7 +1651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

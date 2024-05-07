@@ -19,7 +19,6 @@ final class GlobalDefinitions {
     static let contactUsUrl = URL(string: "https://maria-apps.com/contact")!
     
     enum Paygate {
-        static let yearlyPlan = "apps.ringsizer.year"
-        static let monthlyPlan = "apps.ringsizer.month"
+        static let onetime = "app.ringsizer.onetime"
     }
 }

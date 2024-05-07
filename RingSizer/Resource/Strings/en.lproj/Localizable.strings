@@ -17,15 +17,12 @@
 "ImagePicker.PhotoLibrary" = "Photo library";
 
 // MARK: Paygate
-"Paygate.Cell1" = "Get full feature access";
-"Paygate.Cell2" = "Save your ring size measurements";
+"Paygate.Title" = "Unlock all features";
+"Paygate.Cell1" = "Convert to any measurement system";
+"Paygate.Cell2" = "Save and share your ring size";
 "Paygate.Cell3" = "Finger width ruler";
-"Paygate.MonthlyPlan" = "Monthly Plan";
-"Paygate.AnnualPlan" = "Annual Plan";
-"Paygate.PriceMonthly" = "3 days free,\nthen %@/month";
-"Paygate.PriceYearly" = "3 days free,\nthen %@/year";
-"Paygate.Save" = "Save %i%%";
-"Paygate.StartTrial" = "START FREE TRIAL";
+"Paygate.BuyButton" = "Upgrade now";
+"Paygate.Price" = "One-time purchase for only ";
 "Paygate.CancelAnytime" = "Secured by the App Store. Cancel anytime.";
 "Paygate.TermsOfUse" = "Terms of Use";
 "Paygate.&" = "&";
