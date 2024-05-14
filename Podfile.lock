@@ -126,16 +126,13 @@ PODS:
   - GoogleUtilities/UserDefaults (7.13.0):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
+  - Kingfisher (7.11.0)
   - lottie-ios (4.4.1)
-  - MarqueeLabel (4.3.2)
   - nanopb (2.30909.1):
     - nanopb/decode (= 2.30909.1)
     - nanopb/encode (= 2.30909.1)
   - nanopb/decode (2.30909.1)
   - nanopb/encode (2.30909.1)
-  - NotificationBannerSwift (3.2.1):
-    - MarqueeLabel (~> 4.3.0)
-    - SnapKit (~> 5.6.0)
   - OtterScaleiOS (1.25)
   - PromisesObjC (2.4.0)
   - PromisesSwift (2.4.0):
@@ -146,8 +143,8 @@ PODS:
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
-  - SnapKit (5.6.0)
   - SwiftyStoreKit (0.16.1)
+  - Toast-Swift (5.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -157,12 +154,13 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Messaging
   - FirebaseCrashlytics
+  - Kingfisher
   - lottie-ios
-  - NotificationBannerSwift
   - OtterScaleiOS (from `https://github.com/AgentChe/OtterScaleiOS.git`)
   - RxCocoa
   - RxSwift
   - SwiftyStoreKit
+  - Toast-Swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -184,17 +182,16 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - Kingfisher
     - lottie-ios
-    - MarqueeLabel
     - nanopb
-    - NotificationBannerSwift
     - PromisesObjC
     - PromisesSwift
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SnapKit
     - SwiftyStoreKit
+    - Toast-Swift
 
 EXTERNAL SOURCES:
   OtterScaleiOS:
@@ -224,19 +221,18 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: ccefe3eac9b0aa27f96066809fb1a7fe4b462626
   GoogleDataTransport: bed3a36c04c8552479fbb9b76326e0fc69bddcb2
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
   lottie-ios: e047b1d2e6239b787cc5e9755b988869cf190494
-  MarqueeLabel: 15e524a6762552bb279cb17438b8a94990269fb9
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
-  NotificationBannerSwift: dce54ded532b26e30cd8e7f4d80e124a0f2ba7d1
   OtterScaleiOS: 0411b70aee2f3c998988188b0768e2e3216ebe9d
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
-  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  Toast-Swift: dd369e68ee529f542c65bd0d0c6c50cd743cf6f2
 
-PODFILE CHECKSUM: 2b2b214f9282f368e8d7f6f300abb2e5fd3017ee
+PODFILE CHECKSUM: a214b2a28d554e995dd0c7d3a66478987ef28ea0
 
 COCOAPODS: 1.15.2

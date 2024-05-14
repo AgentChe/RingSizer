@@ -13,6 +13,7 @@ final class MainViewCoordinator {
     lazy var ringSizerVC = RingSizerViewController()
     lazy var converterVC = ConverterViewController()
     lazy var fingerSizerVC = FingerSizerOnboardingViewController()
+    lazy var wallpapersVC = WallpapersCategoriesViewController.make()
     
     private var previousVC: UIViewController?
     
@@ -33,6 +34,8 @@ final class MainViewCoordinator {
             changeVC(on: converterVC)
         case .fingerSizer:
             changeVC(on: fingerSizerVC)
+        case .wallpapers:
+            changeVC(on: wallpapersVC)
         }
     }
 }

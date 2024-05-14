@@ -5,8 +5,9 @@ use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'RingSizer' do
-  pod 'NotificationBannerSwift'
+  pod 'Toast-Swift'
   pod 'lottie-ios'
+  pod 'Kingfisher'
   
   pod 'RxSwift'
   pod 'RxCocoa'

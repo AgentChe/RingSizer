@@ -108,7 +108,6 @@
 		DE38C4742BAEC19A0019C044 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2C42BAEC1990019C044 /* RequestReview.swift */; };
 		DE38C4752BAEC19A0019C044 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2C52BAEC1990019C044 /* ImagePicker.swift */; };
 		DE38C4762BAEC19A0019C044 /* RxActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2C62BAEC1990019C044 /* RxActivityIndicator.swift */; };
-		DE38C4772BAEC19A0019C044 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2C72BAEC1990019C044 /* Toast.swift */; };
 		DE38C4782BAEC19A0019C044 /* NavigationControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2CA2BAEC1990019C044 /* NavigationControllerSettings.swift */; };
 		DE38C4792BAEC19A0019C044 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2CB2BAEC1990019C044 /* NavigationController.swift */; };
 		DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2CC2BAEC1990019C044 /* TapAreaButton.swift */; };
@@ -166,6 +165,28 @@
 		DE38C5C52BAEE22A0019C044 /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */; };
 		DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */; };
 		DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */; };
+		DED6C75B2BF3BE3D001DE5B2 /* WCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C73E2BF3BE3D001DE5B2 /* WCTableCell.swift */; };
+		DED6C75C2BF3BE3D001DE5B2 /* WCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C73F2BF3BE3D001DE5B2 /* WCTableView.swift */; };
+		DED6C75D2BF3BE3D001DE5B2 /* WallpapersNabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7412BF3BE3D001DE5B2 /* WallpapersNabBar.swift */; };
+		DED6C75E2BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7432BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift */; };
+		DED6C75F2BF3BE3D001DE5B2 /* WallpapersCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7442BF3BE3D001DE5B2 /* WallpapersCategoriesViewController.swift */; };
+		DED6C7602BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7452BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift */; };
+		DED6C7612BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7472BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift */; };
+		DED6C7622BF3BE3D001DE5B2 /* WallpapersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7482BF3BE3D001DE5B2 /* WallpapersCollectionView.swift */; };
+		DED6C7632BF3BE3D001DE5B2 /* WallpapersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C74B2BF3BE3D001DE5B2 /* WallpapersView.swift */; };
+		DED6C7642BF3BE3D001DE5B2 /* WallpapersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C74C2BF3BE3D001DE5B2 /* WallpapersViewController.swift */; };
+		DED6C7652BF3BE3D001DE5B2 /* WallpapersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C74D2BF3BE3D001DE5B2 /* WallpapersViewModel.swift */; };
+		DED6C7662BF3BE3D001DE5B2 /* PhotoLibraryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C74F2BF3BE3D001DE5B2 /* PhotoLibraryWrapper.swift */; };
+		DED6C7672BF3BE3D001DE5B2 /* WPCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7512BF3BE3D001DE5B2 /* WPCollectionCell.swift */; };
+		DED6C7682BF3BE3D001DE5B2 /* WPCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7522BF3BE3D001DE5B2 /* WPCollectionView.swift */; };
+		DED6C7692BF3BE3D001DE5B2 /* WPLockscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7542BF3BE3D001DE5B2 /* WPLockscreenView.swift */; };
+		DED6C76A2BF3BE3D001DE5B2 /* WallpapersPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7562BF3BE3D001DE5B2 /* WallpapersPreviewView.swift */; };
+		DED6C76B2BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7572BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift */; };
+		DED6C76C2BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7582BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift */; };
+		DED6C7742BF3C0F6001DE5B2 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C76D2BF3C0F6001DE5B2 /* Wallpaper.swift */; };
+		DED6C7752BF3C0F6001DE5B2 /* WallpaperCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C76E2BF3C0F6001DE5B2 /* WallpaperCategory.swift */; };
+		DED6C7762BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7702BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift */; };
+		DED6C7772BF3C0F6001DE5B2 /* WallpapersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */; };
 		DEFA92A62BE53A8F00F892BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */; };
 		DEFA94362BEA635F00F892BC /* PaygateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFA94352BEA635F00F892BC /* PaygateCell.swift */; };
 /* End PBXBuildFile section */
@@ -276,7 +297,6 @@
 		DE38C2C42BAEC1990019C044 /* RequestReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE38C2C52BAEC1990019C044 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DE38C2C62BAEC1990019C044 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
-		DE38C2C72BAEC1990019C044 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		DE38C2CA2BAEC1990019C044 /* NavigationControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerSettings.swift; sourceTree = "<group>"; };
 		DE38C2CB2BAEC1990019C044 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DE38C2CC2BAEC1990019C044 /* TapAreaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapAreaButton.swift; sourceTree = "<group>"; };
@@ -334,6 +354,28 @@
 		DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
 		DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		DED6C73E2BF3BE3D001DE5B2 /* WCTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCTableCell.swift; sourceTree = "<group>"; };
+		DED6C73F2BF3BE3D001DE5B2 /* WCTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCTableView.swift; sourceTree = "<group>"; };
+		DED6C7412BF3BE3D001DE5B2 /* WallpapersNabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersNabBar.swift; sourceTree = "<group>"; };
+		DED6C7432BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersCategoriesView.swift; sourceTree = "<group>"; };
+		DED6C7442BF3BE3D001DE5B2 /* WallpapersCategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersCategoriesViewController.swift; sourceTree = "<group>"; };
+		DED6C7452BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersCategoriesViewModel.swift; sourceTree = "<group>"; };
+		DED6C7472BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersCollectionCell.swift; sourceTree = "<group>"; };
+		DED6C7482BF3BE3D001DE5B2 /* WallpapersCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersCollectionView.swift; sourceTree = "<group>"; };
+		DED6C74B2BF3BE3D001DE5B2 /* WallpapersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersView.swift; sourceTree = "<group>"; };
+		DED6C74C2BF3BE3D001DE5B2 /* WallpapersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersViewController.swift; sourceTree = "<group>"; };
+		DED6C74D2BF3BE3D001DE5B2 /* WallpapersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersViewModel.swift; sourceTree = "<group>"; };
+		DED6C74F2BF3BE3D001DE5B2 /* PhotoLibraryWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibraryWrapper.swift; sourceTree = "<group>"; };
+		DED6C7512BF3BE3D001DE5B2 /* WPCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPCollectionCell.swift; sourceTree = "<group>"; };
+		DED6C7522BF3BE3D001DE5B2 /* WPCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPCollectionView.swift; sourceTree = "<group>"; };
+		DED6C7542BF3BE3D001DE5B2 /* WPLockscreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPLockscreenView.swift; sourceTree = "<group>"; };
+		DED6C7562BF3BE3D001DE5B2 /* WallpapersPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersPreviewView.swift; sourceTree = "<group>"; };
+		DED6C7572BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersPreviewViewController.swift; sourceTree = "<group>"; };
+		DED6C7582BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersPreviewViewModel.swift; sourceTree = "<group>"; };
+		DED6C76D2BF3C0F6001DE5B2 /* Wallpaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		DED6C76E2BF3C0F6001DE5B2 /* WallpaperCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperCategory.swift; sourceTree = "<group>"; };
+		DED6C7702BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWallpapersCategoriesRequest.swift; sourceTree = "<group>"; };
+		DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersManager.swift; sourceTree = "<group>"; };
 		DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEFA94352BEA635F00F892BC /* PaygateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaygateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -355,8 +397,8 @@
 			children = (
 				0F5502E22BB348FD00B7692B /* Views */,
 				0F5502BC2BB2051C00B7692B /* ConverterViewController.swift */,
-				0F5502BE2BB2053500B7692B /* ConverterView.swift */,
 				0F5502E02BB335E800B7692B /* ConverterViewModel.swift */,
+				0F5502BE2BB2053500B7692B /* ConverterView.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -892,7 +934,6 @@
 				DE38C2C42BAEC1990019C044 /* RequestReview.swift */,
 				DE38C2C52BAEC1990019C044 /* ImagePicker.swift */,
 				DE38C2C62BAEC1990019C044 /* RxActivityIndicator.swift */,
-				DE38C2C72BAEC1990019C044 /* Toast.swift */,
 				0F5502D02BB2247400B7692B /* PrimaryButton.swift */,
 			);
 			path = Components;
@@ -953,6 +994,7 @@
 		DE38C2E12BAEC1990019C044 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DED6C7732BF3C0F6001DE5B2 /* Wallpapers */,
 				0F55030C2BB6D5E300B7692B /* Ring */,
 				DE38C5B62BAED6650019C044 /* Session */,
 				DE38C3312BAEC1990019C044 /* Purchase */,
@@ -993,6 +1035,7 @@
 		DE38C3632BAEC19A0019C044 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DED6C75A2BF3BE3D001DE5B2 /* Wallpapers */,
 				0F95E4512BBC64AE004D86A0 /* Settings */,
 				0F5503192BB833D400B7692B /* FingerSizer */,
 				0F5502F52BB51F7100B7692B /* SaveRingSize */,
@@ -1162,6 +1205,138 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DED6C7402BF3BE3D001DE5B2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C73E2BF3BE3D001DE5B2 /* WCTableCell.swift */,
+				DED6C73F2BF3BE3D001DE5B2 /* WCTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DED6C7422BF3BE3D001DE5B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7402BF3BE3D001DE5B2 /* TableView */,
+				DED6C7412BF3BE3D001DE5B2 /* WallpapersNabBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED6C7462BF3BE3D001DE5B2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7422BF3BE3D001DE5B2 /* Views */,
+				DED6C7442BF3BE3D001DE5B2 /* WallpapersCategoriesViewController.swift */,
+				DED6C7452BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift */,
+				DED6C7432BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DED6C7492BF3BE3D001DE5B2 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7472BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift */,
+				DED6C7482BF3BE3D001DE5B2 /* WallpapersCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DED6C74A2BF3BE3D001DE5B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7492BF3BE3D001DE5B2 /* CollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED6C74E2BF3BE3D001DE5B2 /* Wallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C74A2BF3BE3D001DE5B2 /* Views */,
+				DED6C74C2BF3BE3D001DE5B2 /* WallpapersViewController.swift */,
+				DED6C74D2BF3BE3D001DE5B2 /* WallpapersViewModel.swift */,
+				DED6C74B2BF3BE3D001DE5B2 /* WallpapersView.swift */,
+			);
+			path = Wallpapers;
+			sourceTree = "<group>";
+		};
+		DED6C7502BF3BE3D001DE5B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C74F2BF3BE3D001DE5B2 /* PhotoLibraryWrapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DED6C7532BF3BE3D001DE5B2 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7512BF3BE3D001DE5B2 /* WPCollectionCell.swift */,
+				DED6C7522BF3BE3D001DE5B2 /* WPCollectionView.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DED6C7552BF3BE3D001DE5B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7532BF3BE3D001DE5B2 /* CollectionView */,
+				DED6C7542BF3BE3D001DE5B2 /* WPLockscreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DED6C7592BF3BE3D001DE5B2 /* WallpapersPreview */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7502BF3BE3D001DE5B2 /* Utils */,
+				DED6C7552BF3BE3D001DE5B2 /* Views */,
+				DED6C7572BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift */,
+				DED6C7582BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift */,
+				DED6C7562BF3BE3D001DE5B2 /* WallpapersPreviewView.swift */,
+			);
+			path = WallpapersPreview;
+			sourceTree = "<group>";
+		};
+		DED6C75A2BF3BE3D001DE5B2 /* Wallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7462BF3BE3D001DE5B2 /* Categories */,
+				DED6C74E2BF3BE3D001DE5B2 /* Wallpapers */,
+				DED6C7592BF3BE3D001DE5B2 /* WallpapersPreview */,
+			);
+			path = Wallpapers;
+			sourceTree = "<group>";
+		};
+		DED6C76F2BF3C0F6001DE5B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C76D2BF3C0F6001DE5B2 /* Wallpaper.swift */,
+				DED6C76E2BF3C0F6001DE5B2 /* WallpaperCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DED6C7712BF3C0F6001DE5B2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C7702BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DED6C7732BF3C0F6001DE5B2 /* Wallpapers */ = {
+			isa = PBXGroup;
+			children = (
+				DED6C76F2BF3C0F6001DE5B2 /* Model */,
+				DED6C7712BF3C0F6001DE5B2 /* Request */,
+				DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */,
+			);
+			path = Wallpapers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1310,6 +1485,8 @@
 				0F55032F2BB9720600B7692B /* UIDeviceModel.swift in Sources */,
 				DE38C4892BAEC19A0019C044 /* AmplitudeManager.swift in Sources */,
 				DE38C4C32BAEC19A0019C044 /* IAPActionResult.swift in Sources */,
+				DED6C7612BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift in Sources */,
+				DED6C7602BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift in Sources */,
 				DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */,
 				0F5503002BB526F700B7692B /* RingSaveRadioButtonViewCell.swift in Sources */,
 				0F95E4472BBBBFAD004D86A0 /* SavedActionView.swift in Sources */,
@@ -1326,10 +1503,13 @@
 				DE38C4752BAEC19A0019C044 /* ImagePicker.swift in Sources */,
 				0F5503082BB5C3D900B7692B /* RingSizeHeaderView.swift in Sources */,
 				DE38C56E2BAEC19A0019C044 /* MainViewController.swift in Sources */,
+				DED6C75D2BF3BE3D001DE5B2 /* WallpapersNabBar.swift in Sources */,
 				DE38C4632BAEC19A0019C044 /* String+Extension.swift in Sources */,
+				DED6C76B2BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift in Sources */,
 				DE38C4762BAEC19A0019C044 /* RxActivityIndicator.swift in Sources */,
 				DE38C4642BAEC19A0019C044 /* UIView+RxExtension.swift in Sources */,
 				DE38C46D2BAEC19A0019C044 /* ObservableRetrySingle.swift in Sources */,
+				DED6C7742BF3C0F6001DE5B2 /* Wallpaper.swift in Sources */,
 				DE38C4662BAEC19A0019C044 /* DefaultRequestWrapper.swift in Sources */,
 				DE38C4882BAEC19A0019C044 /* BranchManager.swift in Sources */,
 				DE38C4702BAEC19A0019C044 /* SignError.swift in Sources */,
@@ -1351,7 +1531,9 @@
 				DE38C46C2BAEC19A0019C044 /* ScreenSize.swift in Sources */,
 				DEFA94362BEA635F00F892BC /* PaygateCell.swift in Sources */,
 				0F55032D2BB842A900B7692B /* FingerView.swift in Sources */,
+				DED6C7662BF3BE3D001DE5B2 /* PhotoLibraryWrapper.swift in Sources */,
 				DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */,
+				DED6C7632BF3BE3D001DE5B2 /* WallpapersView.swift in Sources */,
 				0F5502E12BB335E800B7692B /* ConverterViewModel.swift in Sources */,
 				DE38C4682BAEC19A0019C044 /* RestAPITransport.swift in Sources */,
 				0F55030A2BB5D02F00B7692B /* SaveRingFieldViewCell.swift in Sources */,
@@ -1363,15 +1545,17 @@
 				0F5503402BB9E36B00B7692B /* SavedSizeViewCell.swift in Sources */,
 				0F55030F2BB6D62300B7692B /* RingManager.swift in Sources */,
 				DE38C45D2BAEC19A0019C044 /* UIApplication+Extension.swift in Sources */,
-				DE38C4772BAEC19A0019C044 /* Toast.swift in Sources */,
 				0F95E4702BBCAA4F004D86A0 /* RingMediator.swift in Sources */,
 				DE38C4C42BAEC19A0019C044 /* IAPProduct.swift in Sources */,
 				DE38C5712BAEC19A0019C044 /* TabView.swift in Sources */,
+				DED6C7622BF3BE3D001DE5B2 /* WallpapersCollectionView.swift in Sources */,
 				0F95E4452BBBBBEE004D86A0 /* SavedSizesAction.swift in Sources */,
+				DED6C7672BF3BE3D001DE5B2 /* WPCollectionCell.swift in Sources */,
 				DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */,
 				0F55031F2BB8345200B7692B /* FingerSizerViewController.swift in Sources */,
 				0F95E46A2BBC8F9E004D86A0 /* MeasurementPresentationController.swift in Sources */,
 				DE38C46E2BAEC19A0019C044 /* XOREncryption.swift in Sources */,
+				DED6C75F2BF3BE3D001DE5B2 /* WallpapersCategoriesViewController.swift in Sources */,
 				0FDED27E2BC4EEFC00B9A362 /* ShareView.swift in Sources */,
 				0F5502DD2BB3057000B7692B /* MeasurementSystemViewCell.swift in Sources */,
 				DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */,
@@ -1383,14 +1567,17 @@
 				0F5503362BB9DE3500B7692B /* SavedSizesViewController.swift in Sources */,
 				0F5502FC2BB5227200B7692B /* SavedRingSizeModel.swift in Sources */,
 				0F95E4552BBC64D7004D86A0 /* SettingsView.swift in Sources */,
+				DED6C76C2BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift in Sources */,
 				0F55032A2BB83AD800B7692B /* FingerSizerConverterView.swift in Sources */,
 				DE38C4692BAEC19A0019C044 /* Scalable.swift in Sources */,
+				DED6C75C2BF3BE3D001DE5B2 /* WCTableView.swift in Sources */,
 				DE38C4832BAEC19A0019C044 /* PushNotificationsManager.swift in Sources */,
 				DE38C4792BAEC19A0019C044 /* NavigationController.swift in Sources */,
 				0F95E46C2BBC9070004D86A0 /* MeasurementTransitionDelegate.swift in Sources */,
 				0F5503322BB9C95900B7692B /* FingerSizerConverterViewModel.swift in Sources */,
 				DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
+				DED6C75E2BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift in Sources */,
 				0F5502E92BB454BF00B7692B /* RingSizerView.swift in Sources */,
 				0F5502F92BB51F9E00B7692B /* SaveRingSizeView.swift in Sources */,
 				0F55033A2BB9DE5B00B7692B /* SavedSizesViewModel.swift in Sources */,
@@ -1402,27 +1589,35 @@
 				0F5503142BB6F92200B7692B /* HelpViewController.swift in Sources */,
 				DE38C4802BAEC19A0019C044 /* GradientView.swift in Sources */,
 				0F5502DA2BB304D800B7692B /* MeasurementSystemsTableView.swift in Sources */,
+				DED6C7762BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift in Sources */,
 				0F5502D62BB2E42A00B7692B /* PickSizeTableView.swift in Sources */,
 				0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */,
 				0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */,
 				DE38C47F2BAEC19A0019C044 /* CircleView.swift in Sources */,
 				0F95E47C2BBD70E6004D86A0 /* VerticalSlider.swift in Sources */,
+				DED6C7652BF3BE3D001DE5B2 /* WallpapersViewModel.swift in Sources */,
 				0F95E4592BBC66F3004D86A0 /* SettingsTableView.swift in Sources */,
 				0F5503042BB5287F00B7692B /* SaveRingSizeViewModel.swift in Sources */,
 				DE38C5B02BAED0450019C044 /* PaygateInteractor.swift in Sources */,
 				DE38C4C62BAEC19A0019C044 /* IAPErrorHelper.swift in Sources */,
 				DE38C4712BAEC19A0019C044 /* NetworkError.swift in Sources */,
+				DED6C76A2BF3BE3D001DE5B2 /* WallpapersPreviewView.swift in Sources */,
+				DED6C7642BF3BE3D001DE5B2 /* WallpapersViewController.swift in Sources */,
 				0F5503382BB9DE4C00B7692B /* SavedSizesView.swift in Sources */,
 				0F55031B2BB833F500B7692B /* FingerSizerView.swift in Sources */,
+				DED6C7682BF3BE3D001DE5B2 /* WPCollectionView.swift in Sources */,
 				DE38C5702BAEC19A0019C044 /* TabItemView.swift in Sources */,
 				DE38C5B12BAED0450019C044 /* PaygateView.swift in Sources */,
 				DE38C58E2BAEC19A0019C044 /* OnboardingViewModel.swift in Sources */,
 				DE38C46B2BAEC19A0019C044 /* TextAttributes.swift in Sources */,
 				DE38C4FD2BAEC19A0019C044 /* SplashViewModel.swift in Sources */,
+				DED6C7692BF3BE3D001DE5B2 /* WPLockscreenView.swift in Sources */,
 				0F5503182BB7032E00B7692B /* AlertTransitonAnimator.swift in Sources */,
 				DE38C58D2BAEC19A0019C044 /* OnboardingView.swift in Sources */,
 				0F95E45B2BBC6706004D86A0 /* SettingsViewCell.swift in Sources */,
 				DE38C47E2BAEC19A0019C044 /* PaddingLabel.swift in Sources */,
+				DED6C7752BF3C0F6001DE5B2 /* WallpaperCategory.swift in Sources */,
+				DED6C7772BF3C0F6001DE5B2 /* WallpapersManager.swift in Sources */,
 				0F95E4402BBBB84D004D86A0 /* SavedSizesActionsView.swift in Sources */,
 				DE38C5AE2BAED0450019C044 /* PaygateViewModel.swift in Sources */,
 				0F5502BF2BB2053500B7692B /* ConverterView.swift in Sources */,
@@ -1440,6 +1635,7 @@
 				DE38C46F2BAEC19A0019C044 /* Fonts.swift in Sources */,
 				DE38C48B2BAEC19A0019C044 /* FacebookManager.swift in Sources */,
 				DE38C5C12BAEDAB40019C044 /* OAnimationInfoView.swift in Sources */,
+				DED6C75B2BF3BE3D001DE5B2 /* WCTableCell.swift in Sources */,
 				DE38C57A2BAEC19A0019C044 /* OnboardingViewController.swift in Sources */,
 				DE38C4C52BAEC19A0019C044 /* IAPError.swift in Sources */,
 				DE38C4812BAEC19A0019C044 /* CircleProgressView.swift in Sources */,
@@ -1606,6 +1802,8 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingSizer/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "The access is required for saving wallpapers to your device";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The access is required for saving wallpapers to your device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1642,6 +1840,8 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RingSizer/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "The access is required for saving wallpapers to your device";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The access is required for saving wallpapers to your device";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

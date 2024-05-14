@@ -12,12 +12,14 @@ final class TabView: UIView {
         case ringSizer
 		case converter(model: SavedRingSizeModel? = nil)
 		case fingerSizer
+        case wallpapers
     }
     
     lazy var separator = makeSeparator()
     lazy var ringSizerItem = makeItem(name: "Main.RingSizer".localized)
     lazy var convererItem = makeItem(name: "Main.Converter".localized)
     lazy var fingerSizerItem = makeItem(name: "Main.FingerSizer".localized)
+    lazy var wallpapersItem = makeItem(name: "Main.Wallpapers".localized)
     
     var selectedTab = Tab.ringSizer {
         didSet {
@@ -42,7 +44,8 @@ private extension TabView {
         [
             ringSizerItem,
             convererItem,
-            fingerSizerItem
+            fingerSizerItem,
+            wallpapersItem
         ]
         .forEach {
             $0.mode = .deselected
@@ -55,6 +58,8 @@ private extension TabView {
             convererItem.mode = .selected
         case .fingerSizer:
             fingerSizerItem.mode = .selected
+        case .wallpapers:
+            wallpapersItem.mode = .selected
         }
     }
 }
@@ -87,7 +92,14 @@ private extension TabView {
             fingerSizerItem.leadingAnchor.constraint(equalTo: convererItem.trailingAnchor),
             fingerSizerItem.bottomAnchor.constraint(equalTo: bottomAnchor),
             fingerSizerItem.topAnchor.constraint(equalTo: topAnchor),
-            fingerSizerItem.trailingAnchor.constraint(equalTo: trailingAnchor)
+            fingerSizerItem.widthAnchor.constraint(equalTo: wallpapersItem.widthAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            wallpapersItem.leadingAnchor.constraint(equalTo: fingerSizerItem.trailingAnchor),
+            wallpapersItem.bottomAnchor.constraint(equalTo: bottomAnchor),
+            wallpapersItem.topAnchor.constraint(equalTo: topAnchor),
+            wallpapersItem.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
 }

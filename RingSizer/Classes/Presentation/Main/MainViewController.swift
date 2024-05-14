@@ -85,6 +85,10 @@ private extension MainViewController {
                 
                 mainView.tabView.fingerSizerItem
                     .rx.tap.map { TabView.Tab.fingerSizer },
+                
+                mainView.tabView.wallpapersItem
+                    .rx.tap.map { TabView.Tab.wallpapers },
+                
 				MainCoordinatorMediator.shared.selectedTab
             ])
             .subscribe(onNext: { [weak self] tab in

@@ -42,6 +42,7 @@
 "Main.RingSizer" = "RING SIZER";
 "Main.Converter" = "CONVERTER";
 "Main.FingerSizer" = "FINGER SIZER";
+"Main.Wallpapers" = "COLLECTIONS";
 
 // MARK: Converter
 "Converter.Title" = "Converter";
@@ -135,3 +136,14 @@
 // MARK: Share
 "Share.CardTitle" = "Measurement";
 "Share.DiameterFormat" = "%@mm";
+
+// MARK: WallpapersCategories
+"WallpapersCategories.Title" = "Curated Collections";
+"WallpapersCategories.SubTitle" = "Explore the curated designers’ pieces to set as your lock screen wallpaper.";
+"WallpapersCategories.Count" = "%i wallpapers";
+
+// MARK: WallpapersPreview
+"WallpapersPreview.Save" = "Save";
+"WallpapersPreview.Result.Failure" = "Error when saving photo";
+"WallpapersPreview.Result.NotPermission" = "No permission to save";
+"WallpapersPreview.Result.Success" = "Saved to Camera Roll";
