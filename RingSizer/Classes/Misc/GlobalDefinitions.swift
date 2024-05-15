@@ -8,8 +8,8 @@
 import Foundation
 
 final class GlobalDefinitions {
-    static let domain = "https://sergei-mobile.com" // TODO
-    static let apiKey = "Op4H33209xaUkvQqb" // TODO
+    static let domain = "wallpapers.maria-apps.com"
+    static let apiKey = "oGHM7Q0EGjH0kUYtT2TT"
     
     static let otterScaleHost = "https://api.korrekted.com"
     static let otterScaleApiKey = "IHAQkAwwuZK9IjP1"
@@ -22,6 +22,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = URL(string: "https://maria-apps.com/contact")!
     
     enum Paygate {
-        static let onetime = "app.ringsizer.onetime"
+        static let monthly = "app.ringsizer.monthly"
+        static let yearly = "app.ringsizer.yearly"
     }
 }

@@ -38,11 +38,36 @@ final class PaygateViewController: UIViewController {
         AmplitudeManager.shared
             .logEvent(name: "Paygate Screen")
         
+        Observable
+            .merge(
+                mainView.productLeftButton.rx.tap.map { (true, false) },
+                mainView.productRightButton.rx.tap.map { (false, true) }
+            )
+            .startWith((false, true))
+            .bind(to: Binder(mainView) { base, args in
+                base.productLeftButton.marked = args.0
+                base.productRightButton.marked = args.1
+            })
+            .disposed(by: disposeBag)
+        
+        let didBuy = mainView.buyButton.rx.tap
+            .compactMap { [weak self] void -> String? in
+                guard let self else {
+                    return nil
+                }
+
+                let id = [
+                    self.mainView.productLeftButton,
+                    self.mainView.productRightButton
+                ].first(where: { $0.marked })?.product?.id
+
+                return id
+            }
+            .asSignal(onErrorSignalWith: .never())
+        
         let output = viewModel.configure(input: PaygateViewModel.Input(
             didTapClose: mainView.closeButton.rx.tap.asSignal(),
-            didTapBuy: mainView.buyButton.rx.tap
-                .map { GlobalDefinitions.Paygate.onetime }
-                .asSignal(onErrorSignalWith: .never()),
+            didTapBuy: didBuy,
             didTapRestore: mainView.restoreButton.rx.tap.asSignal(),
             didTapTermsOfUse: mainView.didTapTermsOfUse,
             didTapPrivacyPolicy: mainView.didTapPrivacyPolicy
@@ -60,9 +85,10 @@ final class PaygateViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        output.product
-            .drive(Binder(mainView) { base, product in
-                base.setup(product: product)
+        output.products
+            .drive(Binder(mainView) { base, products in
+                base.productLeftButton.setup(product: products.monthly)
+                base.productRightButton.setup(product: products.yearly, discountBy: products.monthly)
             })
             .disposed(by: disposeBag)
     }
@@ -83,7 +109,8 @@ private extension PaygateViewController {
         activity ? mainView.preloader.startAnimating() : mainView.preloader.stopAnimating()
 
         [
-            mainView.priceLabel,
+            mainView.productLeftButton,
+            mainView.productRightButton,
             mainView.buyButton,
             mainView.restoreButton
         ].forEach { $0.isHidden = activity }
