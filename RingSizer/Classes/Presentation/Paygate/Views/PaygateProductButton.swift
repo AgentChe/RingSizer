@@ -78,7 +78,7 @@ private extension PaygateProductButton {
             .lineHeight(19.6.scale)
             .textAlignment(.left)
         
-        let isMonthly = product.id == GlobalDefinitions.Paygate.yearly
+        let isMonthly = product.id == GlobalDefinitions.Paygate.monthly
         let key = isMonthly ? "Paygate.PriceMonthly" : "Paygate.PriceYearly"
         let string = String(format: key.localized, price)
         
