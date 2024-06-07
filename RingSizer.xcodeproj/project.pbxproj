@@ -160,6 +160,17 @@
 		DE38C5C52BAEE22A0019C044 /* OPageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */; };
 		DE38C5CB2BB16E140019C044 /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */; };
 		DE38C5CD2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */; };
+		DEA4D4852C121DFA0049FBFC /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D4772C121DFA0049FBFC /* Currency.swift */; };
+		DEA4D4862C121DFA0049FBFC /* PaygateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D4782C121DFA0049FBFC /* PaygateInteractor.swift */; };
+		DEA4D4872C121DFA0049FBFC /* PaygateActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47A2C121DFA0049FBFC /* PaygateActionsView.swift */; };
+		DEA4D4882C121DFA0049FBFC /* PaygateBestOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47B2C121DFA0049FBFC /* PaygateBestOfferView.swift */; };
+		DEA4D4892C121DFA0049FBFC /* PaygateEnableTrialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47C2C121DFA0049FBFC /* PaygateEnableTrialButton.swift */; };
+		DEA4D48A2C121DFA0049FBFC /* PaygateInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47D2C121DFA0049FBFC /* PaygateInfoCell.swift */; };
+		DEA4D48B2C121DFA0049FBFC /* PaygateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47E2C121DFA0049FBFC /* PaygateInfoView.swift */; };
+		DEA4D48C2C121DFA0049FBFC /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D47F2C121DFA0049FBFC /* PaygateProductButton.swift */; };
+		DEA4D48D2C121DFA0049FBFC /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D4812C121DFA0049FBFC /* PaygateView.swift */; };
+		DEA4D48E2C121DFA0049FBFC /* PaygateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D4822C121DFA0049FBFC /* PaygateViewController.swift */; };
+		DEA4D48F2C121DFA0049FBFC /* PaygateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4D4832C121DFA0049FBFC /* PaygateViewModel.swift */; };
 		DED6C75B2BF3BE3D001DE5B2 /* WCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C73E2BF3BE3D001DE5B2 /* WCTableCell.swift */; };
 		DED6C75C2BF3BE3D001DE5B2 /* WCTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C73F2BF3BE3D001DE5B2 /* WCTableView.swift */; };
 		DED6C75D2BF3BE3D001DE5B2 /* WallpapersNabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7412BF3BE3D001DE5B2 /* WallpapersNabBar.swift */; };
@@ -182,12 +193,6 @@
 		DED6C7752BF3C0F6001DE5B2 /* WallpaperCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C76E2BF3C0F6001DE5B2 /* WallpaperCategory.swift */; };
 		DED6C7762BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7702BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift */; };
 		DED6C7772BF3C0F6001DE5B2 /* WallpapersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */; };
-		DED6C7832BF49EB4001DE5B2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C77A2BF49EB4001DE5B2 /* Currency.swift */; };
-		DED6C7842BF49EB4001DE5B2 /* PaygateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C77B2BF49EB4001DE5B2 /* PaygateInteractor.swift */; };
-		DED6C7852BF49EB4001DE5B2 /* PaygateProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C77D2BF49EB4001DE5B2 /* PaygateProductButton.swift */; };
-		DED6C7862BF49EB4001DE5B2 /* PaygateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C77F2BF49EB4001DE5B2 /* PaygateView.swift */; };
-		DED6C7872BF49EB4001DE5B2 /* PaygateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7802BF49EB4001DE5B2 /* PaygateViewController.swift */; };
-		DED6C7882BF49EB4001DE5B2 /* PaygateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6C7812BF49EB4001DE5B2 /* PaygateViewModel.swift */; };
 		DEFA92A62BE53A8F00F892BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -349,6 +354,17 @@
 		DE38C5C42BAEE22A0019C044 /* OPageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPageIndicatorView.swift; sourceTree = "<group>"; };
 		DE38C5CA2BB16E140019C044 /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
 		DE38C5CC2BB1751C0019C044 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		DEA4D4772C121DFA0049FBFC /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		DEA4D4782C121DFA0049FBFC /* PaygateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateInteractor.swift; sourceTree = "<group>"; };
+		DEA4D47A2C121DFA0049FBFC /* PaygateActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateActionsView.swift; sourceTree = "<group>"; };
+		DEA4D47B2C121DFA0049FBFC /* PaygateBestOfferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateBestOfferView.swift; sourceTree = "<group>"; };
+		DEA4D47C2C121DFA0049FBFC /* PaygateEnableTrialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateEnableTrialButton.swift; sourceTree = "<group>"; };
+		DEA4D47D2C121DFA0049FBFC /* PaygateInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateInfoCell.swift; sourceTree = "<group>"; };
+		DEA4D47E2C121DFA0049FBFC /* PaygateInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateInfoView.swift; sourceTree = "<group>"; };
+		DEA4D47F2C121DFA0049FBFC /* PaygateProductButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
+		DEA4D4812C121DFA0049FBFC /* PaygateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateView.swift; sourceTree = "<group>"; };
+		DEA4D4822C121DFA0049FBFC /* PaygateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewController.swift; sourceTree = "<group>"; };
+		DEA4D4832C121DFA0049FBFC /* PaygateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewModel.swift; sourceTree = "<group>"; };
 		DED6C73E2BF3BE3D001DE5B2 /* WCTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCTableCell.swift; sourceTree = "<group>"; };
 		DED6C73F2BF3BE3D001DE5B2 /* WCTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WCTableView.swift; sourceTree = "<group>"; };
 		DED6C7412BF3BE3D001DE5B2 /* WallpapersNabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersNabBar.swift; sourceTree = "<group>"; };
@@ -371,12 +387,6 @@
 		DED6C76E2BF3C0F6001DE5B2 /* WallpaperCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperCategory.swift; sourceTree = "<group>"; };
 		DED6C7702BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWallpapersCategoriesRequest.swift; sourceTree = "<group>"; };
 		DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpapersManager.swift; sourceTree = "<group>"; };
-		DED6C77A2BF49EB4001DE5B2 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
-		DED6C77B2BF49EB4001DE5B2 /* PaygateInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateInteractor.swift; sourceTree = "<group>"; };
-		DED6C77D2BF49EB4001DE5B2 /* PaygateProductButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateProductButton.swift; sourceTree = "<group>"; };
-		DED6C77F2BF49EB4001DE5B2 /* PaygateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateView.swift; sourceTree = "<group>"; };
-		DED6C7802BF49EB4001DE5B2 /* PaygateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewController.swift; sourceTree = "<group>"; };
-		DED6C7812BF49EB4001DE5B2 /* PaygateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaygateViewModel.swift; sourceTree = "<group>"; };
 		DEFA92A52BE53A8F00F892BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1035,7 +1045,7 @@
 		DE38C3632BAEC19A0019C044 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DED6C7822BF49EB4001DE5B2 /* Paygate */,
+				DEA4D4842C121DFA0049FBFC /* Paygate */,
 				DED6C75A2BF3BE3D001DE5B2 /* Wallpapers */,
 				0F95E4512BBC64AE004D86A0 /* Settings */,
 				0F5503192BB833D400B7692B /* FingerSizer */,
@@ -1176,6 +1186,40 @@
 			path = Atoms;
 			sourceTree = "<group>";
 		};
+		DEA4D4792C121DFA0049FBFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4D4772C121DFA0049FBFC /* Currency.swift */,
+				DEA4D4782C121DFA0049FBFC /* PaygateInteractor.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEA4D4802C121DFA0049FBFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4D47A2C121DFA0049FBFC /* PaygateActionsView.swift */,
+				DEA4D47B2C121DFA0049FBFC /* PaygateBestOfferView.swift */,
+				DEA4D47C2C121DFA0049FBFC /* PaygateEnableTrialButton.swift */,
+				DEA4D47D2C121DFA0049FBFC /* PaygateInfoCell.swift */,
+				DEA4D47E2C121DFA0049FBFC /* PaygateInfoView.swift */,
+				DEA4D47F2C121DFA0049FBFC /* PaygateProductButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEA4D4842C121DFA0049FBFC /* Paygate */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4D4792C121DFA0049FBFC /* Utils */,
+				DEA4D4802C121DFA0049FBFC /* Views */,
+				DEA4D4822C121DFA0049FBFC /* PaygateViewController.swift */,
+				DEA4D4832C121DFA0049FBFC /* PaygateViewModel.swift */,
+				DEA4D4812C121DFA0049FBFC /* PaygateView.swift */,
+			);
+			path = Paygate;
+			sourceTree = "<group>";
+		};
 		DED6C7402BF3BE3D001DE5B2 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1306,35 +1350,6 @@
 				DED6C7722BF3C0F6001DE5B2 /* WallpapersManager.swift */,
 			);
 			path = Wallpapers;
-			sourceTree = "<group>";
-		};
-		DED6C77C2BF49EB4001DE5B2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DED6C77A2BF49EB4001DE5B2 /* Currency.swift */,
-				DED6C77B2BF49EB4001DE5B2 /* PaygateInteractor.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DED6C77E2BF49EB4001DE5B2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DED6C77D2BF49EB4001DE5B2 /* PaygateProductButton.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		DED6C7822BF49EB4001DE5B2 /* Paygate */ = {
-			isa = PBXGroup;
-			children = (
-				DED6C77C2BF49EB4001DE5B2 /* Utils */,
-				DED6C77E2BF49EB4001DE5B2 /* Views */,
-				DED6C77F2BF49EB4001DE5B2 /* PaygateView.swift */,
-				DED6C7802BF49EB4001DE5B2 /* PaygateViewController.swift */,
-				DED6C7812BF49EB4001DE5B2 /* PaygateViewModel.swift */,
-			);
-			path = Paygate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1489,7 +1504,7 @@
 				DE38C47A2BAEC19A0019C044 /* TapAreaButton.swift in Sources */,
 				0F5503002BB526F700B7692B /* RingSaveRadioButtonViewCell.swift in Sources */,
 				0F95E4472BBBBFAD004D86A0 /* SavedActionView.swift in Sources */,
-				DED6C7842BF49EB4001DE5B2 /* PaygateInteractor.swift in Sources */,
+				DEA4D4862C121DFA0049FBFC /* PaygateInteractor.swift in Sources */,
 				DE38C47D2BAEC19A0019C044 /* PaddingTextField.swift in Sources */,
 				0F5502EE2BB4647100B7692B /* RingView.swift in Sources */,
 				0F5502C52BB2195300B7692B /* ConverterDropdownView.swift in Sources */,
@@ -1498,11 +1513,10 @@
 				DE38C45F2BAEC19A0019C044 /* UIColor+Extension.swift in Sources */,
 				0F55033E2BB9E2E900B7692B /* SavedSizesTableView.swift in Sources */,
 				0F5502E72BB454AD00B7692B /* RingSizerViewController.swift in Sources */,
-				DED6C7852BF49EB4001DE5B2 /* PaygateProductButton.swift in Sources */,
 				0F5502CD2BB2238D00B7692B /* PickSizeView.swift in Sources */,
 				DE38C4742BAEC19A0019C044 /* RequestReview.swift in Sources */,
+				DEA4D4892C121DFA0049FBFC /* PaygateEnableTrialButton.swift in Sources */,
 				DE38C4752BAEC19A0019C044 /* ImagePicker.swift in Sources */,
-				DED6C7872BF49EB4001DE5B2 /* PaygateViewController.swift in Sources */,
 				0F5503082BB5C3D900B7692B /* RingSizeHeaderView.swift in Sources */,
 				DE38C56E2BAEC19A0019C044 /* MainViewController.swift in Sources */,
 				DED6C75D2BF3BE3D001DE5B2 /* WallpapersNabBar.swift in Sources */,
@@ -1510,6 +1524,7 @@
 				DED6C76B2BF3BE3D001DE5B2 /* WallpapersPreviewViewController.swift in Sources */,
 				DE38C4762BAEC19A0019C044 /* RxActivityIndicator.swift in Sources */,
 				DE38C4642BAEC19A0019C044 /* UIView+RxExtension.swift in Sources */,
+				DEA4D48D2C121DFA0049FBFC /* PaygateView.swift in Sources */,
 				DE38C46D2BAEC19A0019C044 /* ObservableRetrySingle.swift in Sources */,
 				DED6C7742BF3C0F6001DE5B2 /* Wallpaper.swift in Sources */,
 				DE38C4662BAEC19A0019C044 /* DefaultRequestWrapper.swift in Sources */,
@@ -1524,6 +1539,7 @@
 				0F5503452BBA07FE00B7692B /* DeleteSavedSizeView.swift in Sources */,
 				0F5503022BB527EF00B7692B /* SaveRingSizeCollectionView.swift in Sources */,
 				0F5503432BBA07E200B7692B /* DeleteSavedSizeViewController.swift in Sources */,
+				DEA4D4872C121DFA0049FBFC /* PaygateActionsView.swift in Sources */,
 				DE38C4672BAEC19A0019C044 /* APIRequestBody.swift in Sources */,
 				DE38C4732BAEC19A0019C044 /* Weak.swift in Sources */,
 				DE38C4C12BAEC19A0019C044 /* PurchaseValidationObserver.swift in Sources */,
@@ -1552,6 +1568,8 @@
 				DED6C7622BF3BE3D001DE5B2 /* WallpapersCollectionView.swift in Sources */,
 				0F95E4452BBBBBEE004D86A0 /* SavedSizesAction.swift in Sources */,
 				DED6C7672BF3BE3D001DE5B2 /* WPCollectionCell.swift in Sources */,
+				DEA4D48A2C121DFA0049FBFC /* PaygateInfoCell.swift in Sources */,
+				DEA4D48F2C121DFA0049FBFC /* PaygateViewModel.swift in Sources */,
 				DE38C45E2BAEC19A0019C044 /* UIDevice+Extension.swift in Sources */,
 				0F55031F2BB8345200B7692B /* FingerSizerViewController.swift in Sources */,
 				0F95E46A2BBC8F9E004D86A0 /* MeasurementPresentationController.swift in Sources */,
@@ -1565,12 +1583,11 @@
 				DE38C4FC2BAEC19A0019C044 /* SplashReceiptValidationObserver.swift in Sources */,
 				0F95E4792BBCAED5004D86A0 /* SavedSizesActionsViewController.swift in Sources */,
 				DE38C5B82BAED6710019C044 /* SessionManager.swift in Sources */,
-				DED6C7832BF49EB4001DE5B2 /* Currency.swift in Sources */,
+				DEA4D4852C121DFA0049FBFC /* Currency.swift in Sources */,
 				0F5503362BB9DE3500B7692B /* SavedSizesViewController.swift in Sources */,
 				0F5502FC2BB5227200B7692B /* SavedRingSizeModel.swift in Sources */,
 				0F95E4552BBC64D7004D86A0 /* SettingsView.swift in Sources */,
 				DED6C76C2BF3BE3D001DE5B2 /* WallpapersPreviewViewModel.swift in Sources */,
-				DED6C7862BF49EB4001DE5B2 /* PaygateView.swift in Sources */,
 				0F55032A2BB83AD800B7692B /* FingerSizerConverterView.swift in Sources */,
 				DE38C4692BAEC19A0019C044 /* Scalable.swift in Sources */,
 				DED6C75C2BF3BE3D001DE5B2 /* WCTableView.swift in Sources */,
@@ -1582,6 +1599,7 @@
 				DE38C5722BAEC19A0019C044 /* MainViewCoordinator.swift in Sources */,
 				DED6C75E2BF3BE3D001DE5B2 /* WallpapersCategoriesView.swift in Sources */,
 				0F5502E92BB454BF00B7692B /* RingSizerView.swift in Sources */,
+				DEA4D48B2C121DFA0049FBFC /* PaygateInfoView.swift in Sources */,
 				0F5502F92BB51F9E00B7692B /* SaveRingSizeView.swift in Sources */,
 				0F55033A2BB9DE5B00B7692B /* SavedSizesViewModel.swift in Sources */,
 				0F95E4682BBC8F51004D86A0 /* DimmedPresentationController.swift in Sources */,
@@ -1595,6 +1613,7 @@
 				DED6C7762BF3C0F6001DE5B2 /* GetWallpapersCategoriesRequest.swift in Sources */,
 				0F5502D62BB2E42A00B7692B /* PickSizeTableView.swift in Sources */,
 				0F5502CA2BB2226B00B7692B /* MeasurementSystemsView.swift in Sources */,
+				DEA4D48E2C121DFA0049FBFC /* PaygateViewController.swift in Sources */,
 				0F5502C22BB2143700B7692B /* HeaderView.swift in Sources */,
 				DE38C47F2BAEC19A0019C044 /* CircleView.swift in Sources */,
 				0F95E47C2BBD70E6004D86A0 /* VerticalSlider.swift in Sources */,
@@ -1633,14 +1652,15 @@
 				DE38C4652BAEC19A0019C044 /* GlobalDefinitions.swift in Sources */,
 				0F5503062BB5873700B7692B /* ExpandableHeaderViewCell.swift in Sources */,
 				DE38C46F2BAEC19A0019C044 /* Fonts.swift in Sources */,
-				DED6C7882BF49EB4001DE5B2 /* PaygateViewModel.swift in Sources */,
 				DE38C48B2BAEC19A0019C044 /* FacebookManager.swift in Sources */,
 				DE38C5C12BAEDAB40019C044 /* OAnimationInfoView.swift in Sources */,
 				DED6C75B2BF3BE3D001DE5B2 /* WCTableCell.swift in Sources */,
 				DE38C57A2BAEC19A0019C044 /* OnboardingViewController.swift in Sources */,
+				DEA4D48C2C121DFA0049FBFC /* PaygateProductButton.swift in Sources */,
 				DE38C4C52BAEC19A0019C044 /* IAPError.swift in Sources */,
 				DE38C4812BAEC19A0019C044 /* CircleProgressView.swift in Sources */,
 				0F5502F42BB4938900B7692B /* RingSizerViewModel.swift in Sources */,
+				DEA4D4882C121DFA0049FBFC /* PaygateBestOfferView.swift in Sources */,
 				0F5502C82BB2225500B7692B /* MeasurementSystemsViewController.swift in Sources */,
 				DE38C4852BAEC19A0019C044 /* PushNotificationsModel.swift in Sources */,
 				0F95E4772BBCAE75004D86A0 /* SavedActionsTransitionDelegate.swift in Sources */,
@@ -1796,7 +1816,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
@@ -1813,7 +1833,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1835,7 +1855,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1851,7 +1871,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

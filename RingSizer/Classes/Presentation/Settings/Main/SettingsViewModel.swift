@@ -35,7 +35,7 @@ extension SettingsViewModel {
 				case .savedSizes:
 					return .savedSizes
 				case .termsOfUse:
-					return .open(url: GlobalDefinitions.termsOfUseUrl)
+					return .open(url: GlobalDefinitions.termsOfServiceUrl)
 				case .privacyPolicy:
 					return .open(url: GlobalDefinitions.privacyPolicyUrl)
 				case .support:

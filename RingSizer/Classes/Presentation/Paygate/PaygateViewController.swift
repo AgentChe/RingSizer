@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 final class PaygateViewController: UIViewController {
-    lazy var mainView = PaygateView()
+    private lazy var mainView = PaygateView()
     
     private lazy var viewModel = PaygateViewModel()
     
@@ -40,13 +40,28 @@ final class PaygateViewController: UIViewController {
         
         Observable
             .merge(
-                mainView.productLeftButton.rx.tap.map { (true, false) },
-                mainView.productRightButton.rx.tap.map { (false, true) }
+                mainView.product1Button.rx.tap.map { (true, false) },
+                mainView.product2Button.rx.tap.map { (false, true) },
+                mainView.enableTrialButton.rx.tap
+                    .compactMap { [weak self] in
+                        let isEnable = self?.mainView.enableTrialButton.isEnable ?? false
+                        let newValue = !isEnable
+                        return (!newValue, newValue)
+                    }
             )
             .startWith((false, true))
             .bind(to: Binder(mainView) { base, args in
-                base.productLeftButton.marked = args.0
-                base.productRightButton.marked = args.1
+                base.product1Button.marked = args.0
+                base.product2Button.marked = args.1
+                base.enableTrialButton.isEnable = args.1
+                
+                let buyTitle = args.0 ? "Paygate.Continue".localized : "Paygate.TryFreeSubscribe".localized
+                base.setup(buyTitle: buyTitle.uppercased())
+                
+                let info = args.0 ? "Paygate.CancelAnytime".localized : "Paygate.NoPaymentNow".localized
+                base.infoView.setup(text: info.uppercased())
+                
+                base.bestOfferView.update(marked: args.0)
             })
             .disposed(by: disposeBag)
         
@@ -55,12 +70,12 @@ final class PaygateViewController: UIViewController {
                 guard let self else {
                     return nil
                 }
-
+                
                 let id = [
-                    self.mainView.productLeftButton,
-                    self.mainView.productRightButton
+                    self.mainView.product1Button,
+                    self.mainView.product2Button
                 ].first(where: { $0.marked })?.product?.id
-
+                
                 return id
             }
             .asSignal(onErrorSignalWith: .never())
@@ -68,9 +83,9 @@ final class PaygateViewController: UIViewController {
         let output = viewModel.configure(input: PaygateViewModel.Input(
             didTapClose: mainView.closeButton.rx.tap.asSignal(),
             didTapBuy: didBuy,
-            didTapRestore: mainView.restoreButton.rx.tap.asSignal(),
-            didTapTermsOfUse: mainView.didTapTermsOfUse,
-            didTapPrivacyPolicy: mainView.didTapPrivacyPolicy
+            didTapRestore: mainView.actionsView.restoreButton.rx.tap.asSignal(),
+            didTapTermsOfUse: mainView.actionsView.termsOfUseButton.rx.tap.asSignal(),
+            didTapPrivacyPolicy: mainView.actionsView.privacyPolicyButton.rx.tap.asSignal()
         ))
         
         output.activity
@@ -87,8 +102,8 @@ final class PaygateViewController: UIViewController {
         
         output.products
             .drive(Binder(mainView) { base, products in
-                base.productLeftButton.setup(product: products.monthly)
-                base.productRightButton.setup(product: products.yearly, discountBy: products.monthly)
+                base.product1Button.product = products.yearly
+                base.product2Button.product = products.weekly
             })
             .disposed(by: disposeBag)
     }
@@ -107,12 +122,15 @@ extension PaygateViewController {
 private extension PaygateViewController {
     func activity(_ activity: Bool) {
         activity ? mainView.preloader.startAnimating() : mainView.preloader.stopAnimating()
-
+        
         [
-            mainView.productLeftButton,
-            mainView.productRightButton,
+            mainView.product1Button,
+            mainView.product2Button,
+            mainView.enableTrialButton,
             mainView.buyButton,
-            mainView.restoreButton
+            mainView.actionsView,
+            mainView.closeButton,
+            mainView.bestOfferView
         ].forEach { $0.isHidden = activity }
     }
     

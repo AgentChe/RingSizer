@@ -9,7 +9,7 @@ import RxSwift
 import RxCocoa
 
 final class PaygateViewModel {
-    typealias Products = (monthly: ProductPrice, yearly: ProductPrice)
+    typealias Products = (yearly: ProductPrice, weekly: ProductPrice)
     
     enum Route {
         case dismiss
@@ -59,18 +59,18 @@ private extension PaygateViewModel {
     func makeProducts() -> Driver<Products> {
         iapManager
             .obtainPrices(for: [
-                GlobalDefinitions.Paygate.monthly,
-                GlobalDefinitions.Paygate.yearly
+                GlobalDefinitions.Paygate.yearly,
+                GlobalDefinitions.Paygate.weekly
             ])
             .compactMap { prices -> Products? in
                 guard
-                    let monthly = prices.first(where: { $0.id == GlobalDefinitions.Paygate.monthly }),
-                    let yearly = prices.first(where: { $0.id == GlobalDefinitions.Paygate.yearly })
+                    let yearly = prices.first(where: { $0.id == GlobalDefinitions.Paygate.yearly }),
+                    let weekly = prices.first(where: { $0.id == GlobalDefinitions.Paygate.weekly })
                 else {
                     return nil
                 }
 
-                return (monthly: monthly, yearly: yearly)
+                return (yearly: yearly, weekly: weekly)
             }
             .trackActivity(activity)
             .asDriver(onErrorDriveWith: .never())
@@ -91,7 +91,7 @@ private extension PaygateViewModel {
         let restore = makeRestored(didTapRestore: didTapRestore)
             .map { $0 ? Route.dismiss : Route.error }
         let termsOfUse = didTapTermsOfUse
-            .map { Route.open(GlobalDefinitions.termsOfUseUrl) }
+            .map { Route.open(GlobalDefinitions.termsOfServiceUrl) }
             .asDriver(onErrorDriveWith: .never())
         let privacyPolicy = didTapPrivacyPolicy
             .map { Route.open(GlobalDefinitions.privacyPolicyUrl) }

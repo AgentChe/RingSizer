@@ -17,23 +17,28 @@
 "ImagePicker.PhotoLibrary" = "Photo library";
 
 // MARK: Paygate
-"Paygate.Cell1" = "Get full feature access";
-"Paygate.Cell2" = "Save your ring size measurements";
-"Paygate.Cell3" = "Finger width ruler";
-"Paygate.MonthlyPlan" = "Monthly Plan";
-"Paygate.AnnualPlan" = "Annual Plan";
-"Paygate.PriceMonthly" = "3 days free,\nthen %@/month";
-"Paygate.PriceYearly" = "3 days free,\nthen %@/year";
-"Paygate.Save" = "Save %i%%";
-"Paygate.StartTrial" = "START FREE TRIAL";
-"Paygate.CancelAnytime" = "Secured by the App Store. Cancel anytime.";
-"Paygate.TermsOfUse" = "Terms of Use";
-"Paygate.&" = "&";
-"Paygate.PrivacyPolicy" = "Privacy Policy";
-"Paygate.Restore" = "Restore Purchase";
 "Paygate.Error.Title" = "Error";
 "Paygate.Error.Text" = "An error occurred during execution. Try later.";
 "Paygate.Error.Button" = "OK";
+"Paygate.Title" = "Upgrade Premium";
+"Paygate.Info1" = "Save and share your ring size";
+"Paygate.Info2" = "Convert to any measurement system";
+"Paygate.Info3" = "Finger width ruler";
+"Paygate.EnableFreeTrial" = "Enable Free Trial";
+"Paygate.FreeTrialEnabled" = "Free Trial Enabled";
+"Paygate.Yearly" = "Yearly";
+"Paygate.Yearly.Bottom" = "Just %@/year";
+"Paygate.PerWeek" = "per week";
+"Paygate.FreeTrialDays" = "3-day free trial";
+"Paygate.Then" = "then %@\n";
+"Paygate.Continue" = "Continue";
+"Paygate.TryFreeSubscribe" = "Try free & subscribe";
+"Paygate.CancelAnytime" = "Cancel Anytime";
+"Paygate.NoPaymentNow" = "No payment now";
+"Paygate.TermsOfUse" = "Terms of Use";
+"Paygate.PrivacyPolicy" = "Privacy Policy";
+"Paygate.RestorePurchases" = "Restore Purchases";
+"Paygate.BestOffer" = "⭐ Best Offer";
 
 // MARK: Onboarding
 "Onboarding.Skip" = "SKIP";

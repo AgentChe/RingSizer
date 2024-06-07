@@ -22,6 +22,7 @@ final class PaygateInteractor {
     
     private lazy var iapManager = IAPManager()
     private lazy var sessionManager = SessionManager()
+    private lazy var validationObserver = PurchaseValidationObserver.shared
     
     private lazy var disposables = [Disposable]()
     
@@ -96,8 +97,6 @@ private extension PaygateInteractor {
     func restore() -> Disposable {
         iapManager
             .restorePurchases()
-            .subscribe(onFailure: { [weak self] error in
-                self?.callback.accept(.completed(false))
-            })
+            .subscribe()
     }
 }

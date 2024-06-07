@@ -17,12 +17,12 @@ final class GlobalDefinitions {
     static let applicationTag = "RING_SIZER"
     static let amplitudeApiKey = "d433d2c66723aeefd10c5b65f91c1fa3"
     
-    static let termsOfUseUrl = URL(string: "https://maria-apps.com/terms")!
+    static let termsOfServiceUrl = URL(string: "https://maria-apps.com/terms")!
     static let privacyPolicyUrl = URL(string: "https://maria-apps.com/policy")!
     static let contactUsUrl = URL(string: "https://maria-apps.com/contact")!
     
     enum Paygate {
-        static let monthly = "app.ringsizer.monthly"
-        static let yearly = "app.ringsizer.yearly"
+        static let yearly = "app.ringsizer.yearly2"
+        static let weekly = "app.ringsizer.weekly"
     }
 }
