@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SaveRingFieldViewCell: UICollectionViewCell {
     private lazy var textField = makeTextField()
-	private var didEndEditing: ((String) -> Void)?
+    private var disposeBag = DisposeBag()
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -21,23 +23,20 @@ class SaveRingFieldViewCell: UICollectionViewCell {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = .init()
+    }
 }
 
 // MARK: Public
 extension SaveRingFieldViewCell {
 	func setup(text: @escaping (String) -> Void) {
-		didEndEditing = text
-	}
-}
-
-// MARK: UITextFieldDelegate
-extension SaveRingFieldViewCell: UITextFieldDelegate {
-	func textFieldDidEndEditing(_ textField: UITextField) {
-		didEndEditing?(textField.text ?? "")
-	}
-	
-	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-		textField.resignFirstResponder()
+        textField.rx.text
+            .map { $0 ?? "" }
+            .subscribe(onNext: { text($0) })
+            .disposed(by: disposeBag)
 	}
 }
 
@@ -63,7 +62,6 @@ private extension SaveRingFieldViewCell {
 			.textAlignment(.left)
 		
 		let view = UITextField()
-		view.delegate = self
 		view.textColor = Appearance.v4DarkGrey
 		view.translatesAutoresizingMaskIntoConstraints = false
 		view.attributedPlaceholder = "SaveSize.Placeholder".localized.attributed(with: attrs)
