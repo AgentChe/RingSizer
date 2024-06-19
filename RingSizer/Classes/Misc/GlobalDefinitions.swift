@@ -8,7 +8,7 @@
 import Foundation
 
 final class GlobalDefinitions {
-    static let domain = "wallpapers.maria-apps.com"
+    static let domain = "https://wallpapers.maria-apps.com"
     static let apiKey = "oGHM7Q0EGjH0kUYtT2TT"
     
     static let otterScaleHost = "https://api.korrekted.com"
