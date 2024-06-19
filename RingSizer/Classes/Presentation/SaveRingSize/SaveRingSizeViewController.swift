@@ -57,6 +57,13 @@ class SaveRingSizeViewController: UIViewController {
 				base.dismiss(animated: true, completion: base.didSaved)
 			}
 			.disposed(by: disposeBag)
+        
+        output.isEnabled
+            .drive(with: mainView.primaryButton) {
+                $0.isEnabled = $1
+                $0.alpha = $1 ? 1 : 0.3
+            }
+            .disposed(by: disposeBag)
 		
 		mainView.collectionView.setSelected(item: .finger(initialFinger))
 		mainView.collectionView.setSelected(item: .hand(initialHand))

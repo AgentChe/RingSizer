@@ -35,6 +35,7 @@ extension SaveRingSizeViewModel {
 	struct Output {
 		let dataSource: Driver<[Section]>
 		let closeSignal: Signal<Void>
+        let isEnabled: Driver<Bool>
 	}
 	
 	func configure(input: Input) -> Output {
@@ -59,10 +60,15 @@ extension SaveRingSizeViewModel {
 			.do(onNext: { [weak self] in self?.ringManager.save(model: $0) })
 			.map { _ in () }
 			.asSignal(onErrorSignalWith: .empty())
+        
+        let isEnabled = input.ringName
+            .map { !$0.isEmpty }
+            .asDriver(onErrorJustReturn: false)
 		
 		return Output(
 			dataSource: makeDataSource(), 
-			closeSignal: closeSignal
+            closeSignal: closeSignal, 
+            isEnabled: isEnabled
 		)
 	}
 }
