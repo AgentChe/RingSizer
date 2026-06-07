@@ -19,8 +19,6 @@ target 'RingSizer' do
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"
   
   pod 'FBSDKCoreKit'
-  pod 'Amplitude-iOS'
-  pod 'Branch'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
   pod 'FirebaseCrashlytics'

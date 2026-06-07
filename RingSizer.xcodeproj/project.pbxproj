@@ -122,8 +122,6 @@
 		DE38C4852BAEC19A0019C044 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2D92BAEC1990019C044 /* PushNotificationsModel.swift */; };
 		DE38C4862BAEC19A0019C044 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2DA2BAEC1990019C044 /* SceneDelegate.swift */; };
 		DE38C4872BAEC19A0019C044 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2DB2BAEC1990019C044 /* Appearance.swift */; };
-		DE38C4882BAEC19A0019C044 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2DD2BAEC1990019C044 /* BranchManager.swift */; };
-		DE38C4892BAEC19A0019C044 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2DE2BAEC1990019C044 /* AmplitudeManager.swift */; };
 		DE38C48A2BAEC19A0019C044 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2DF2BAEC1990019C044 /* FirebaseManager.swift */; };
 		DE38C48B2BAEC19A0019C044 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C2E02BAEC1990019C044 /* FacebookManager.swift */; };
 		DE38C4C02BAEC19A0019C044 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE38C3322BAEC1990019C044 /* IAPManager.swift */; };
@@ -316,8 +314,6 @@
 		DE38C2D92BAEC1990019C044 /* PushNotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
 		DE38C2DA2BAEC1990019C044 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE38C2DB2BAEC1990019C044 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
-		DE38C2DD2BAEC1990019C044 /* BranchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
-		DE38C2DE2BAEC1990019C044 /* AmplitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE38C2DF2BAEC1990019C044 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE38C2E02BAEC1990019C044 /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		DE38C3322BAEC1990019C044 /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
@@ -993,8 +989,6 @@
 		DE38C2DC2BAEC1990019C044 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DE38C2DD2BAEC1990019C044 /* BranchManager.swift */,
-				DE38C2DE2BAEC1990019C044 /* AmplitudeManager.swift */,
 				DE38C2DF2BAEC1990019C044 /* FirebaseManager.swift */,
 				DE38C2E02BAEC1990019C044 /* FacebookManager.swift */,
 			);
@@ -1501,7 +1495,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F55032F2BB9720600B7692B /* UIDeviceModel.swift in Sources */,
-				DE38C4892BAEC19A0019C044 /* AmplitudeManager.swift in Sources */,
 				DE38C4C32BAEC19A0019C044 /* IAPActionResult.swift in Sources */,
 				DED6C7612BF3BE3D001DE5B2 /* WallpapersCollectionCell.swift in Sources */,
 				DED6C7602BF3BE3D001DE5B2 /* WallpapersCategoriesViewModel.swift in Sources */,
@@ -1532,7 +1525,6 @@
 				DE38C46D2BAEC19A0019C044 /* ObservableRetrySingle.swift in Sources */,
 				DED6C7742BF3C0F6001DE5B2 /* Wallpaper.swift in Sources */,
 				DE38C4662BAEC19A0019C044 /* DefaultRequestWrapper.swift in Sources */,
-				DE38C4882BAEC19A0019C044 /* BranchManager.swift in Sources */,
 				DE38C4702BAEC19A0019C044 /* SignError.swift in Sources */,
 				0F5503232BB834C100B7692B /* FingerSizerOnboardingView.swift in Sources */,
 				0F95E4752BBCAE30004D86A0 /* SavedActionsPresentationController.swift in Sources */,
@@ -1821,7 +1813,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
@@ -1838,7 +1830,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1861,7 +1853,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1877,7 +1869,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.6.3;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
