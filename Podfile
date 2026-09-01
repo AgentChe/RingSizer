@@ -22,6 +22,8 @@ target 'RingSizer' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
   pod 'FirebaseCrashlytics'
+
+  pod 'PostHog'
 end
 
 post_install do |installer|

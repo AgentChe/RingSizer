@@ -79,6 +79,7 @@
 		0F95E47C2BBD70E6004D86A0 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E47B2BBD70E6004D86A0 /* VerticalSlider.swift */; };
 		0F95E47E2BBD7BF9004D86A0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F95E47D2BBD7BF9004D86A0 /* SettingsViewModel.swift */; };
 		0FDED27E2BC4EEFC00B9A362 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDED27D2BC4EEFC00B9A362 /* ShareView.swift */; };
+		18FE9E3DB9F07E6564754864 /* PostHogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2849525189ABB93C4A1523B0 /* PostHogManager.swift */; };
 		99173C2AA2761E04B7FF7BCE /* Pods_RingSizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */; };
 		DE38C2942BAEC0740019C044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2932BAEC0740019C044 /* Assets.xcassets */; };
 		DE38C2972BAEC0740019C044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE38C2952BAEC0740019C044 /* LaunchScreen.storyboard */; };
@@ -268,6 +269,7 @@
 		0F95E47D2BBD7BF9004D86A0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		0FDED27D2BC4EEFC00B9A362 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		240B27661E146BC73ECE3632 /* Pods_RingSizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2849525189ABB93C4A1523B0 /* PostHogManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PostHogManager.swift; sourceTree = "<group>"; };
 		426723285054683E1755FD3A /* Pods-RingSizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.debug.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.debug.xcconfig"; sourceTree = "<group>"; };
 		B298D76B0AF3E7B54D526CD0 /* Pods-RingSizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSizer.release.xcconfig"; path = "Target Support Files/Pods-RingSizer/Pods-RingSizer.release.xcconfig"; sourceTree = "<group>"; };
 		DE38C2872BAEC0720019C044 /* RingSizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingSizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -991,6 +993,7 @@
 			children = (
 				DE38C2DF2BAEC1990019C044 /* FirebaseManager.swift */,
 				DE38C2E02BAEC1990019C044 /* FacebookManager.swift */,
+				2849525189ABB93C4A1523B0 /* PostHogManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -1665,6 +1668,7 @@
 				0F5502F22BB4929E00B7692B /* RingSlider.swift in Sources */,
 				DE38C4C22BAEC19A0019C044 /* ProductPrice.swift in Sources */,
 				0F5503162BB6F93100B7692B /* HelpView.swift in Sources */,
+				18FE9E3DB9F07E6564754864 /* PostHogManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1813,7 +1817,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
@@ -1830,7 +1834,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1853,7 +1857,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = NKRD6VXU3X;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1869,7 +1873,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.3;
+				MARKETING_VERSION = 1.6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = apps.ringsizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
